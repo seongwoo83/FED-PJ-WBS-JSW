@@ -1,0 +1,7 @@
+@charset "UTF-8";
+@import url("./reset.css");
+@import url("./common.css");
+
+header, main, footer, .inner, li, h2, h3, p, a{
+    border: 1px dotted red;
+}
