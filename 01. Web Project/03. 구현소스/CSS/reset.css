@@ -9,7 +9,7 @@
     src: url("../font/CJ+ONLYONE+Medium.woff") format("woff");
 }
 
-html, body, header, main, footer, h1, h2, h3, h4, h5, h6{
+html, body, h1, h2, h3, h4, h5, h6, p, figure, ul, ol, dl, dt, dd{
     margin: 0;
     padding: 0;
 }
