@@ -5,6 +5,56 @@
 header, main, footer, .inner, li, h2, h3, p, a{
     border: 1px dotted red;
 }
+.btn{
+    display: inline-block;
+    height: 50px;
+    padding: 10px 32px;
+    border: 1px solid #4d4d4d;
+    border-radius: 25px;
+    color: #000;
+    font-size: 16px;
+    line-height: 30px;
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 104px;
+    z-index: 9;
+}
+header>.inner{
+    position: relative;
+    padding-top: 40px;
+}
+header .logo a{
+    display: inline-block;
+}
+header .logo svg{
+    vertical-align: top;
+}
+svg{
+    width: 120px;
+    height: 20px;
+    fill: none;
+}
+header ul{
+    position: absolute;
+    right: 0;
+    top: 40px;
+    display: flex;
+    font-size: 14px;
+}
+header li a{
+    color: #000;
+    text-decoration: none;
+}
+header ul li+li{
+    margin-left: 40px;
+}
+
 h2.title{
     font-size: 38px;
     line-height: 50px;
@@ -18,11 +68,14 @@ h3.title{
     padding-top: 312px;
     font-weight: 700;
     font-size: 57px;
-    line-height: 90px;
+    line-height: 88px;
+}
+.mtit{
+    height: 1080px;
 }
 .main h2 small{
     display: block;
-    margin-bottom: -100px;
+    margin-bottom: -66px;
     font-size: 20px;
     color: #989898;
     line-height: 26px;
@@ -58,6 +111,9 @@ li.aboutList{
     width: 25%;
     box-sizing: border-box;
 }
+.mvimi{
+    padding-top: 198px;
+}
 .inner ul.box_list::after{
     content: '';
     display: block;
@@ -71,6 +127,9 @@ li.aboutList{
     padding: 40px 40px 0;
     box-sizing: border-box;
 }
+.mreare{
+    padding: 199px 0;
+}
 
 #career{
     position: relative;
@@ -78,6 +137,14 @@ li.aboutList{
 }
 #career .obj_bx{
     position: absolute;
+}
+#career p.description{
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 24px;
+}
+#career .btn{
+    margin-top: 40px;
 }
 .mcare{
     padding: 100px 0;
@@ -107,4 +174,24 @@ li.aboutList{
 
 footer .inner{
     padding-bottom: 45px;
+}
+footer .inner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+footer p{
+    float: left;
+    color: #666;
+}
+.policy{
+    float: right;
+    font-size: 14px;
+}
+.policy a{
+    color: #000;
+    text-decoration: none;
+}
+.policy span+span{
+    margin-left: 37px;
 }
