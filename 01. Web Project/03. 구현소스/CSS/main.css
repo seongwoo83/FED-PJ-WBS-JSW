@@ -4,6 +4,7 @@
 
 header, main, footer, .inner, li, h2, h3, p, a{
     border: 1px dotted red;
+    box-sizing: border-box;
 }
 .btn{
     display: inline-block;
@@ -114,6 +115,16 @@ li.aboutList{
 .mvimi{
     padding-top: 198px;
 }
+.box_list .vam{
+    border: 1px solid #999;
+    height: 320px;
+}
+.vam h3.title{
+    margin-top: 32px;
+}
+.vam .description, .vam .bul_list{
+    margin-top: 16px;
+}
 .inner ul.box_list::after{
     content: '';
     display: block;
@@ -129,6 +140,21 @@ li.aboutList{
 }
 .mreare{
     padding: 199px 0;
+}
+.mreare .box_list>li{
+    height: 460px;
+    padding-top: 60px;
+    background-color: #000;
+}
+.mreare .title{
+    color: #fff;
+    line-height: 34px;
+}
+.mreare .description{
+    margin-top: 24px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 34px;
 }
 
 #career{
@@ -151,6 +177,7 @@ li.aboutList{
 }
 
 .mcont{
+    position: relative; 
     padding: 80px 0;
 }
 .mcont::after{
@@ -161,7 +188,16 @@ li.aboutList{
 .mcont .half{
     float: left;
     width: 46.8%;
-    margin: 3.2% 0 0 3.2%;;;
+}
+.mcont .contact::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 200px;
+    background-color: #ccc;
+}
+.mcont .visit{
+    padding-left: 20px;
 }
 .mcont .title{
     font-size: 30px;
