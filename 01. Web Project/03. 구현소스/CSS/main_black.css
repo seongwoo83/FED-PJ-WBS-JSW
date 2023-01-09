@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@import url("./reset.css");
+@import url("./common.css");
+
+
+.bl{
+    background-color: #000;
+    color: #fff
+}
+.bl header{
+    background-color: #000;
+}
+.bl header .logo path{
+    fill: #fff;
+}
+.bl .main .motiv path{
+    fill: #fff;
+    fill-opacity: .6;
+}
