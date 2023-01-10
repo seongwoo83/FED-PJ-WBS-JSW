@@ -236,10 +236,17 @@ body .vam .list_box .motiv path{
     height: 513px;
     top: 156px;
     right: 342px;
+    transform-origin: 70% 70%;
+    animation: rotateObj 20s linear infinite forwards;
 }
 #career .obj_rotate path{
     stroke: gray;
     opacity: 0.2;
+}
+@keyframes rotateObj {
+    100%{
+        transform: rotate(-360deg);
+    }
 }
 .mcare{
     padding: 100px 0;
