@@ -3,7 +3,6 @@
 @import url("./common.css");
 
 header, main, footer, .inner, li, h2, h3, p, a{
-    border: 1px dotted red;
     box-sizing: border-box;
 }
 .btn{
@@ -73,6 +72,27 @@ header ul li+li{
 .mtit{
     height: 1080px;
 }
+.mtit .obj_bx{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    max-width: 1920px;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 100%;
+}
+.mtit .circle{
+    position: absolute;
+    border-radius: 50%;
+}
+.mtit .cir1{
+    position: absolute;
+    top: 63px;
+    right: 88px;
+    width: 328px;
+    height: 328px;
+    background: linear-gradient(90deg, #000 0%, #0087cc 102.23%);
+}
 .main h2 small{
     display: block;
     margin-bottom: -66px;
@@ -81,9 +101,34 @@ header ul li+li{
     line-height: 26px;
 }
 .main .scrDwn{
+    position: relative;
+    display: inline-block;
     margin-top: 67px;
     font-size: 17px;
     color: #ff9700;
+}
+.main .scrDwn::before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -26px;
+    width: 17px;
+    height: 17px;
+    border-width: 0 0 2px 2px;
+    border-style: solid;
+    border-color: transparent transparent #ff9700 #ff9700;
+    transform: rotate(-45deg);
+}
+.main .scrDwn::after{
+    content: '';
+    position: absolute;
+    right: -26px;
+    width: 17px;
+    height: 17px;
+    border-width: 0 0 2px 2px;
+    border-style: solid;
+    border-color: transparent transparent #ff9700 #ff9700;
+    transform: rotate(-45deg);
 }
 .about h2.title{
     font-size: 42px;
@@ -151,6 +196,7 @@ body .vam .list_box .motiv path{
     height: 460px;
     padding-top: 60px;
     background-color: #000;
+    overflow: hidden;
 }
 .mreare .title{
     color: #fff;
@@ -162,6 +208,13 @@ body .vam .list_box .motiv path{
     font-size: 18px;
     line-height: 34px;
 }
+.mreare .box_list>li:nth-child(2){
+    top: 80px;
+}
+.mreare .box_list>li:nth-child(4){
+    top: 80px;
+}
+
 .mreare .l1 .description::after{
     content: "";
     position: absolute;
@@ -169,7 +222,6 @@ body .vam .list_box .motiv path{
     right: 0;
     width: 440px;
     height: 220px;
-    border-radius: 0 0 15px 0;
     background: url(../img/bg_research1.png) no-repeat 100% 0;
 }
 .mreare .l2 .description::after{
@@ -179,7 +231,6 @@ body .vam .list_box .motiv path{
     right: 0;
     width: 368px;
     height: 227px;
-    border-radius: 0 0 20px 0;
     background: url(../img/bg_research2.png) no-repeat 0 0;
 }
 .mreare .l3 .description::after{
@@ -189,7 +240,6 @@ body .vam .list_box .motiv path{
     right: 0;
     width: 518px;
     height: 215px;
-    border-radius: 0 0 15px 0;
     background: url(../img/bg_research3.png) no-repeat 100% 0;
 }
 .mreare .l4  .description::after{
@@ -199,7 +249,6 @@ body .vam .list_box .motiv path{
     right: 0;
     width: 559px;
     height: 230px;
-    border-radius: 0 0 15px 20px;
     background: url(../img/bg_research4.png) no-repeat 100% 0;
 }
 
@@ -234,10 +283,21 @@ body .vam .list_box .motiv path{
     position: absolute;
     width: 512px;
     height: 513px;
-    top: 156px;
+    top: 138px;
     right: 342px;
     transform-origin: 70% 70%;
     animation: rotateObj 20s linear infinite forwards;
+}
+#career .obj_rotate::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 180px;
+    height: 180px;
+    top: 260px;
+    left: 260px;
+    border-radius: 50%;
+    background-color: #000;
 }
 #career .obj_rotate path{
     stroke: gray;
