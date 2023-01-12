@@ -17,52 +17,6 @@ header, main, footer, .inner, li, h2, h3, p, a{
     box-sizing: border-box;
 }
 
-h2.title{
-    font-size: 38px;
-    line-height: 50px;
-}
-h3.title{
-    font-size: 26px;
-    line-height: 32px;
-}
-
-header{
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 104px;
-    z-index: 9;
-}
-header>.inner{
-    position: relative;
-    padding-top: 40px;
-}
-header .logo a{
-    position: absolute;
-}
-header .logo svg{
-    vertical-align: top;
-}
-header .logo path{
-    fill: black;
-}
-header ul{
-    position: absolute;
-    right: 0;
-    top: 40px;
-    display: flex;
-    font-size: 12px;
-}
-header li a{
-    color: inherit;
-    text-decoration: none;
-}
-header ul li+li{
-    margin-left: 40px;
-}
-
 .mtit h2.title{
     padding-top: 312px;
     font-weight: 700;
@@ -80,9 +34,9 @@ header ul li+li{
     transform: translateX(-50%);
     height: 100%;
     width: 100%;
+    z-index: 4;
 }
-.mtit .circle{
-    position: absolute;
+.cir{
     border-radius: 50%;
 }
 .mtit .cir1{
@@ -92,6 +46,95 @@ header ul li+li{
     width: 328px;
     height: 328px;
     background: linear-gradient(90deg, #000 0%, #0087cc 102.23%);
+}
+.mtit .cirwrap{
+    position: absolute;
+    top: 182px;
+    right: 274px;
+    width: 258px;
+    height: 183px;
+}
+.cirwrap .wrapcir{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+}
+.cirwrap .wrapcir::before, .cirwrap .wrapcir::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 183px;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.cirwrap .wrapcir:nth-child(1)::before{
+    left: 0;
+}
+.cirwrap .wrapcir:nth-child(1)::after{
+    left: 12px;
+}
+.cirwrap .wrapcir:nth-child(2)::before{
+    left: 24px;
+}
+.cirwrap .wrapcir:nth-child(2)::after{
+    left: 36px;
+}
+.cirwrap .wrapcir:nth-child(3)::before{
+    left: 48px;
+}
+.cirwrap .wrapcir:nth-child(3)::after{
+    left: 60px;
+}
+.cirwrap .wrapcir:nth-child(4)::before{
+    left: 72px;
+}
+.mtit .cir2{
+    position: absolute;
+    top: 708px;
+    right: 156px;
+    width: 65px;
+    height: 65px;
+    background: linear-gradient(165.31deg, rgba(239, 21, 30, 0.4) 10.38%, #ef151e 95.06%);
+}
+.mtit .cir3{
+    position: absolute;
+    top: 838px;
+    right: -53px;
+    width: 154px;
+    height: 154px;
+    background: linear-gradient(165.31deg, #feC26b 10.38%, #ff9700 95.06%);
+}
+.mtit .cir4{
+    position: absolute;
+    top: 772px;
+    left: -4px;
+    width: 345px;
+    height: 345px;
+    background: linear-gradient(0deg, rgba(24, 24, 24, 0.0001) 0%, #0087CC 100%);
+}
+.mtit .cir5{
+    position: absolute;
+    top: 772px;
+    left: 150px;
+    width: 345px;
+    height: 345px;
+    background: linear-gradient(0deg, #0087CC 0%, rgba(24, 24, 24, 0.0001) 100%);
+}
+.mtit .obj_rotate{
+    position: absolute;
+    top: 671px;
+    right: -141px;
+}
+.obj_rotate svg{
+    position: relative;
+    width: 680px;
+    height: 682px;
+    opacity: .3;
+    animation: rotateObj 20s linear infinite forwards;
 }
 .main h2 small{
     display: block;
@@ -308,6 +351,46 @@ body .vam .list_box .motiv path{
         transform: rotate(-360deg);
     }
 }
+#career .cirwrap{
+    position: absolute;
+    top: -26px;
+    right: 1680px;
+    width: 358px;
+    height: 254px;
+}
+.obj_bx .cirwrap::before, .obj_bx .cirwrap::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 254px;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid #000;
+    opacity: .2;
+}
+.obj_bx .cirwrap:nth-child(1):before{
+    left: 0;
+}
+.obj_bx .cirwrap:nth-child(1):after{
+    left: 12px;
+}
+.obj_bx .cirwrap:nth-child(2):before{
+    left: 24px;
+}
+.obj_bx .cirwrap:nth-child(2):after{
+    left: 36px;
+}
+.obj_bx .cirwrap:nth-child(3):before{
+    left: 48px;
+}
+.obj_bx .cirwrap:nth-child(3):after{
+    left: 60px;
+}
+.obj_bx .cirwrap:nth-child(4):before{
+    left: 72px;
+}
+
+
 .mcare{
     padding: 100px 0;
 }
