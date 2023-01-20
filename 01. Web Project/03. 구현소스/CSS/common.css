@@ -9,3 +9,13 @@
 html, body{
     font-family: 'nanum', sans-serif;
 }
+html{
+    font-size: 10px;
+}
+body{
+    line-height: 1;
+    overflow-x: hidden;
+}
+body *{
+    outline: 1px dotted gray;
+}

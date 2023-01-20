@@ -1,1 +1,21 @@
 @charset "UTF-8";
+@import url(./common.css);
+@import url(./reset.css);
+
+/* 1. 상단부분 */
+.header{
+    height: 120px;
+    position: relative;
+}
+.tmenu{
+    display: flex;
+}
+.gnb{
+    display: flex;
+}
+.smenu{
+    display: flex;
+}
+
+/* 2. 메인부분 */
+/* 3. 하단부분 */
