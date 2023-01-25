@@ -3,18 +3,46 @@
 @import url(./reset.css);
 
 /* 1. 상단부분 */
-.header{
+#header{
     height: 120px;
+}
+.header .inner_wrap{
     position: relative;
+}
+.logo{
+    position: absolute;
+    left: 0;
 }
 .tmenu{
     display: flex;
+    position: absolute;
+    height: 20px;
+    right: 93px;
+    top: 15px;
+    width: 464px;
 }
 .gnb{
     display: flex;
+    position: absolute;
+    width: 100%;
+    height: 66px;
+    top: 54px;
+    left: 0;
+}
+.gnb>li:nth-child(1){
+    width: 89px;
+}
+.gnb h2>a{
+    height: 56%;
+    line-height: 20px;
+    padding-top: 10px;
+    display: block;
+    text-align: center;
+    width: 100%;
 }
 .smenu{
     display: flex;
+    display: none;
 }
 
 /* 2. 메인부분 */

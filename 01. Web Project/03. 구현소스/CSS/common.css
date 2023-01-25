@@ -19,3 +19,8 @@ body{
 body *{
     outline: 1px dotted gray;
 }
+.inner_wrap{
+    width: 1100px;
+    margin: 0 auto;
+    height: 120px;
+}
