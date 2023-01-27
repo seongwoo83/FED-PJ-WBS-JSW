@@ -6,12 +6,33 @@
 #header{
     height: 120px;
 }
+.header{
+    height: 120px;
+    z-index: 99;
+    background-color: #f6f5ef;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 2px solid #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
 .header .inner_wrap{
     position: relative;
 }
 .logo{
     position: absolute;
     left: 0;
+    top: 22px;
+    width: 75px;
+    height: 75px;
+    z-index: 12;
+}
+.logo a{
+    background: url("https://www.starbucks.co.kr/common/img/common/logo.png");
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 .tmenu{
     display: flex;
@@ -20,6 +41,31 @@
     right: 93px;
     top: 15px;
     width: 464px;
+}
+.tmenu li{
+    float: left;
+    text-align: center;
+}
+.tmenu li:nth-child(1){
+    width: 76px;
+}
+.tmenu li:nth-child(2){
+    width: 107px;
+}
+.tmenu li:nth-child(3){
+    width: 181px;
+}
+.tmenu li:nth-child(4){
+    width: 97px;
+}
+.tmenu li+li{
+    margin-left: 1px;
+}
+.tmenu li a{
+    line-height: 20px;
+    color: #555;
+    display: block;
+    font: normal 13px Avenir, Arial, georgia;
 }
 .gnb_wrap{
     position: absolute;
@@ -38,7 +84,6 @@
 }
 .gnb>ul>li{
     float: left;
-    height: 66px;
 }
 .gnb>ul>li:nth-child(1){
     width: 89px;
@@ -69,6 +114,8 @@
     display: block;
     text-align: center;
     width: 100%;
+    color: #333;
+    font: normal 13px Avenir, Arial, georgia;
 }
 .smenu_wrap{
     display: flex;
@@ -104,4 +151,41 @@
 }
 
 /* 2. 메인부분 */
+.main .m_event{
+    height: 34vw;
+}
+.main .m_menu{
+    height: 62px;
+}
+.main .m_star_rewards{
+    padding: 30px 0 40px;
+    background-color: #1e3932;
+}
+.main .m_coffee1{
+    height: 573px;
+    background: url("https://image.istarbucks.co.kr/upload/common/img/main/2023/2023_newyear_promotion_bg.jpg") no-repeat center/cover;
+    overflow: hidden;
+}
+.main .m_coffee2{
+    height: 400px;
+    background: url("https://image.istarbucks.co.kr/upload/common/img/main/2022/221220_pc_reserve_bg.png") no-repeat center top/cover;
+}
+.main .m_coffee3{
+    height: 800px;
+    background:#45434c url("https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Chrismas2_PTF_bg.png") no-repeat fixed center bottom/auto 87%;
+    padding: 0;
+}
+.main .m_reserve{
+    height: 400px;
+    background: url("https://image.istarbucks.co.kr/upload/common/img/main/2021/reserve_bg_pc.png") no-repeat 50% 100%/auto 353px;
+}
+.main .m_with_star{
+    height: 400px;
+    background: url("https://www.starbucks.co.kr/common/img/main/store_bg.jpg");
+    background-size: 100% auto;
+}
 /* 3. 하단부분 */
+.footer{
+    padding: 32px 0 35px;
+    background-color: #2c2a29;
+}
