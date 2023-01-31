@@ -41,6 +41,10 @@
     padding: 30px 0 40px;
     background-color: #1e3932;
 }
+.m_star_rewards .inner{
+    max-width: 1080px;
+    margin: 0 auto;
+}
 .main .m_coffee1{
     height: 573px;
     background: url("https://image.istarbucks.co.kr/upload/common/img/main/2023/2023_newyear_promotion_bg.jpg") no-repeat center/cover;
