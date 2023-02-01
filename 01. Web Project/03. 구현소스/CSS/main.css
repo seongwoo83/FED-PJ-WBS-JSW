@@ -45,14 +45,163 @@
     max-width: 1080px;
     margin: 0 auto;
 }
+.m_rewards::after{
+    content: '';
+    display: block;
+    clear: both;
+} 
+.m_rewards_logo{
+    float: left;
+    width: 16.3%;
+    margin: 0 40px;
+    text-align: center;
+}
+.m_rewards_logo img{
+    width: 176px;
+}
+.m_rewards_cont{
+    box-sizing: border-box;
+    float: left;
+    width: calc(83.7% - 80px);
+    padding-right: 30px;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+.m_reward_info{
+    position: relative;
+    margin-bottom: 22px;
+    border-bottom: 1px solid #4b615b;
+}
+.m_reward_info .info_txt{
+    margin-bottom: 12px;
+}
+.info_txt h2{
+    line-height: 1.4;
+    margin-bottom: 12px;
+    font-size: 2.6rem;
+    font-weight: normal;
+}
+.info_txt p{
+    line-height: 1.4;
+    font-size: 1.7rem;
+}
+.btn_sign_group{
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    font-size: 0;
+}
+.btn_sign_group a{
+    box-sizing: border-box;
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 18.5px;
+    font-size: 1.4rem;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn_sign_group .sign_in{
+    background-color: #00704a;
+    border: 2px solid #00704a;
+}
+.btn_sign_group .log_in{
+    margin-left: 9px;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+.m_reward_gift{
+    position: relative;
+}
+.m_reward_gift .gift_info{
+    line-height: 1.4;
+    font-size: 1.4rem;
+}
+.m_reward_gift .btn_gift{
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 183px;
+    height: 38px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 1.4rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+.btn_gift a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
 .main .m_coffee1{
     height: 573px;
     background: url("https://image.istarbucks.co.kr/upload/common/img/main/2023/2023_newyear_promotion_bg.jpg") no-repeat center/cover;
     overflow: hidden;
 }
+.m_coffee1 .coffee1_inner{
+    max-width: 1124px;
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+}
+.coffee1_inner .coffee_imgbx{
+    position: absolute;
+    left: 10.9%;
+    top: 15.18%;
+    max-width: 310px;
+    width: 42.97%;
+}
+.coffee1_inner .coffee_txtbx{
+    position: absolute;
+    top: 32.8%;
+    right: 16%;
+    max-width: 339px;
+    width: 37.63%;
+}
+.coffee_imgbx img, .coffee_txtbx img{
+    width: 100%;
+}
+.btn_coffee_detail{
+    margin-top: 39px;
+    width: 125px;
+    height: 38px;
+}
+.btn_coffee_detail a{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    line-height: 34px;
+    border-radius: 5px;
+    text-align: center;
+    color: #633510;
+    border: 2px solid #633510;
+}
 .main .m_coffee2{
     height: 400px;
     background: url("https://image.istarbucks.co.kr/upload/common/img/main/2022/221220_pc_reserve_bg.png") no-repeat center top/cover;
+}
+.coffee2_inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.coffee2_inner .coffee2_title{
+    position: relative;
+    padding-top: 115px;
+    max-width: 1080px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.coffee2_title img{
+    width: auto;
+    transform: translateX(-11px);
 }
 .main .m_coffee3{
     height: 800px;

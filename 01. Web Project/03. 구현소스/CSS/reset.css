@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-html, body, h1, h2, h3, h4, h5, h6, ul, ol, li{
+html, body, h1, h2, h3, h4, h5, h6, ul, ol, li, p{
     margin: 0;
     padding: 0;
     vertical-align: baseline;
@@ -11,6 +11,10 @@ ul, ol, li{
 a{
     color: #000;
     text-decoration: none;
+}
+img{
+    vertical-align: top;
+    max-width: 100%;
 }
 button{
     background-color: transparent;
