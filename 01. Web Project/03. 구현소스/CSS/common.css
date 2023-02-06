@@ -137,7 +137,6 @@ body{
     font: normal 13px Avenir, Arial, georgia;
 }
 .smenu_wrap{
-    display: flex;
     display: none;
     position: absolute;
     width: 100%;
