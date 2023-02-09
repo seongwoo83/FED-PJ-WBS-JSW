@@ -207,3 +207,15 @@ body{
     font-weight: normal;
     color: #fff;
 }
+
+@media screen and (max-width: 1120px) {
+    header .inner_wrap{
+        width: 100%;
+    }
+    header h1.logo{
+        left: 20px;
+    }
+    .gnb{
+        width: 100%;
+    }
+}
