@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+
+@media screen and (max-width: 1400px){
+    .coffee3_inner .fav_img {
+        top: 50%;
+        transform: translateY(-50%);
+        right: 60px;
+        width: 720px;
+        height: 475px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .coffee3_inner .fav_img {
+        top: 50%;
+        transform: translateY(-50%);
+        right: 160px;
+        width: 570px;
+        height: 380px;
+    }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1104px){
+    .coffee3_inner .fav_txt1 {
+        background-size: 100% auto;
+        height: 175px;
+        left: 280px;
+        width: 220px;
+    }
+    .coffee3_inner .fav_txt2 {
+        background-size: 100% auto;
+        height: 137px;
+        left: 182px;
+        top: 330px;
+        width: 320px;
+    }
+}
