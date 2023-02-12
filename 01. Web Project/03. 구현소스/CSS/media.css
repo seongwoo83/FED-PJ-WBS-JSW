@@ -1,26 +1,6 @@
 @charset "UTF-8";
 
 
-@media screen and (max-width: 1400px){
-    .coffee3_inner .fav_img {
-        top: 50%;
-        transform: translateY(-50%);
-        right: 60px;
-        width: 720px;
-        height: 475px;
-    }
-}
-
-@media screen and (max-width: 1100px){
-    .coffee3_inner .fav_img {
-        top: 50%;
-        transform: translateY(-50%);
-        right: 160px;
-        width: 570px;
-        height: 380px;
-    }
-}
-
 @media screen and (min-width: 961px) and (max-width: 1104px){
     .coffee3_inner .fav_txt1 {
         background-size: 100% auto;
@@ -34,5 +14,74 @@
         left: 182px;
         top: 330px;
         width: 320px;
+    }
+}
+    @media screen and (min-width: 2000px){
+        .coffee2_inner .coffee2_imgbx{
+            right: 0;
+            left: 0;
+            text-align: center;
+        }
+}
+@media screen and (max-width: 1900px){
+    .coffee2_inner .coffee2_imgbx{
+        right: -4%;
+    }
+}
+@media screen and (max-width: 1800px){
+    .coffee2_inner .coffee2_imgbx{
+        right: -8%;
+    }
+}
+@media screen and (max-width: 1700px){
+    .coffee2_inner .coffee2_imgbx{
+        right: -12%;
+    }
+}
+@media screen and (max-width: 1600px){
+    .coffee2_inner .coffee2_imgbx{
+        right: -16%;
+    }    
+}    
+@media screen and (max-width: 1500px){
+    .coffee2_inner .coffee2_imgbx{
+        right: -19%;
+    }    
+}    
+@media screen and (max-width: 1400px){
+    .coffee2_inner .coffee2_imgbx{
+        right: -24%;
+    }
+    .coffee3_inner .fav_img {
+        top: 50%;
+        transform: translateY(-50%);
+        right: 60px;
+        width: 720px;
+        height: 475px;
+    }
+}    
+@media screen and (max-width: 1300px){
+    .coffee2_inner .coffee2_imgbx{
+        right: -33%;
+    }    
+}    
+@media screen and (max-width: 1200px){
+    .coffee2_inner .coffee2_imgbx{
+        right: -44%;
+    }    
+}    
+
+@media screen and (max-width: 1120px){
+    .coffee2_inner .coffee2_imgbx{
+        right: -42%;
+    }    
+}    
+@media screen and (max-width: 1100px){
+    .coffee3_inner .fav_img {
+        top: 50%;
+        transform: translateY(-50%);
+        right: 160px;
+        width: 570px;
+        height: 380px;
     }
 }
