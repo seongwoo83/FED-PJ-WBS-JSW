@@ -6,7 +6,7 @@
 
 /* 2. 메인부분 */
 .main .m_event{
-    height: 34vw;
+    height: 32vw;
 }
 .event_wrap{
     height: 100%;
@@ -57,14 +57,16 @@
     margin: 0 auto;
     font-size: 1.5rem;
     line-height: 34px;
-    border: 2px solid #046241;
+    
     border-radius: 5px;
     box-sizing: border-box;
 }
 .event1 .event_btn a{
+    border: 2px solid #046241;
     color: #046241;
 }
 .event2 .event_btn a{
+    border: 2px solid #e30222;
     color: #e30222;
 }
 .event2{
@@ -98,7 +100,7 @@
     top: 0;
     transform: translateX(-50%);
 }
-.m_menu .left_news{
+.m_menu .menu_left{
     position: absolute;
     background-color: #111;
     top: 0;
@@ -106,13 +108,99 @@
     height: 62px;
     width: 50%;
 }
-.m_menu .right_promo{
+.m_menu .menu_right{
     position: absolute;
     background-color: #f6f5ef;
     top: 0;
     right: 0;
     height: 62px;
     width: 50%;
+}
+.m_menu_wrap .left_news{
+    float: left;
+    width: 730px;
+    height: 62px;
+}
+.m_menu_wrap .right_promo{
+    float: right;
+    position: relative;
+    width: 550px;
+    height: 62px;
+}
+.right_promo button{
+    position: absolute;
+    display: block;
+    top: 13px;
+    left: 37%;
+    width: 234px;
+    height: 36px;
+    cursor: pointer;
+}
+.right_promo .promo_title{
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 129px;
+    height: 17px;
+    background: url(../img/starbucks/main_promo_title.png) no-repeat;
+    background-size: 100% auto;
+}
+.right_promo .promo_btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+}
+.menu_promo{
+    background: #f6f5ef;
+    border-top: 1px solid #f6f5ef;
+    position: relative;
+    width: 100%;
+    height: 658px;
+    transition: .5s ease-in-out;
+}
+.menu_promo .promo_swiper{
+    position: relative;
+    left: 50%;
+    width: 1100px;
+    height: 553px;
+    margin-top: 39px;
+    margin-left: -550px;
+    text-align: center;
+}
+.menu_promo .promo_wrap{
+    position: relative;
+    width: 100%;
+    height: 541px;
+    transform: translateX(-819px);
+}
+.promo_wrap .promo_slider{
+    position: relative;
+    width: 515%;
+    margin-left: 135px;
+}
+.promo_slider li{
+    float: left;
+    position: relative;
+    width: 819px;
+    margin: 0 5px;
+}
+.promo_slider img{
+    position: relative;
+}
+.promo_slider a{
+    position: relative; 
+    border: 2px solid #222;
+    border-radius: 3px;
+    color: #222;
+    display: block;
+    font-size: 14px;
+    height: 34px;
+    line-height: 34px;
+    margin: -50px auto 0;
+    text-align: center;
+    width: 121px;
 }
 .main .m_star_rewards{
     padding: 30px 0 40px;
