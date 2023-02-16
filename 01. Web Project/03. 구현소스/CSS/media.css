@@ -16,6 +16,21 @@
         width: 320px;
     }
 }
+@media screen and (min-width: 961px) and (max-width: 1479px){
+    .m_menu .m_menu_wrap{
+        background: none;
+        width: 960px;
+    }
+    .m_menu_wrap .left_news{
+        width: 55%;
+    }
+    .m_menu_wrap .right_promo{
+        width: 45%;
+    }
+    .right_promo button{
+        left: 10%;
+    }
+}
     @media screen and (min-width: 2000px){
         .coffee2_inner .coffee2_imgbx{
             right: 0;
