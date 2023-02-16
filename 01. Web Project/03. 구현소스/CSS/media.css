@@ -16,6 +16,18 @@
         width: 320px;
     }
 }
+@media screen and (max-width: 1120px) {
+    header .inner_wrap{
+        width: 100%;
+    }
+    header h1.logo{
+        left: 20px;
+    }
+    .gnb{
+        width: 100%;
+    }
+}
+
 @media screen and (min-width: 961px) and (max-width: 1479px){
     .m_menu .m_menu_wrap{
         background: none;

@@ -13,4 +13,18 @@ window.addEventListener("load", function(){
             navList[i].style.overflow = "hidden";
         }
     }
+
+    let prizeList = document.querySelector(".prize_list_inner");
+    prizeList = `<ul>`;
+    for(let i = 1; i<8; i++){
+        prizeList+= `
+        <li>
+            <a href="#">
+                <img src="./03. 구현소스/img/starbucks/footer_award_img${i}.jpg" alt="하단 상 이미지">
+            </a>
+        </li>
+        `;
+    }
+    prizeList += `</ul>`;
+
 })
