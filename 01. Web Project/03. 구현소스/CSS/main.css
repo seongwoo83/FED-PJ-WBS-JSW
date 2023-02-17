@@ -186,12 +186,38 @@
     margin-top: 39px;
     margin-left: -550px;
     text-align: center;
+    transform: translateX(-819px);
 }
 .menu_promo .promo_wrap{
     position: relative;
     width: 100%;
     height: 541px;
-    transform: translateX(-819px);
+}
+.promo_left_btn{
+    position: absolute;
+    left: 3%;
+    top: 225px;
+    z-index: 100;
+}
+.promo_right_btn{
+    position: absolute;
+    right: 3%;
+    top: 225px;
+    z-index: 100;
+}
+.promo_wrap button.promo{
+    display: block;
+    width: 51px;
+    height: 51px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+button.promo.left{
+    background: url(../img/starbucks/arrow_left_on.png) no-repeat center center;
+}
+button.promo.right{
+    background: url(../img/starbucks/arrow_right_on.png) no-repeat center center;
 }
 .promo_wrap .promo_slider{
     position: relative;
