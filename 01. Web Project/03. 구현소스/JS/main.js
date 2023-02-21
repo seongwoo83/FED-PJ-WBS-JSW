@@ -14,11 +14,12 @@ window.addEventListener("DOMContentLoaded",()=>{
         if(arrowTxt === "./03. 구현소스/img/starbucks/main_promo_down.png"){
             arrowTxt = "./03. 구현소스/img/starbucks/main_promo_up.png"
             promoBtn.setAttribute("src", arrowTxt);
-            promoMenu.style.display = "block";
+            promoMenu.style.height = "658px";
         }else{
             arrowTxt = "./03. 구현소스/img/starbucks/main_promo_down.png"
             promoBtn.setAttribute("src", arrowTxt);
-            promoMenu.style.display = "none";
+            promoMenu.style.height = "0";
+            promoMenu.style.overflow = "hidden";
         }
     }
     
