@@ -8,12 +8,12 @@ window.addEventListener("load", function(){
     for(let x in ndata){
         hcode += `
         <li>
-            <h2><a href="#">${x}</a></h2>`
+            <h2><a href="#">${x}</a></h2>
+            <div class="smenu_wrap">
+                <div class="smenu">
+                    <div class="smenu_inner">`
             for(let y in ndata[x]){
                 hcode += `
-                <div class="smenu_wrap">
-                    <div class="smenu">
-                        <div class="smenu_inner">
                             <div class="smenu_list">
                              <ul>
                                 <li class="menu_head"><a href="#">${y}</a></li>
@@ -23,10 +23,11 @@ window.addEventListener("load", function(){
                                             <li><a href="#">${z}</a></li>
                                             `
                                         }
-                                    }
-                                    hcode += `
+                                        hcode += `
                                         </ul>
-                                    </div>`;
+                                    </div>
+                                    `;
+                                    }
         hcode += `
                     </div>
                 </div>
@@ -36,7 +37,6 @@ window.addEventListener("load", function(){
     }
     hcode += "</ul>"
     gnb.innerHTML = hcode;
-    console.log(hcode);
 
     const gnbList = document.querySelectorAll(".gnb>ul>li");
     const navList = document.querySelectorAll(".gnb>ul>li .smenu_wrap");

@@ -1,0 +1,707 @@
+@charset "UTF-8";
+@import url(./common.css);
+@import url(./reset.css);
+
+
+
+/* 2. 메인부분 */
+.main .m_event{
+    height: 32vw;
+}
+.main .fxbx{
+    position: fixed;
+    top: 154px;
+    left: 54.5%;
+    width: 140px;
+    margin-left: 485px;
+    z-index: 9999;
+}
+.fxbx a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.fxbx img{
+    display: block;
+    width: 100%;
+}
+.event_wrap{
+    height: 100%;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+.event1{
+    position: relative;
+    background: url(../img/starbucks/main_bg1.jpg) center/cover;
+    width: 100%;
+    height: 100%;
+}
+.event .event_slogan{
+    width: 19%;
+    left: 13.6%;
+    top: 24%;
+}
+.event .event_slogan, .event .e_img, .event .event_btn{
+    position: absolute;
+}
+.event .event_img1{
+    top: 14%;
+    left: 36.4%;
+    width: 16.4%;
+}
+.event .event_img2{
+    top: 26.8%;
+    left: 47.5%;
+    width: 17.6%;
+}
+.event1 .event_img3{
+    top: 24%;
+    right: 22%;
+    width: 16.8%;
+}
+.event1 .event_btn{
+    width: 19%;
+    left: 12.6%;
+    height: 38px;
+    top: 58%;
+    text-align: center;
+}
+.event .event_btn a{
+    display: block;
+    width: 40%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    line-height: 34px;
+    
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.event1 .event_btn a{
+    border: 2px solid #046241;
+    color: #046241;
+}
+.event2 .event_btn a{
+    border: 2px solid #e30222;
+    color: #e30222;
+}
+.event2{
+    position: relative;
+    background: url(../img/starbucks/main_bg2.jpg) center/cover;
+    width: 100%;
+    height: 100%;
+}
+.event2 .event_img3{
+    top: 12%;
+    right: 22%;
+    width: 16.8%;
+}
+.event2 .event_btn{
+    width: 19%;
+    left: 13.6%;
+    height: 38px;
+    top: 43%;
+    text-align: center;
+}
+.main .m_menu{
+    position: relative;
+    height: 62px;
+}
+.m_menu .m_menu_wrap{
+    background: url(../img/starbucks/main_menu.jpg);
+    position: absolute;
+    width: 1280px;
+    height: 62px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+.m_menu .menu_left{
+    position: absolute;
+    background-color: #111;
+    top: 0;
+    left: 0;
+    height: 62px;
+    width: 50%;
+}
+.m_menu .menu_right{
+    position: absolute;
+    background-color: #f6f5ef;
+    top: 0;
+    right: 0;
+    height: 62px;
+    width: 50%;
+}
+.m_menu_wrap .left_news{
+    float: left;
+    width: 730px;
+    height: 62px;
+}
+.m_menu_wrap .right_promo{
+    float: right;
+    position: relative;
+    width: 550px;
+    height: 62px;
+}
+.right_promo button{
+    position: absolute;
+    display: block;
+    top: 13px;
+    left: 37%;
+    width: 234px;
+    height: 36px;
+    cursor: pointer;
+}
+.right_promo .promo_title{
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 129px;
+    height: 17px;
+    background: url(../img/starbucks/main_promo_title.png) no-repeat;
+    background-size: 100% auto;
+}
+.right_promo .promo_btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+}
+.menu_promo{
+    height: 0;
+    overflow: hidden;
+    background: #f6f5ef;
+    position: relative;
+    width: 100%;
+    transition: .5s ease-in-out;
+    box-sizing: border-box;
+}
+.menu_promo .promo_swiper{
+    position: relative;
+    left: 50%;
+    width: 1100px;
+    height: 553px;
+    margin-top: 39px;
+    margin-left: -550px;
+    text-align: center;
+}
+.menu_promo .promo_wrap{
+    position: relative;
+    width: 100%;
+    height: 541px;
+}
+.promo_left_btn{
+    position: absolute;
+    left: 17%;
+    top: 225px;
+    z-index: 100;
+}
+.promo_right_btn{
+    position: absolute;
+    right: 17%;
+    top: 225px;
+    z-index: 100;
+}
+button.left{
+    background: url(../img/starbucks/arrow_left_on.png) no-repeat center center;
+}
+button.right{
+    background: url(../img/starbucks/arrow_right_on.png) no-repeat center center;
+}
+button.promo{
+    display: block;
+    width: 51px;
+    height: 51px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.promo_slider{
+    display: flex;
+    position: relative;
+    transform: translateX(-1638px);
+    width: 515%;
+    margin-left: 135px;
+}
+.promo_slider li{
+    position: relative;
+    opacity: 0.4;
+    width: 819px;
+    margin: 0 5px;
+}
+.promo_slider .middle{
+    opacity: 1 ;
+}
+.promo_slider img{
+    position: relative;
+}
+.promo_slider a{
+    position: relative; 
+    border: 2px solid #222;
+    border-radius: 3px;
+    color: #222;
+    display: block;
+    font-size: 14px;
+    height: 34px;
+    line-height: 34px;
+    margin: -50px auto 0;
+    text-align: center;
+    width: 121px;
+}
+.main .m_star_rewards{
+    padding: 30px 0 40px;
+    background-color: #1e3932;
+}
+.m_star_rewards .inner{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.m_rewards::after{
+    content: '';
+    display: block;
+    clear: both;
+} 
+.m_rewards_logo{
+    float: left;
+    width: 16.3%;
+    margin: 0 40px;
+    text-align: center;
+}
+.m_rewards_logo img{
+    width: 176px;
+}
+.m_rewards_cont{
+    box-sizing: border-box;
+    float: left;
+    width: calc(83.7% - 80px);
+    padding-right: 30px;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+.m_reward_info{
+    position: relative;
+    margin-bottom: 22px;
+    border-bottom: 1px solid #4b615b;
+}
+.m_reward_info .info_txt{
+    margin-bottom: 12px;
+}
+.info_txt h2{
+    line-height: 1.4;
+    margin-bottom: 12px;
+    font-size: 2.6rem;
+    font-weight: normal;
+}
+.info_txt p{
+    line-height: 1.4;
+    font-size: 1.7rem;
+}
+.btn_sign_group{
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    font-size: 0;
+}
+.btn_sign_group a{
+    box-sizing: border-box;
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 18.5px;
+    font-size: 1.4rem;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn_sign_group .sign_in{
+    background-color: #00704a;
+    border: 2px solid #00704a;
+}
+.btn_sign_group .log_in{
+    margin-left: 9px;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+.m_reward_gift{
+    position: relative;
+}
+.m_reward_gift .gift_info{
+    line-height: 1.4;
+    font-size: 1.4rem;
+}
+.m_reward_gift .btn_gift{
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 183px;
+    height: 38px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 1.4rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+.btn_gift a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.main .m_coffee1{
+    height: 573px;
+    background: url(../img/starbucks/main_coffee1.jpg) no-repeat center/cover;
+    overflow: hidden;
+}
+.m_coffee1 .coffee1_inner{
+    max-width: 1124px;
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+}
+.coffee1_inner .coffee_imgbx{
+    position: absolute;
+    left: 10.9%;
+    top: 15.18%;
+    max-width: 310px;
+    width: 42.97%;
+    transition: .7s ease-in-out;
+}
+.coffee1_inner .coffee_imgbx.off{
+    opacity: .4;
+    left: -31%;
+}
+.coffee1_inner .coffee_txtbx{
+    position: absolute;
+    top: 32.8%;
+    right: 16%;
+    max-width: 339px;
+    width: 37.63%;
+    transition: .7s ease-in-out;
+}
+.coffee1_inner .coffee_txtbx.off{
+    opacity: 0.4;
+    right: -40%;
+}
+.coffee_imgbx img, .coffee_txtbx img{
+    width: 100%;
+}
+.btn_coffee_detail{
+    margin-top: 39px;
+    width: 125px;
+    height: 38px;
+}
+.btn_coffee_detail a{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    line-height: 34px;
+    border-radius: 5px;
+    text-align: center;
+    color: #633510;
+    border: 2px solid #633510;
+}
+.main .m_coffee2{
+    position: relative;
+    height: 400px;
+    background: url(../img/starbucks/main_coffee2.jpg) no-repeat center top;
+    background-size: cover;
+    overflow: hidden;
+}
+.coffee2_inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    opacity: 1;
+    transition: 1s ease-out;
+}
+.coffee2_inner.off{
+    opacity: 0.3;
+}
+.coffee2_inner .coffee2_title{
+    position: relative;
+    padding-top: 52px;
+    max-width: 1080px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+.coffee2_title img{
+    width: auto;
+    transform: translateX(150px);
+}
+.m_coffee2 .coffee2_visual{
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.coffee2_inner .coffee2_imgbx{
+    display: block;
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+}
+.coffee2_imgbx img{
+    max-width: none;
+    width: auto;
+}
+.coffee2_inner .btn_detail_wrap{
+    position: relative;
+    max-width: 1080px;
+    margin-top: 39px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 254px;
+    box-sizing: border-box;
+}
+.btn_detail_wrap .detail_btn{
+    width: 125px;
+    height: 38px;
+}
+.detail_btn a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 34px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.main .m_coffee3{
+    height: 800px;
+    background:#45434c url(../img/starbucks/main_coffee3.png) no-repeat fixed center bottom/auto 87%;
+    padding: 0;
+    position: relative;
+}
+.m_coffee3 .coffee3_inner{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1280px;
+    bottom: 0;
+}
+.coffee3_inner .fav_txt1{
+    background: url(../img/starbucks/main_coffee3_txt1.png) no-repeat;
+    height: 240px;
+    width: 258px;
+    position: absolute;
+    top: 120px;
+    left: 200px;
+    overflow: hidden;
+    transition: .8s ease-out;
+}
+.fav_txt1.off{
+    left: -500px;
+}
+.coffee3_inner .fav_txt2{
+    background: url(../img/starbucks/main_coffee3_txt2.png) no-repeat;
+    position: absolute;
+    left: 92px;
+    top: 370px;
+    width: 362px;
+    height: 156px;
+    transition: .8s ease-out;
+}
+.fav_txt2.off{
+    left: -700px;
+}
+.coffee3_inner .fav_img{
+    background: url(../img/starbucks/main_coffee3_img.png) no-repeat center/100%;
+    position: absolute;
+    width: 912px;
+    height: 575px;
+    right: -163px;
+    top: 100px;
+}
+.coffee3_inner .fav_detail_wrap{
+    position: absolute;
+    width: 125px;
+    height: 38px;
+    left: 328px;
+    top: 570px;
+}
+.fav_detail_wrap a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 34px;
+    font-size: 1.5rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #fff;
+}
+.main .m_reserve {
+    height: 400px;
+    background: url(../img/starbucks/main_reserve.png) no-repeat 50% 100%/auto 353px;
+}
+.m_reserve .reserve_inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.reserve_inner .reserve_tit{
+    position: relative;
+    padding-top: 135px;
+    padding-left: 55px;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto; 
+    box-sizing: border-box;
+    z-index: 10;
+}
+.reserve_tit img{
+    width: auto;
+    transform: translateX(150px);
+}
+.reserve_inner .reserve_img{
+    position: absolute;
+    bottom: auto;
+    top: 0;
+    right: 50%;
+    margin-right: -483px;
+}
+.reserve_inner .detail_btn_wrap{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    max-width: 1100px;
+    margin: 33px auto 0;
+    box-sizing: border-box;
+}
+.reserve_inner .detail_btn{
+    width: 583px;
+    height: 38px;
+    padding-left: 225px;
+    box-sizing: border-box;
+}
+.detail_btn .expand.m4{
+    display: block;
+    margin: 0 auto;
+    width: 125px;
+    height: 100%;
+    color: #000;
+    font-size: 1.5rem;
+    line-height: 3.4rem;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.main .m_with_star{
+    position: relative;
+    height: 400px;
+    background: url(../img/starbucks/main_star.jpg);
+    background-size: 100% auto;
+    width: 100%;
+    overflow: hidden;
+}
+.m_with_star .star_inner{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -640px;
+    width: 1280px;
+}
+.star_inner .star_img1{
+    background: url(../img/starbucks/main_star_img1.png);
+    background-size: contain;
+    position: absolute;
+    top: 149px;
+    left: 390px;
+    width: 228px;
+    height: 228px;
+    z-index: 5;
+}
+.star_inner .star_img2{
+    background: url(../img/starbucks/main_star_img2.png);
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 160px;
+    width: 366px;
+    height: 312px;
+    z-index: 4;
+}
+.star_inner .star_img3{
+    background: url(../img/starbucks/main_star_img3.png);
+    background-size: contain;
+    position: absolute;
+    top: -60px;
+    left: 520px;
+    width: 343px;
+    height: 142px;
+    z-index: 4;
+}
+.star_inner .star_img4{
+    background: url(../img/starbucks/main_star_img4.png);
+    background-size: contain;
+    position: absolute;
+    top: 298px;
+    right: 30px;
+    width: 230px;
+    height: 102px;
+    z-index: 4;
+}
+.star_inner .star_txt1{
+    background: url(../img/starbucks/main_star_txt1.png);
+    position: absolute;
+    top: 100px;
+    right: 162px;
+    width: 374px;
+    height: 54px;
+    z-index: 4;
+    transition: .7s ease-out;
+}
+.star_txt1.off{
+    opacity: 0.3;
+    right: -600px;
+}
+.star_inner .star_txt2{
+    background: url(../img/starbucks/main_star_txt2.png);
+    position: absolute;
+    top: 168px;
+    right: 168px;
+    width: 366px;
+    height: 92px;
+    z-index: 4;
+    transition: .7s ease-out;
+}
+.star_txt2.off{
+    opacity: .3;
+    right: -800px;
+}
+.star_inner .detail_btn{
+    position: absolute;
+    top: 290px;
+    right: 408px;
+    width: 121px;
+    height: 34px;
+    line-height: 34px;
+    z-index: 4;
+    border: 2px solid #000;
+    border-radius: 3px;
+}
+.star_inner .detail_btn .expand.m5{
+    color: #222;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}

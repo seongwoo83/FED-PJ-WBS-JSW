@@ -218,16 +218,21 @@ button.promo{
     border-radius: 50%;
     cursor: pointer;
 }
-.promo_wrap .promo_slider{
+.promo_slider{
+    display: flex;
     position: relative;
+    transform: translateX(-1638px);
     width: 515%;
     margin-left: 135px;
 }
 .promo_slider li{
-    float: left;
     position: relative;
+    opacity: 0.4;
     width: 819px;
     margin: 0 5px;
+}
+.promo_slider .middle{
+    opacity: 1 ;
 }
 .promo_slider img{
     position: relative;
@@ -362,6 +367,11 @@ button.promo{
     top: 15.18%;
     max-width: 310px;
     width: 42.97%;
+    transition: .7s ease-in-out;
+}
+.coffee1_inner .coffee_imgbx.off{
+    opacity: .4;
+    left: -31%;
 }
 .coffee1_inner .coffee_txtbx{
     position: absolute;
@@ -369,6 +379,11 @@ button.promo{
     right: 16%;
     max-width: 339px;
     width: 37.63%;
+    transition: .7s ease-in-out;
+}
+.coffee1_inner .coffee_txtbx.off{
+    opacity: 0.4;
+    right: -40%;
 }
 .coffee_imgbx img, .coffee_txtbx img{
     width: 100%;
@@ -402,6 +417,11 @@ button.promo{
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    opacity: 1;
+    transition: 1s ease-out;
+}
+.coffee2_inner.off{
+    opacity: 0.3;
 }
 .coffee2_inner .coffee2_title{
     position: relative;
@@ -480,6 +500,10 @@ button.promo{
     top: 120px;
     left: 200px;
     overflow: hidden;
+    transition: .8s ease-out;
+}
+.fav_txt1.off{
+    left: -500px;
 }
 .coffee3_inner .fav_txt2{
     background: url(../img/starbucks/main_coffee3_txt2.png) no-repeat;
@@ -488,6 +512,10 @@ button.promo{
     top: 370px;
     width: 362px;
     height: 156px;
+    transition: .8s ease-out;
+}
+.fav_txt2.off{
+    left: -700px;
 }
 .coffee3_inner .fav_img{
     background: url(../img/starbucks/main_coffee3_img.png) no-repeat center/100%;
@@ -639,6 +667,11 @@ button.promo{
     width: 374px;
     height: 54px;
     z-index: 4;
+    transition: .7s ease-out;
+}
+.star_txt1.off{
+    opacity: 0.3;
+    right: -600px;
 }
 .star_inner .star_txt2{
     background: url(../img/starbucks/main_star_txt2.png);
@@ -648,6 +681,11 @@ button.promo{
     width: 366px;
     height: 92px;
     z-index: 4;
+    transition: .7s ease-out;
+}
+.star_txt2.off{
+    opacity: .3;
+    right: -800px;
 }
 .star_inner .detail_btn{
     position: absolute;

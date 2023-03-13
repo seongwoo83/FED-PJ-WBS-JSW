@@ -23,40 +23,91 @@ window.addEventListener("DOMContentLoaded",()=>{
         }
     }
     
-    btns.forEach((ele,idx)=>{ // ele => 요소자신, idx => 요소 순번
-        ele.onclick = ()=>goSlide(idx);
-    });
-
-    let promoSeq = 1;
-    promoSlider.style.transform = `translateX(-819px)`;
-
+    let prot = 0;
+    
     const goSlide = (seq)=>{
+        if(prot) return;
+        prot= 1
+        setTimeout(() => {
+            prot = 0;
+        }, 400);
+        let sliderBx = promoSlider.querySelectorAll(".promo_box");
         /* 1. 함수 호출 및 전달값 확인 */
         console.log("호출완료",seq);
         
         /* 현재전역 promoSeq변수 */
         /* 2. 버튼 별 분기하기 */
         if(seq){
-            promoSeq++;//1씩증가
-        }else{
-            promoSeq--;//1씩감소
-        }
-        console.log("증감후",promoSeq);
-        if(promoSeq===4){
-            promoSeq = 1;    
-        }else if(promoSeq === -1){
-            promoSeq = 2;
-        }
-        else if(promoSeq === 0) {
-            promoSeq = 3;
-        }
-        console.log("초기화후",promoSeq);
-        let slidePx = -(819*promoSeq);
-        promoSlider.style.transform = `translateX(${slidePx}px)`;
-        promoSlider.style.transition = "transform .4s ease-in-out"; 
-        
-    };
+            promoSlider.style.transform = `translateX(${-819*3}px)`;
+            promoSlider.style.transition = "transform .4s ease-in-out";
+            sliderBx.forEach(ele=>ele.classList.remove("middle"));
 
+            
+            setTimeout(() => {
+                promoSlider.appendChild(sliderBx[0]);
+                promoSlider.style.transition = "none";
+                promoSlider.style.transform = `translateX(${-819*2}px)`;
+                sliderBx[3].classList.add("middle");
+            }, 400);
+            
+        }else{
+            promoSlider.style.transform = `translateX(${-819*1}px)`;
+            promoSlider.style.transition = "transform .4s ease-in-out";
+            sliderBx.forEach(ele=>ele.classList.remove("middle"));
+            setTimeout(() => {
+                promoSlider.insertBefore(sliderBx[sliderBx.length-1], sliderBx[0])
+                promoSlider.style.transition = "none";
+                promoSlider.style.transform = `translateX(${-819*2}px)`;
+                sliderBx[1].classList.add("middle");
+            }, 400);
+            
+        }
+    };
+    
+    btns.forEach((ele,idx)=>{ // ele => 요소자신, idx => 요소 순번
+        ele.onclick = ()=>goSlide(idx);
+    });
+
+    const coffee1_img = document.querySelector(".coffee_imgbx");
+    const coffee1_txt = document.querySelector(".coffee_txtbx");
+    const coffee2 = document.querySelector(".coffee2_inner");
+    const coffee3_txt1 = document.querySelector(".fav_txt1")
+    const coffee3_txt2 = document.querySelector(".fav_txt2")
+    const star_txt1 = document.querySelector(".star_txt1");
+    const star_txt2 = document.querySelector(".star_txt2");
+
+    window.addEventListener("scroll",()=>{
+        let scTop = window.scrollY
+        console.log(scTop);
+
+        const crm = ele => ele.classList.remove("off")
+        const cad = ele => ele.classList.add("off")
+
+
+        if(scTop > 300 && scTop<=900){
+            setTimeout(() => {
+                crm(coffee1_img);
+                crm(coffee1_txt);
+            }, 200);
+        }else if(scTop > 900 && scTop <=1500){
+            crm(coffee2);
+        }else if(scTop > 1500 && scTop <= 2000){
+            crm(coffee3_txt1);
+            crm(coffee3_txt2);
+        }else if(scTop > 2000){
+            crm(star_txt1)
+            crm(star_txt2)
+        }else{
+            cad(coffee1_img);
+            cad(coffee1_txt);
+            cad(coffee2);
+            cad(coffee3_txt1);
+            cad(coffee3_txt2);
+            cad(star_txt1)
+            cad(star_txt2)
+        }
+        
+    });
 
 
 });
