@@ -85,6 +85,26 @@ window.addEventListener("DOMContentLoaded",()=>{
         ele.onclick = ()=>goSlide(idx);
     });
 
+    const notice = document.querySelector(".notice ul");
+
+    function slideNotice(){
+        let noticeList = document.querySelectorAll(".notice li");
+        noticeList[0].style.transition = "all .3s ease-in-out"
+        noticeList[0].style.height = "0";
+        noticeList[0].style.overflow = "hidden";
+        setTimeout(() => {
+            noticeList = document.querySelectorAll(".notice li");
+            notice.appendChild(noticeList[0]);
+            noticeList[noticeList.length-1].style.transition = "none";
+            noticeList[noticeList.length-1].style.height = "25px";
+            noticeList[noticeList.length-1].style.overflow= "visible";
+        }, 300);
+    }
+    setInterval(slideNotice, 1000);
+
+
+
+
     const coffee1_img = document.querySelector(".coffee_imgbx");
     const coffee1_txt = document.querySelector(".coffee_txtbx");
     const coffee2 = document.querySelector(".coffee2_inner");

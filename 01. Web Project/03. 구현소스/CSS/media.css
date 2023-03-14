@@ -33,8 +33,11 @@
         background: none;
         width: 960px;
     }
-    .m_menu_wrap .left_news{
-        width: 55%;
+    .m_menu_wrap .left_notice{
+        width: 48%;
+    }
+    .left_notice .notice_tit{
+        white-space: nowrap;
     }
     .m_menu_wrap .right_promo{
         width: 45%;
