@@ -1,10 +1,27 @@
 window.addEventListener("DOMContentLoaded",()=>{
-    let promo = document.querySelector(".right_promo button");
-    let promoBtn = document.querySelector(".promo_btn img");
-    let promoMenu = document.querySelector(".menu_promo");
-    let promoSlider = document.querySelector(".promo_slider");
-    let promoBx = document.querySelectorAll(".promo_box");
-    let btns = document.querySelectorAll(".menu_promo button");
+    const promo = document.querySelector(".right_promo button");
+    const promoBtn = document.querySelector(".promo_btn img");
+    const promoMenu = document.querySelector(".menu_promo");
+    const promoSlider = document.querySelector(".promo_slider");
+    const promoBx = document.querySelectorAll(".promo_box");
+    const btns = document.querySelectorAll(".menu_promo button");
+    const eventBx = document.querySelector(".event_wrap");
+    
+
+    function eventCh(){
+        eventBx.style.left = "-100%";
+        eventBx.style.transition = "left 1s linear";
+    }
+    setTimeout(() => {
+            let eventImg = document.querySelectorAll(".event");
+            eventBx.appendChild(eventImg[0]);
+            eventBx.style.transition = "none";
+            eventBx.style.left = "0";
+        }, 1000);
+
+    setInterval(() => {
+
+    }, 1000);
 
     
     
