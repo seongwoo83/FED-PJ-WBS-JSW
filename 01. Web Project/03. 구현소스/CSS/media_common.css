@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 1120px) {
+    header .inner_wrap{
+        width: 100%;
+    }
+    header h1.logo{
+        left: 20px;
+    }
+    .gnb{
+        width: 100%;
+    }
+    .gnb li .smenu_inner{
+        width: 70%;
+        flex-wrap: wrap;
+    }
+    .smenu_list{
+        padding-top: 10px;
+    }
+}
+@media screen and (max-width: 960px) {
+    #header{
+        height: 70px;
+    }
+    .mb_hidden{
+        display: none;
+    }
+    .dt_hidden{
+        display: block;
+    }
+}

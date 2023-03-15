@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 @media screen and (min-width: 961px) and (max-width: 1104px){
     .coffee3_inner .fav_txt1 {
         background-size: 100% auto;
@@ -16,22 +15,10 @@
         width: 320px;
     }
 }
-@media screen and (max-width: 1120px) {
-    header .inner_wrap{
-        width: 100%;
-    }
-    header h1.logo{
-        left: 20px;
-    }
-    .gnb{
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 961px) and (max-width: 1479px){
+@media screen and (max-width: 1479px){
     .m_menu .m_menu_wrap{
         background: none;
-        width: 960px;
+        width: 90%;
     }
     .m_menu_wrap .left_notice{
         width: 48%;
@@ -46,12 +33,46 @@
         left: 10%;
     }
 }
-    @media screen and (min-width: 2000px){
-        .coffee2_inner .coffee2_imgbx{
-            right: 0;
-            left: 0;
-            text-align: center;
-        }
+@media screen and (max-width: 1025px) {
+    .m_star_rewards .inner{
+        flex-direction: column;
+        width: 85%;
+    }
+    .m_rewards_logo{
+        margin: 0 auto;
+        width: 30%;
+    }
+    .m_rewards_cont{
+        position: relative;        
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-top: 30px;
+        text-align: center;
+    }
+    .m_reward_info{
+        height: 170px;
+    }
+    .btn_sign_group{
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .m_reward_gift{
+        height: 89px;
+    }
+    .m_reward_gift .btn_gift{
+        top: 80%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+@media screen and (min-width: 2000px){
+    .coffee2_inner .coffee2_imgbx{
+        right: 0;
+        left: 0;
+        text-align: center;
+    }
 }
 @media screen and (max-width: 1900px){
     .coffee2_inner .coffee2_imgbx{

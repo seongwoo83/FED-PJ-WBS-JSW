@@ -10,18 +10,20 @@ window.addEventListener("DOMContentLoaded",()=>{
 
     function eventCh(){
         eventBx.style.left = "-100%";
-        eventBx.style.transition = "left 1s linear";
-    }
-    setTimeout(() => {
-            let eventImg = document.querySelectorAll(".event");
-            eventBx.appendChild(eventImg[0]);
+        eventBx.style.transition = "1s linear";
+        
+        setTimeout(() => {
             eventBx.style.transition = "none";
             eventBx.style.left = "0";
+            eventImg = document.querySelectorAll(".event");
+            eventBx.appendChild(eventImg[0]);
         }, 1000);
-
+    }
+    
     setInterval(() => {
-
-    }, 1000);
+        let eventImg =  document.querySelectorAll(".event");
+        eventCh();
+    }, 3500);
 
     
     

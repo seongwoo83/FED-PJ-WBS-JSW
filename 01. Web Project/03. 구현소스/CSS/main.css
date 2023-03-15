@@ -11,10 +11,9 @@
 .main .fxbx{
     position: fixed;
     top: 154px;
-    left: 54.5%;
     width: 140px;
-    margin-left: 485px;
-    z-index: 9999;
+    z-index: 1;
+    right: 1%;
 }
 .fxbx a{
     display: block;
@@ -30,8 +29,8 @@
     display: flex;
     height: 100%;
     width: 200%;
-    overflow: hidden;
     left: 0;
+    transition: none;
 }
 .event1{
     position: relative;
@@ -40,7 +39,7 @@
     height: 100%;
 }
 .event .event_slogan{
-    width: 19%;
+    width: 19vw;
     left: 13.6%;
     top: 24%;
 }
@@ -50,20 +49,20 @@
 .event .event_img1{
     top: 14%;
     left: 36.4%;
-    width: 16.4%;
+    width: 16.4vw;
 }
 .event .event_img2{
     top: 26.8%;
     left: 47.5%;
-    width: 17.6%;
+    width: 17.6vw;
 }
 .event1 .event_img3{
     top: 24%;
     right: 22%;
-    width: 16.8%;
+    width: 16.8vw;
 }
 .event1 .event_btn{
-    width: 19%;
+    width: 19vw;
     left: 12.6%;
     height: 38px;
     top: 58%;
@@ -287,16 +286,11 @@ button.promo{
     background-color: #1e3932;
 }
 .m_star_rewards .inner{
+    display: flex;
     max-width: 1080px;
     margin: 0 auto;
 }
-.m_rewards::after{
-    content: '';
-    display: block;
-    clear: both;
-} 
 .m_rewards_logo{
-    float: left;
     width: 16.3%;
     margin: 0 40px;
     text-align: center;
@@ -306,7 +300,6 @@ button.promo{
 }
 .m_rewards_cont{
     box-sizing: border-box;
-    float: left;
     width: calc(83.7% - 80px);
     padding-right: 30px;
     color: #fff;
