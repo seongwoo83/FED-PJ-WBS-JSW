@@ -89,16 +89,18 @@ window.addEventListener("DOMContentLoaded",()=>{
 
     function slideNotice(){
         let noticeList = document.querySelectorAll(".notice li");
-        noticeList[0].style.transition = "all .3s ease-in-out"
-        noticeList[0].style.height = "0";
-        noticeList[0].style.overflow = "hidden";
+        noticeList[0].style.transition = "all .5s ease-in-out"
+        setTimeout(()=>{
+            noticeList[0].style.height = "0";
+        },0)
         setTimeout(() => {
-            noticeList = document.querySelectorAll(".notice li");
+            noticeList[0].style.overflow = "hidden";
             notice.appendChild(noticeList[0]);
+            noticeList = document.querySelectorAll(".notice li");
             noticeList[noticeList.length-1].style.transition = "none";
             noticeList[noticeList.length-1].style.height = "25px";
             noticeList[noticeList.length-1].style.overflow= "visible";
-        }, 300);
+        }, 500);
     }
     setInterval(slideNotice, 1000);
 

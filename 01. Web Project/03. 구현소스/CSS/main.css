@@ -154,6 +154,10 @@
     height: 24px;
     height: 100%;
 }
+.notice li{
+    height: 24px;
+    background-color: #000;
+}
 .notice ul{
     display: flex;
     flex-direction: column;
