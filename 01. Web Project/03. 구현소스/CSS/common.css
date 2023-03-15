@@ -245,6 +245,7 @@ body{
     width: 70%;
     height: 100%;
     background-color: #000;
+    overflow: auto;
 }
 .search_wrap{
     background: #2d2926;
@@ -275,6 +276,68 @@ body{
     color: #fff;
     border-radius: 5px;
     box-sizing: border-box;
+}
+.mb_menu{
+    color: #fff;
+    width: 100%;
+}
+.mb_menu *{
+    color: #fff;
+}
+.mb_smenu_list{
+    background: #181818;
+    border-bottom: 1px solid #222;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 76px;
+    text-indent: 20px;
+}
+.mb_smenu_list a{
+    color: #fff;
+    display: block;
+    height: 76px;
+    line-height: 76px;
+    position: relative;
+    width: 100%;
+}
+.mb_smenu_list a:hover{
+    text-decoration: underline;
+}
+.mb_smenu_list.li_tit{
+    background: #111;
+    font-size: 28px;
+    border-bottom: 1px solid #222;
+    font-weight: normal;
+    line-height: 76px;
+    text-indent: 20px;
+}
+.mb_smenu_smenu{
+    height: 0;
+    overflow: hidden;
+    border: none;
+    
+}
+.mb_smenu_smenu.on{
+    height: 76px;
+    overflow: hidden;
+    border-bottom: 1px solid #222;
+}
+.mb_smenu_smenu.on.in{
+    height: auto;
+}
+.mb_smenu_list ul li{
+    background: #222222;
+    border-bottom: none;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 50px;
+    text-indent: 50px;
+    height: 0;
+}
+.mb_smenu_list ul li.on{
+    overflow: visible;
+    height: 75px;
+    border-bottom: 1px solid #222;
 }
 /************************************* 1. 상단부분 *************************************/
 /************************************* 2. 하단부분 *************************************/
