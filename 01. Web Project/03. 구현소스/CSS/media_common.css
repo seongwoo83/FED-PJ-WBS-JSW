@@ -28,4 +28,47 @@
     .dt_hidden{
         display: block;
     }
+    .main .m_event{
+        width: auto;
+        height: 200vw;
+        box-sizing: border-box;
+    }
+    .event1{
+        background-image: url(../img/starbucks/main_bg1.jpg);
+    }
+    .event2{
+        background-image: url(../img/starbucks/m_main_bg2.jpg);
+        background-position: center top;
+        background-size:  cover;
+    }
+    .event .event_slogan {
+        width: 34vw;
+        left: 32%;
+        top: 7%;
+    }
+    .event1 .event_img1 {
+        top: 19%;
+        left: 13%;
+        width: 51vw;
+    }
+    .event1 .event_img2 {
+        top: 41%;
+        left: 39%;
+        width: 51vw;
+    }
+    .event1 .event_img3 {
+        top: 56%;
+        right: 36%;
+        width: 51vw;
+    }
+    .event1 .event_btn {
+        width: 87vw;
+        left: 7%;
+        height: 100px;
+        top: 73%;
+    }
+    .event1 .event_btn a {
+        line-height: 100px;
+        font-size: 34px;
+    }
 }

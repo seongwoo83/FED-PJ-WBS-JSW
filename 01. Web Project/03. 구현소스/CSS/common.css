@@ -26,9 +26,6 @@ body{
 #header{
     height: 120px;
 }
-.mb_hidden{
-    height: 120px;
-}
 
 .header{
     z-index: 99;
@@ -214,6 +211,9 @@ body{
 }
 /************************************* 1-2. 모바일 *************************************/
 .dt_hidden{
+    display: none;
+}
+.dt_hidden .inner_wrap{
     height: 70px;
 }
 .dt_hidden .logo{
@@ -227,6 +227,27 @@ body{
 .dt_hidden .logo.on{
     z-index: 0;
 }
+.mb_icon_wrap{
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    right: 0;
+    top: 0;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.mb_icon_wrap div{
+    display: inline-block;
+    width: 30%;
+    height: 80%;
+}
+.mb_icon_wrap span{
+    font-size: 45px;
+    color: #012b05;
+    cursor: pointer;
+}
 .mb_wrap{
     position: absolute;
     top: 0;
@@ -237,15 +258,17 @@ body{
     height: 100vh;
     background-color: #000;
     opacity: 0.7;
+    display: none;
 }
 .mb_gnb{
     position: fixed;
     top: 0;
-    right: 0;
+    right: -100%;
     width: 70%;
     height: 100%;
     background-color: #000;
     overflow: auto;
+    transition: right .8s ease-in-out;
 }
 .search_wrap{
     background: #2d2926;
@@ -338,6 +361,26 @@ body{
     overflow: visible;
     height: 75px;
     border-bottom: 1px solid #222;
+}
+.close_wrap{
+    position: absolute;
+    text-align: center;
+    left: -50px;
+    top: 35px;
+}
+ .close{
+    position: fixed;
+    font-size: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+.close:hover{
+    animation: closeAni .5s ease-in-out forwards;
+}
+@keyframes closeAni {
+    to{
+        transform: rotate(180deg);
+    }
 }
 /************************************* 1. 상단부분 *************************************/
 /************************************* 2. 하단부분 *************************************/

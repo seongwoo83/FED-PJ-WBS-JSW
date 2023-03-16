@@ -37,6 +37,7 @@
     background: url(../img/starbucks/main_bg1.jpg) center/cover;
     width: 100%;
     height: 100%;
+    display: none;
 }
 .event .event_slogan{
     width: 19vw;
@@ -73,7 +74,7 @@
     width: 40%;
     height: 100%;
     margin: 0 auto;
-    font-size: 1.5rem;
+    font-size: min(1vw,1.5rem);
     line-height: 34px;
     
     border-radius: 5px;
@@ -89,18 +90,35 @@
 }
 .event2{
     position: relative;
-    background: url(../img/starbucks/main_bg2.jpg) center/cover;
+    background-image: url(../img/starbucks/main_bg2.jpg);
+    background-position: center;
+    background-size: cover;
     width: 100%;
     height: 100%;
 }
+.event2 .event_img1 {
+    top: 14%;
+    left: 20.4%;
+    width: 16.4vw;
+}
+.event2 .event_img2 {
+    top: 26.8%;
+    left: 28.5%;
+    width: 17.6vw;
+}
 .event2 .event_img3{
     top: 12%;
-    right: 22%;
-    width: 16.8%;
+    right: 55%;
+    width: 7.8%;
+}
+.event2 .event_slogan {
+    width: 19vw;
+    left: 8.6%;
+    top: 24%;
 }
 .event2 .event_btn{
     width: 19%;
-    left: 13.6%;
+    left: 3.6%;
     height: 38px;
     top: 43%;
     text-align: center;

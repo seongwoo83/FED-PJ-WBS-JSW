@@ -47,9 +47,26 @@ window.addEventListener("DOMContentLoaded",()=>{
                     });
                 }
             })          
-
         }
     })
+
+    const mbGnbBg = document.querySelector(".mb_wrap");
+    const mbGnb = document.querySelector(".mb_gnb");
+    const mbIconWrap = document.querySelector(".mb_icon_wrap");
+    const bars = document.querySelector(".bars");
+    const close = document.querySelector(".close");
+    bars.onclick=()=>{
+        mbIconWrap.style.display = "none";
+        mbGnbBg.style.display ="block";
+        mbGnb.style.right = "0";
+    }
+    close.onclick=()=>{
+        mbGnbBg.style.display ="none";
+        mbGnb.style.right = "-100%";
+        setTimeout(() => {
+            mbIconWrap.style.display = "flex";
+        }, 700);
+    }
 
 
 
