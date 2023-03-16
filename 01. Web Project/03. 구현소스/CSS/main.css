@@ -37,7 +37,7 @@
     background: url(../img/starbucks/main_bg1.jpg) center/cover;
     width: 100%;
     height: 100%;
-    display: none;
+    /* display: none; */
 }
 .event .event_slogan{
     width: 19vw;
@@ -47,12 +47,12 @@
 .event .event_slogan, .event .e_img, .event .event_btn{
     position: absolute;
 }
-.event .event_img1{
+.event1 .event_img1{
     top: 14%;
     left: 36.4%;
     width: 16.4vw;
 }
-.event .event_img2{
+.event1 .event_img2{
     top: 26.8%;
     left: 47.5%;
     width: 17.6vw;
@@ -98,18 +98,18 @@
 }
 .event2 .event_img1 {
     top: 14%;
-    left: 20.4%;
+    left: 34.4%;
     width: 16.4vw;
 }
 .event2 .event_img2 {
     top: 26.8%;
-    left: 28.5%;
+    left: 48.5%;
     width: 17.6vw;
 }
 .event2 .event_img3{
     top: 12%;
-    right: 55%;
-    width: 7.8%;
+    right: 19%;
+    width: 16.8%;
 }
 .event2 .event_slogan {
     width: 19vw;
@@ -495,14 +495,10 @@ button.promo{
     max-width: none;
     width: auto;
 }
-.coffee2_inner .btn_detail_wrap{
-    position: relative;
-    max-width: 1080px;
-    margin-top: 39px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 254px;
-    box-sizing: border-box;
+.coffee2_inner .btn_detail_wrap {
+    position: absolute;
+    left: 27%;
+    top: 60%;
 }
 .btn_detail_wrap .detail_btn{
     width: 125px;

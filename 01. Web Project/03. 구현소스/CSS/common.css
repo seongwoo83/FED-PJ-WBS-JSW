@@ -227,16 +227,15 @@ body{
 .dt_hidden .logo.on{
     z-index: 0;
 }
-.mb_icon_wrap{
+.mb_icon_wrap {
     position: absolute;
-    height: 100%;
-    width: 20%;
+    width: 30%;
+    top: 50%;
+    transform: translateY(-50%);
     right: 0;
-    top: 0;
     text-align: center;
     display: flex;
     align-items: flex-end;
-    justify-content: space-around;
 }
 .mb_icon_wrap div{
     display: inline-block;
@@ -244,7 +243,7 @@ body{
     height: 80%;
 }
 .mb_icon_wrap span{
-    font-size: 45px;
+    font-size: 6vw;
     color: #012b05;
     cursor: pointer;
 }

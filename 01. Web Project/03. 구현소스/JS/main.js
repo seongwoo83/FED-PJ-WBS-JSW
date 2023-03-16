@@ -8,22 +8,22 @@ window.addEventListener("DOMContentLoaded",()=>{
     const eventBx = document.querySelector(".event_wrap");
     
 
-    // function eventCh(){
-    //     eventBx.style.left = "-100%";
-    //     eventBx.style.transition = "1s linear";
+    function eventCh(){
+        eventBx.style.left = "-100%";
+        eventBx.style.transition = "1s linear";
         
-    //     setTimeout(() => {
-    //         eventBx.style.transition = "none";
-    //         eventBx.style.left = "0";
-    //         eventImg = document.querySelectorAll(".event");
-    //         eventBx.appendChild(eventImg[0]);
-    //     }, 1000);
-    // }
+        setTimeout(() => {
+            eventBx.style.transition = "none";
+            eventBx.style.left = "0";
+            eventImg = document.querySelectorAll(".event");
+            eventBx.appendChild(eventImg[0]);
+        }, 1000);
+    }
     
-    // setInterval(() => {
-    //     let eventImg =  document.querySelectorAll(".event");
-    //     eventCh();
-    // }, 3500);
+    setInterval(() => {
+        let eventImg =  document.querySelectorAll(".event");
+        eventCh();
+    }, 3500);
 
     
     
