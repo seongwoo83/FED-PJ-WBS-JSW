@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="https://image.istarbucks.co.kr/common/img/common/favicon.ico?v=200828" type="image/ico">
+        <title>Starbucks Korea(customize)</title>
+        <link rel="stylesheet" href="./03. 구현소스/CSS/coffee.css">
+        <link rel="stylesheet" href="./03. 구현소스/CSS/common.css">
+        <link rel="stylesheet" href="./03. 구현소스/CSS/common_media.css">
+        <script src="./03. 구현소스/JS/main.js"></script>
+        <script src="./03. 구현소스/JS/common.js"></script>
+        <script src="./03. 구현소스/JS/mb_common.js"></script>
+        <script src="./03. 구현소스/JS/navdata.js"></script>
+        <script src="https://kit.fontawesome.com/6688d7064c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- 1. 상단부분 -->
+        <header id="header">
+            <div class="header mb_hidden">
+                <div class="inner_wrap">
+                    <h1 class="logo"><a href="#"></a></h1>
+                    <ul class="tmenu">
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">My Starbucks</a></li>
+                        <li><a href="#">Customer Service & Ideas</a></li>
+                        <li><a href="#">Find a Store</a></li>
+                    </ul>
+                    <p class="btn_search"><a href="#" class="fa-solid fa-magnifying-glass"></a></p>
+                </div>
+                <div class="gnb_wrap">
+                    <div class="gnb">
+                    </div>
+                </div>
+            </div>
+            <div class="header dt_hidden">
+                <div class="inner_wrap">
+                    <h1 class="logo"><a href="#"></a></h1>
+                    <div class="mb_wrap"></div>
+                    <div class="mb_gnb">
+                        <div class="search_wrap">
+                            <input type="text" class="seacrh_input">
+                            <button>Search</button>
+                        </div>
+                        <nav class="mb_menu">
+                        </nav>
+                        <div class="close_wrap">
+                            <span class="close fa-solid fa-xmark"></span>
+                        </div>
+                    </div>
+                    <div class="mb_icon_wrap">
+                        <div class="user"><span class="fa-solid fa-user"></span></div>
+                        <div class="location"><span class="fa-solid fa-location-dot"></span></div>
+                        <div class="bars"><span class="fa-solid fa-bars"></span></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 2. 메인부분 -->
+        <main id="main">
+            <div class="sub_tit_wrap">
+                <div class="sub_tit_inner">
+                    <h2>COFFEE</h2>
+                    <ul class="dir">
+                        <li><a href="#" class="home"></a></li>
+                        <li><img src="" alt="화살표"></li>
+                        <li><a href="#" class="coffee"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="coffee_wrap">
+                <div class="slider_wrap">
+                    <div class="coffee1 on"></div>
+                    <div class="coffee2"></div>
+                    <button class="left">
+                        <a href="#">
+                            <img class="on" src="./03. 구현소스/img/coffee/left_btn_off.png" alt="왼쪽 화살표">
+                            <img src="./03. 구현소스/img/coffee/left_btn_on.png" alt="왼쪽 화살표">
+                        </a>
+                    </button>
+                    <button class="right">
+                        <a href="#">
+                            <img class="on" src="./03. 구현소스/img/coffee/right_btn_off.png" alt="왼쪽 화살표">
+                            <img src="./03. 구현소스/img/coffee/right_btn_on.png" alt="왼쪽 화살표">
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="news_wrap">
+                <div class="news">
+                    <ul>
+                        <li>스타벅스, 커피업계 최초 커피찌꺼기 ‘순환자원 인정’ 획득</li>
+                        <li>스타벅스, 카페 라떼에 무료로 샷 추가하는 ‘러브 유어 라떼’ 이벤트 전개</li>
+                        <li>스타벅스, 커티스 쿨릭과 협업한 화이트 데이 푸드와 MD 출시</li>
+                        <li>스타벅스, 이대R점에서 최고의 커피전문가들을 만나는 '스타벅스 커피 모먼트' 진행</li>
+                        <li>스타벅스, 유튜브 콘텐츠 스벅TV 개국 4주년 이벤트 진행</li>
+                    </ul>
+                </div>
+                <div class="site_help">
+                    <img src="./03. 구현소스/img/coffee/help.png" alt="사이트 도움말">
+                    <img class="dt_hidden" src="./03. 구현소스/img/coffee/m_help.png" alt="사이트 도움말">
+                </div>
+            </div>
+            <div class="wrap history_wrap">
+                <div class="inner">
+                    <img src="./03. 구현소스/img/coffee/coffee_history_txt.png" alt="역사 텍스트">
+                    <div class="detail_btn"><a href=""></a></div>
+                </div>
+            </div>
+            <div class="wrap reserve_wrap">
+                <div class="inner">
+                    <img src="./03. 구현소스/img/coffee/coffee_reserve_txt.png" alt="">
+                    <div class="detail_btn"><a href=""></a></div>
+                </div>
+            </div>
+            <div class="wrap espresso_wrap">
+                <div class="inner">
+                    <img src="./03. 구현소스/img/coffee/coffee_espresso_txt.png" alt="">
+                    <div class="detail_btn"><a href=""></a></div>
+                </div>
+            </div>
+            <div class="wrap best_wrap">
+                <div class="inner">
+                    <img src="./03. 구현소스/img/coffee/coffee_best_txt.png" alt="">
+                    <div class="detail_btn"><a href=""></a></div>
+                </div>
+            </div>
+        </main>
+        <!-- 3. 하단부분 -->
+        <footer id="footer">
+            <div class="btn_list">
+                <ul class="company">
+                    <li class="footer_menu_tit"><a href="#">COMPANY</a></li>
+                    <li class="off"><a href="#">한눈에 보기</a></li>
+                    <li class="off"><a href="#">스타벅스 사명</a></li>
+                    <li class="off"><a href="#">스타벅스 소개</a></li>
+                    <li class="off"><a href="#">국내 뉴스룸</a></li>
+                    <li class="off"><a href="#">세계의 스타벅스</a></li>
+                    <li class="off"><a href="#">글로벌 뉴스룸</a></li>
+                </ul>
+                <ul class="corporate">
+                    <li class="footer_menu_tit"><a href="#">CORPORATE SALES</a></li>
+                    <li class="off"><a href="#">단체 및 기업 구매 안내</a></li>
+                    <li class="off"><a href="#">단체 주문 배달 안내</a></li>
+                </ul>
+                <ul class="partner">
+                    <li class="footer_menu_tit"><a href="#">PARTNERSHIP</a></li>
+                    <li class="off"><a href="#">신규 입점 제의</a></li>
+                    <li class="off"><a href="#">협력 고객사 등록신청</a></li>
+                </ul>
+                <ul class="online">
+                    <li class="footer_menu_tit"><a href="#">ONLINE COMMUNITY</a></li>
+                    <li class="off"><a href="#">페이스북</a></li>
+                    <li class="off"><a href="#">트위터</a></li>
+                    <li class="off"><a href="#">유튜브</a></li>
+                    <li class="off"><a href="#">인스타그램</a></li>
+                </ul>
+                <ul class="recruit">
+                    <li class="footer_menu_tit"><a href="#">RECRUIT</a></li>
+                    <li class="off"><a href="#">채용 소개</a></li>
+                    <li class="off"><a href="#">채용 지원하기</a></li>
+                </ul>
+            </div>
+            <div class="prize_list">
+                <div class="prize_list_inner">
+                </div>
+            </div>
+            <div class="info">
+                <div class="mb_hidden">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">영상정보처리기기 운영관리 방침</a>
+                    <a href="#">홈페이지 이용약관</a>
+                    <a href="#">위치정보 이용약관</a>
+                    <a href="#">스타벅스 카드 이용약관</a>
+                    <a href="#">비회원 이용약관</a>
+                    <a href="#">My DT Pass 서비스 이용약관</a>
+                    <a href="#">윤리경영 핫라인</a>
+                </div>
+                <br>
+                <a href="#" class="info_btn road">찾아오시는 길</a>
+                <a href="#" class="info_btn new_store">신규입점제의</a>
+                <a href="#" class="info_btn site_map">사이트 맵</a>
+                <br>
+                <ul class="com_info">
+                    <li>사업자등록번호 : 201-81-21515</li>
+                    <li>주식회사 에스씨케이컴퍼니 대표이사 : 손정현</li>
+                    <li>TEL : 1522-3232</li>
+                    <li>개인정보 책임자 : 이찬우</li>
+                </ul>
+                <span class="reserve">ⓒ 2023 Starbucks Coffee Company. All Rights Reserved.</ㄴ>
+            </div>
+        </footer>
+    </body>
+</html>

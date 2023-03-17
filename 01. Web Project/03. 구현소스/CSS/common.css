@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url(./reset.css);
+
 @font-face {
     font-family: 'nanum';
     src: url(../font/NanumBarunGothic.woff) format("woff");  
