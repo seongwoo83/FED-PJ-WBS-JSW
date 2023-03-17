@@ -29,4 +29,14 @@
     .dt_hidden{
         display: block;
     }
+    #footer .prize_list {
+        height: auto;
+    }
+    .prize_list_inner {
+        position: static;
+        transform: none;
+    }
+    .prize_list_inner ul {
+        flex-wrap: wrap;
+    }
 }

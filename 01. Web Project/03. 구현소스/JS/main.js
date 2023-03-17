@@ -25,15 +25,16 @@ window.addEventListener("DOMContentLoaded",()=>{
         eventCh();
     }, 3500);
 
-    
-    
+    const promoSwiper = document.querySelector(".promo_swiper")
+    console.log(promoSwiper.clientHeight);
+
     promo.onclick = ()=>{
         let arrowTxt = "";
         arrowTxt = promoBtn.getAttribute("src");
         if(arrowTxt === "./03. 구현소스/img/starbucks/main_promo_down.png"){
             arrowTxt = "./03. 구현소스/img/starbucks/main_promo_up.png"
             promoBtn.setAttribute("src", arrowTxt);
-            promoMenu.style.height = "658px";
+            promoMenu.style.height = promoSwiper.clientHeight+ 30 +"px";
         }else{
             arrowTxt = "./03. 구현소스/img/starbucks/main_promo_down.png"
             promoBtn.setAttribute("src", arrowTxt);
@@ -118,24 +119,24 @@ window.addEventListener("DOMContentLoaded",()=>{
     const star_txt2 = document.querySelector(".star_txt2");
 
     window.addEventListener("scroll",()=>{
-        let scTop = window.scrollY
-        console.log(scTop);
+        let scTop = Math.floor(window.scrollY/document.body.clientHeight*100)
+        // console.log(scTop);
 
         const crm = ele => ele.classList.remove("off")
         const cad = ele => ele.classList.add("off")
 
 
-        if(scTop > 300 && scTop<=900){
+        if(scTop > 15 && scTop<=25){
             setTimeout(() => {
                 crm(coffee1_img);
                 crm(coffee1_txt);
             }, 200);
-        }else if(scTop > 900 && scTop <=1500){
+        }else if(scTop > 25 && scTop <=40){
             crm(coffee2);
-        }else if(scTop > 1500 && scTop <= 2000){
+        }else if(scTop > 40 && scTop <= 60){
             crm(coffee3_txt1);
             crm(coffee3_txt2);
-        }else if(scTop > 2000){
+        }else if(scTop > 60){
             crm(star_txt1)
             crm(star_txt2)
         }else{
