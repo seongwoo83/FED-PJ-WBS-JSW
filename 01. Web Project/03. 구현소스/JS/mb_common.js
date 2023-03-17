@@ -69,6 +69,18 @@ window.addEventListener("DOMContentLoaded",()=>{
     }
 
 
+    const ftListTit = document.querySelectorAll(".footer_menu_tit a");
+    
+    ftListTit.forEach(ele1 => {
+        ele1.onclick = (e)=>{
+            e.preventDefault();
+            let ftList = ele1.parentElement.parentElement.querySelectorAll(".btn_list li+li");
+            ftList.forEach(ele2 => {
+                ele2.classList.toggle("off")
+            });
+        }
+    });
+
 
 
 })

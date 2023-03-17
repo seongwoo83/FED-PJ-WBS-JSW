@@ -409,8 +409,9 @@ body{
     line-height: 24px;
 }
 .btn_list ul li.footer_menu_tit a{
+    height: 50px;
     font-size: 1.4rem;
-    line-height: 40px;
+    line-height: 50px;
 }
 #footer .prize_list{
     background: #282828;
