@@ -67,7 +67,7 @@
         height: 22px;
         top: 16px;
         right: 22px;
-        background: url(../img/starbucks/arrow_down.png) no-repeat top;
+        background: url(../img/index/arrow_down.png) no-repeat top;
     }
     .btn_list ul li a{
         background: #645952;
@@ -91,5 +91,8 @@
     }
     .btn_list ul li+li.off{
     height: 0;
+    }
+    .prize_list_inner ul{
+        justify-content: space-evenly;
     }
 }

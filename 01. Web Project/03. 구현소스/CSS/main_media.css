@@ -25,10 +25,10 @@
         box-sizing: border-box;
     }
     .event1{
-        background-image: url(../img/starbucks/main_bg1.jpg);
+        background-image: url(../img/index/main_bg1.jpg);
     }
     .event2{
-        background-image: url(../img/starbucks/m_main_bg2.jpg);
+        background-image: url(../img/index/m_main_bg2.jpg);
         background-position: center top;
         background-size:  cover;
     }
@@ -122,7 +122,7 @@
         line-height: 68px;
     }
     .main .m_coffee3{
-        background: url(../img/starbucks/m_main_coffee3.jpg) no-repeat center -6px;
+        background: url(../img/index/m_main_coffee3.jpg) no-repeat center -6px;
         background-size: 100% auto;
         height: 232vw;
         position: relative;
