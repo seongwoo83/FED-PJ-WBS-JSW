@@ -17,6 +17,9 @@
     .smenu_list{
         padding-top: 10px;
     }
+    .cont{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 960px) {
     
@@ -94,5 +97,33 @@
     }
     .prize_list_inner ul{
         justify-content: space-evenly;
+    }
+    .help_img::before{
+        display: none;
+    }
+}
+@media screen and (max-width: 640px) {
+    .news_wrap {
+        flex-direction: column;
+    }
+    .news{
+        width: 100%;
+    }
+    .site_help{
+        width: 100%;
+    }
+    .news_list{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;  
+    }
+    .news_tit{
+        display: none;
+    }
+    .help{
+        width: 100%;
+        height: 50%;
+        top: 50%;
     }
 }

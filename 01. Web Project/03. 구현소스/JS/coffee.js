@@ -1,9 +1,9 @@
 window.addEventListener("DOMContentLoaded", ()=>{
 
-    const news = document.querySelector(".news ul");
+    const news = document.querySelector(".news_list ul");
 
     function slideNews(){
-        let newsList = document.querySelectorAll(".news li");
+        let newsList = document.querySelectorAll(".news_list li");
         newsList[0].style.transition = "all .5s ease-in-out"
         setTimeout(()=>{
             newsList[0].style.height = "0";
@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
         },0)
         setTimeout(() => {
             news.appendChild(newsList[0]);
-            newsList = document.querySelectorAll(".news li");
+            newsList = document.querySelectorAll(".news_list li");
             newsList[newsList.length-1].style.transition = "none";
             newsList[newsList.length-1].style.height = "25px";
             newsList[newsList.length-1].style.overflow= "visible";
