@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.wrap{
+    position: relative;
+    width: 100%;
+    height: 430px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.social_wrap{
+    background-image: url(../img/responsibliity/resp_social.jpg);
+    background-position: 20% 50%;
+}
+.region_wrap{
+    background-image: url(../img/responsibliity/resp_region.jpg);
+    background-position: 80% 50%;
+}
+.envir_wrap{
+    background-image: url(../img/responsibliity/resp_envir.jpg);
+    background-position: 20% 50%;
+}
+.ethic_wrap{
+    background-image: url(../img/responsibliity/resp_ethic.jpg);
+    background-position: 80% 50%;
+}
+.global_wrap{
+    background-image: url(../img/responsibliity/resp_global.jpg);
+    background-position: 20% 50%;
+}
