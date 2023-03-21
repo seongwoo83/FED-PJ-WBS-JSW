@@ -53,8 +53,11 @@ window.addEventListener("load", function(){
         }
     }
 
-    const gnbLink = this.document.querySelectorAll(".gnb h2>a");
-
+    const gnbLink = document.querySelectorAll(".gnb h2>a");
+    const logo = this.document.querySelector("#header .logo");
+    logo.onclick = ()=>{
+        this.location.href = "index.html";
+    }
     function link(obj) {
         obj.forEach((ele)=>{
             ele.onclick = () => {

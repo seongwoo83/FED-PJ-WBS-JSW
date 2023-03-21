@@ -1,12 +1,5 @@
 @charset "UTF-8";
 
-.wrap{
-    position: relative;
-    width: 100%;
-    height: 430px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 .store_wrap{
     background-image: url(../img/store/store_store.jpg);
     background-position: 20% 50%;

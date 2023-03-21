@@ -1,12 +1,6 @@
 @charset "UTF-8";
 
-.wrap{
-    position: relative;
-    width: 100%;
-    height: 430px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 .social_wrap{
     background-image: url(../img/responsibliity/resp_social.jpg);
     background-position: 20% 50%;

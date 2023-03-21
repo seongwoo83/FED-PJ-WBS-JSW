@@ -127,3 +127,40 @@
         top: 50%;
     }
 }
+/*************************************** 서브페이지 미디어쿼리  ***************************************/
+@media screen and (max-width: 1125px) {
+    .slider_wrap{
+        height: 300px;
+    }
+    .slider_wrap .btn_wrap{
+        top: 75%;
+    }
+    .wrap{
+        height: 200px;
+    }
+    .wrap .inner{
+        width: 100%;
+    }
+    .detail_btn{
+        top: 87%;
+        height: 20px;
+        line-height: 20px;
+    }
+}
+@media screen and (max-width: 960px) {
+    .slider_wrap{
+        height: auto;
+    }
+    .slider_wrap .btn_wrap{
+        top: 56%;
+    }
+    .btn_wrap button{
+        font-size: 10px;
+    }
+    .inner span{
+        height: 60%;
+    }
+    .inner img{
+        height: 100%;
+    }
+}
