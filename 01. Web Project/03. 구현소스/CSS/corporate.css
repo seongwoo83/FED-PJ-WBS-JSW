@@ -56,6 +56,20 @@
 .guide_bx strong{
     font-size: 14px;
 }
+.guide_bx a{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #666;
+    color: #fff;
+    text-decoration: none;
+}
 
 
 

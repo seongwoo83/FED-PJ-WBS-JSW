@@ -673,7 +673,7 @@ body{
 span.odd{
     right: 0;
 }
-.detail_btn{
+.inner .detail_btn{
     position: absolute;
     top: 70%;
     height: 34px;
@@ -683,7 +683,7 @@ span.odd{
     border-style: solid;
     border-radius: 3px;
 }
-.detail_btn a{
+.inner .detail_btn a{
     display: block;
     width: 100%;
     height: 100%;

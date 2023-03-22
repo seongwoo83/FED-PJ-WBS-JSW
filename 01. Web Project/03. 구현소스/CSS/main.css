@@ -501,7 +501,7 @@ button.promo{
     width: 125px;
     height: 38px;
 }
-.detail_btn a{
+.btn_detail_wrap .detail_btn a{
     display: block;
     width: 100%;
     height: 100%;
