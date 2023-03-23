@@ -1,0 +1,24 @@
+@charset "UTF-8";
+.menu1{
+    background-image: url(../../img/menu/menu_bg.jpg);
+}
+.beverage_wrap{
+    background-image: url(../../img/menu/menu_beverage.jpg);
+    background-position: 20% 50%;
+}
+.food_wrap{
+    background-image: url(../../img/menu/menu_food.jpg);
+    background-position: 80% 50%;
+}
+.goods_wrap{
+    background-image: url(../../img/menu/menu_goods.jpg);
+    background-position: 20% 50%;
+}
+.card_wrap{
+    background-image: url(../../img/menu/menu_card.jpg);
+    background-position: 80% 50%;
+}
+.story_wrap{
+    background-image: url(../../img/menu/menu_story.jpg);
+    background-position: 20% 50%;
+}

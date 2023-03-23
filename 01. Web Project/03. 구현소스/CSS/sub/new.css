@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.new{
+    background-image: url(../../img/new/new_bg.jpg);
+}
+.event_wrap{
+    background-image: url(../../img/new/new_event.jpg);
+    background-position: 20% 50%;
+}
+.new_news_wrap{
+    background-image: url(../../img/new/new_news.jpg);
+    background-position: 80% 50%;
+}
+.store_wrap{
+    background-image: url(../../img/new/new_store.jpg);
+    background-position: 20% 50%;
+}
+.wall_wrap{
+    background-image: url(../../img/new/new_wall.jpg);
+    background-position: 80% 50%;
+}

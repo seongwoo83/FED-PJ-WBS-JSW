@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .reward{
-    background-image: url(../img/reward/reward_bg.jpg);
+    background-image: url(../../img/reward/reward_bg.jpg);
 }
 .reward span{
     position: absolute;
@@ -41,10 +41,10 @@
     transform: none;
 }
 .card_wrap{
-    background-image: url(../img/reward/reward_card.jpg);
+    background-image: url(../../img/reward/reward_card.jpg);
     background-position: 20% 50%;
 }
 .getcard_wrap{
-    background-image: url(../img/reward/reward_getcard.jpg);
+    background-image: url(../../img/reward/reward_getcard.jpg);
     background-position: 80% 50%;
 }

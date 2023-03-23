@@ -141,7 +141,7 @@
     .wrap .inner{
         width: 100%;
     }
-    .detail_btn{
+    .inner .detail_btn{
         top: 87%;
         height: 20px;
         line-height: 20px;

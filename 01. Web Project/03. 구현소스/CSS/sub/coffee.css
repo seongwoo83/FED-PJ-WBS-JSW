@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.slider_wrap .on{
+    opacity: 1;
+}
+.coffee1{
+    background-image: url(../../img/coffee/coffee_bg1.jpg);
+    opacity: 0;
+}
+.coffee2{
+    background-image: url(../../img/coffee/coffee_bg2.jpg);
+    opacity: 0;
+}
+.mobile.on{
+    display: block;
+}
+.mobile{
+    display: none;
+}
+.history_wrap{
+    background-image: url(../../img/coffee/coffee_history.jpg);
+    background-position: 20% 50%;
+}
+.creserve_wrap{
+    background-image: url(../../img/coffee/coffee_reserve.jpg);
+    background-position: 80% 50%;
+}
+.espresso_wrap{
+    background-image: url(../../img/coffee/coffee_espresso.jpg);
+    background-position: 20% 50%;
+}
+.best_wrap{
+    background-image: url(../../img/coffee/coffee_best.jpg);
+    background-position: 80% 50%;
+}
+
