@@ -6,10 +6,10 @@
         <link rel="shortcut icon" href="https://image.istarbucks.co.kr/common/img/common/favicon.ico?v=200828" type="image/ico">
         <title>Starbucks Korea(customize)</title>
         <link rel="stylesheet" href="./03. 구현소스/CSS/sub.css">
-        <link rel="stylesheet" href="./03. 구현소스/CSS/corporate_media.css">
         <link rel="stylesheet" href="./03. 구현소스/CSS/common.css">
         <link rel="stylesheet" href="./03. 구현소스/CSS/common_media.css">
-        <script src="./03. 구현소스/JS/coffee.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="../dist/01. Web Project/03. 구현소스/JS/sub/corporate.js"></script>
         <script src="./03. 구현소스/JS/common.js"></script>
         <script src="./03. 구현소스/JS/mb_common.js"></script>
         <script src="./03. 구현소스/JS/navdata.js"></script>
@@ -96,13 +96,13 @@
                                 </ul>
                                 <div class="tab_sel dt_hidden">
                                     <select name="select_bx" id="select_bx">
-                                        <option value="md" selected>MD상품</option>
+                                        <option value="md">MD상품</option>
                                         <option value="card">실물카드</option>
                                         <option value="ecard1">e-Gift Card(MMS)</option>
                                         <option value="ecard2">e-Gift Card(BULK)</option>
                                     </select>
                                 </div>
-                                <div class="md inner_tab">
+                                <div class="md inner_tab on">
                                     <div class="inner_go">
                                         <p>스타벅스 MD 상품은 B2B 주문사이트를 통해 구매가 가능하며,단체/기업고객을 위한 전용 상품 제작이 가능합니다. 특별한 선물로 즐거움을 선사하세요.</p>
                                         <span><a href="#">B2B 주문사이트 바로가기</a></span>
@@ -149,38 +149,37 @@
                                         <p class="title">구매절차</p>
                                         <ul class="order_guide">
                                             <li class="order_icon">
-                                                <img src="./03. 구현소스/img/corporate/ecard1/m_ecd1_1.jpg" alt="e-Gift(MMS)">
+                                                <img src="./03. 구현소스/img/corporate/md/m_md1.jpg" alt="MD상품">
                                             </li>
                                             <li class="order_cont">
-                                                <p class="title">Step 1. 스타벅스 <br> <a href="#">[회원가입]</a></p>
-                                                <p class="content">스타벅스 홈페이지 <br> 개인 회원 로그인 후 신청 가능</p>
+                                                <p class="title">Step 1. B2B 주문사이트 <br> <a href="#">[회원가입]</a></p>
+                                                <p class="content">재판매 방지등을 위해 가입 시 사업자 등록증 확인으로<br>거래처 등록까지 2~3영업일 소요</p>
                                             </li>
                                         </ul>
                                         <ul class="order_guide">
                                             <li class="order_icon">
-                                                <img src="./03. 구현소스/img/corporate/ecard1/m_ecd1_2.jpg" alt="e-Gift(MMS)">
+                                                <img src="./03. 구현소스/img/corporate/md/m_md2.jpg" alt="MD상품">
                                             </li>
                                             <li class="order_cont">
-                                                <p class="title">Step 2. 구매 신청</p>
-                                                <p class="content">신청일 낮 12시 이전 기준<br> 익일까지 선택 가능, <br> 당일 발송 불가 <br> <a href="#">[구매 신청 바로가기]</a></p>
+                                                <p class="title">Step 2. 접수 및 담당자 상담</p>
+                                                <p class="content">사이트 내 상품 구매 혹은 구매 희망 상품 견적 관련 상담</p>
                                             </li>
                                         </ul>
                                         <ul class="order_guide">
                                             <li class="order_icon">
-                                                <img src="./03. 구현소스/img/corporate/ecard1/m_ecd1_3.jpg" alt="e-Gift(MMS)">
+                                                <img src="./03. 구현소스/img/corporate/md/m_md3.jpg" alt="MD상품">
                                             </li>
                                             <li class="order_cont">
-                                                <p class="title">Step 3. 결제 진행</p>
-                                                <p class="content">ARS 결제(법인카드 결제 가능) <br> 또는 무통장 입금 <br><a href="#">[결제 수단 안내]</a></p>
+                                                <p class="title">Step 3. 결제 진행(선결제)</p>
+                                                <p class="content">ARS 결제 또는 무통장 입금 <br><a href="#">[결제 수단 안내]</a></p>
                                             </li>
                                         </ul>
                                         <ul class="order_guide">
                                             <li class="order_icon">
-                                                <img src="./03. 구현소스/img/corporate/ecard1/m_ecd1_4.jpg" alt="e-Gift(MMS)">
+                                                <img src="./03. 구현소스/img/corporate/md/m_md4.jpg" alt="MD상품">
                                             </li>
                                             <li class="order_cont">
-                                                <p class="title">Step 4. e-Gift Card(MMS) 발송</p>
-                                                <p class="content">예약 신청일 오전 10시 이후 순차 발송. 발송 실패 시, <br> 발송일 +4일차 실패 내역 및 후속 안내 메일 발송</p>
+                                                <p class="title">Step 4. 상품 발송</p>
                                             </li>
                                         </ul>
                                     </div>
@@ -304,7 +303,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="ecard1 inner_tab on">
+                                <div class="ecard1 inner_tab">
                                     <div class="inner_go">
                                         <p>수신자 연락처로 예약 발송이 가능한 e-Gift Card 대량 구매 서비스입니다. 문자 (MMS) 발송 서비스를 통해 간편하게 선물해 보세요.</p>
                                         <div class="btn_wrap">
