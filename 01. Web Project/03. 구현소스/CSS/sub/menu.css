@@ -2,6 +2,14 @@
 .menu1{
     background-image: url(../../img/menu/menu_bg.jpg);
 }
+.product_wrap{
+    width: 100%;
+    padding: 28px 0 80px 0;
+    background-color: #fffaf4;
+    position: relative;
+    border-top: 2px solid #0d6035;
+    border-bottom: 2px solid #0d6035;
+}
 .beverage_wrap{
     background-image: url(../../img/menu/menu_beverage.jpg);
     background-position: 20% 50%;
