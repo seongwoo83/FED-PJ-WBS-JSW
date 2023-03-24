@@ -47,6 +47,22 @@
         width: 100%;
     }
     .inner_go span{
-        width: 100%;
+        width: 94%;
+        margin-top: 10px;
+    }
+    .cbtn_wrap{
+        flex-wrap: wrap;
+        height: 120px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .cbtn_wrap a:first-child{
+        width: 90%;
+    }
+    .cbtn_wrap a+a{
+        margin-left: 0;
+    }
+    .cbtn_wrap a{
+        width: 40%;
     }
 }

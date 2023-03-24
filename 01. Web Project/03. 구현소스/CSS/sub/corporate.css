@@ -155,6 +155,7 @@
     margin-top: 20px;
 }
 .inner_go p{
+    margin-bottom: 10px;
     font-size: 14px;
     width: 100%;
     box-sizing: border-box;
@@ -179,6 +180,22 @@
     color: #fff;
 }
 /***************************************** 데스크탑 화면 *****************************************/
+.cbtn_wrap{
+    margin-top: 10px;
+    display: flex;
+}
+.cbtn_wrap a{
+    font-size: 14px; 
+    font-weight: bold;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.cbtn_wrap a+a{
+    margin-left: 10px;
+}
 .proce_guide_bx{
     margin-top: 20px;
 }

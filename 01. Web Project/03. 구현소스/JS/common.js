@@ -54,10 +54,12 @@ window.addEventListener("load", function(){
     }
 
     const gnbLink = document.querySelectorAll(".gnb h2>a");
-    const logo = this.document.querySelector("#header .logo");
-    logo.onclick = ()=>{
-        this.location.href = "index.html";
-    }
+    const logo = document.querySelectorAll("#header .logo");
+    logo.forEach(ele =>{
+        ele.onclick = function(){
+            location.href = "index.html";
+        }
+    })
     function link(obj) {
         obj.forEach((ele)=>{
             ele.onclick = () => {

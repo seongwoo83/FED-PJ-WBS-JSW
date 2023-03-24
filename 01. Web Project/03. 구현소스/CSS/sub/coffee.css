@@ -6,10 +6,12 @@
 .coffee1{
     background-image: url(../../img/coffee/coffee_bg1.jpg);
     opacity: 0;
+    transition: .5s linear;
 }
 .coffee2{
     background-image: url(../../img/coffee/coffee_bg2.jpg);
     opacity: 0;
+    transition: .5s linear;
 }
 .mobile.on{
     display: block;
