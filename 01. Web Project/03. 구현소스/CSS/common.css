@@ -536,7 +536,7 @@ body{
     display: flex;
 }
 .news{
-    width: 65%;
+    width: 60%;
     height: 70px;
     background: #000;
 }
@@ -550,7 +550,7 @@ body{
 .news_list{
     position: absolute;
     display: flex;
-    width: 65%;
+    width: 60%;
 }
 .news_tit{
     color: #fff;
@@ -577,13 +577,13 @@ body{
 }
 .help{
     position: absolute;
-    width: 35%;
+    width: 40%;
     height: 100%;
     right: 0;
 }
 .site_help{
     background: url(../img/coffee/help_bg.png) repeat 0 0;
-    width: 35%;
+    width: 40%;
     height: 70px;
 }
 .help_img{
