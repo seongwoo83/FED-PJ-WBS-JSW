@@ -7,6 +7,7 @@ window.addEventListener("DOMContentLoaded",()=>{
         hcode += `
         <ul class="mb_menu_list">
             <li class="mb_smenu_list li_tit"><a href="#">${x}</a></li>
+            <li class="mb_smenu_list mb_smenu_smenu allin"><a href="#">한번에 보기</a></li> 
         `
         for(let y in ndata[x]){
             hcode +=`
@@ -67,6 +68,14 @@ window.addEventListener("DOMContentLoaded",()=>{
             mbIconWrap.style.display = "flex";
         }, 700);
     }
+
+    $("mb_smenu_smenu").find(".allin").on("click", function(){
+        $(this).preventDefault();
+        let btnTxt = $(this).parent().siblings(".li_tit");
+        console.log(btnTxt);
+    })
+
+
 
 
     const ftListTit = document.querySelectorAll(".footer_menu_tit a");
