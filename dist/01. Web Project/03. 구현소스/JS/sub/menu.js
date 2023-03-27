@@ -24,7 +24,38 @@ const mdata = {
     "23 SS 어반 스프링 모카 텀블러": "23"
 };
 window.addEventListener("DOMContentLoaded", function () {
-    const productWrap = this.document.querySelector(".product_wrap");
+    const productWrap = document.querySelector(".product_wrap");
     let hcode = "";
     hcode += "<ul>";
+    for (let x in mdata) {
+        hcode += `
+            <li>
+                <a href="#" class="pdc_img">
+                    <img src="./03. 구현소스/img/menu/product/${mdata[x]}.jpg">
+                </a>
+                <span class="pdc_name">${x}</span>
+            </li>
+        `;
+    }
+    hcode += "</ul>";
+    productWrap.innerHTML += hcode;
+    const productButton = document.querySelector(".product_wrap");
+    const productList = document.querySelector(".product_wrap ul");
+    const pda = document.querySelector(".product_wrap a");
+    pda.onclick = function (e) {
+        e.preventDefault();
+        if (productButton.clientHeight === 0) {
+            productList.style.display = "flex";
+            let productListHeight = productList.clientHeight;
+            productButton.style.height = productListHeight + "px";
+            productButton.style.padding = "28px 0 30px 0";
+        }
+        else {
+            productButton.style.height = "0";
+            productButton.style.padding = "0";
+            setTimeout(() => {
+                productList.style.display = "none";
+            }, 400);
+        }
+    };
 });

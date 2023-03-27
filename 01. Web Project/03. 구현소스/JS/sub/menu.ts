@@ -1,5 +1,9 @@
-const mdata = {
-    "바스크 치즈 케이크" : "1",
+interface ProdName {
+    [name : string] : string;
+}
+
+const mdata : ProdName = {
+    "바스크 치즈 케이크"  :  "1",
     "치킨 토마토 치즈 샌드위치" : "2",
     "포테이토 어니언 크림치즈 베이글" : "3",
     "아이스 슈크림 라떼" : "4",
@@ -25,9 +29,42 @@ const mdata = {
 }
 
 window.addEventListener("DOMContentLoaded",function(){
-    const productWrap : Element | null= this.document.querySelector(".product_wrap")
+    const productWrap : any = document.querySelector(".product_wrap")
 
     let hcode: string = "";
     hcode+="<ul>";
+    for (let x in mdata) {
+        hcode += `
+            <li>
+                <a href="#" class="pdc_img">
+                    <img src="./03. 구현소스/img/menu/product/${mdata[x]}.jpg">
+                </a>
+                <span class="pdc_name">${x}</span>
+            </li>
+        `;
+    }
+    hcode += "</ul>";   
+
+    productWrap.innerHTML += hcode;
+
+    const productButton : any = document.querySelector(".product_wrap");
+    const productList : any = document.querySelector(".product_wrap ul");
+    const pda : any = document.querySelector(".product_wrap a");
     
+    pda.onclick = function(e : Event){
+        e.preventDefault();
+        if(productButton.clientHeight === 0 ){
+            productList.style.display = "flex";
+            let productListHeight = productList.clientHeight;
+            productButton.style.height = productListHeight+"px";
+            productButton.style.padding = "28px 0 30px 0";
+        }else{
+            productButton.style.height = "0";
+            productButton.style.padding = "0";
+            setTimeout(() => {
+                productList.style.display = "none";
+            }, 400);
+        }
+
+    }
 })
