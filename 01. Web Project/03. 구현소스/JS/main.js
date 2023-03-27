@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded",()=>{
 
     function eventCh(){
         eventBx.style.left = "-100%";
-        eventBx.style.transition = "1s linear";
+        eventBx.style.transition = "1s ease-in-out";
         
         setTimeout(() => {
             eventBx.style.transition = "none";
