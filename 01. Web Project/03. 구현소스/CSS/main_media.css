@@ -170,7 +170,8 @@
         margin: auto;
     }
     .detail_btn .expand.m4 {
-        margin: 0;
+        margin: 0 auto;
+        width: 200px;
     }
     .main .m_with_star{
         height: 760px;
