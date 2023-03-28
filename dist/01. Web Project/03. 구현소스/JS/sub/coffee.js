@@ -13,15 +13,6 @@ $(() => {
     arrowBtn.find("a").on("click", function (e) {
         e.preventDefault();
     });
-    let timer;
-    let plot = 0;
-    function slide() {
-        if (plot === 0) {
-            timer = setInterval(() => {
-                $(".slider_wrap").find(".on").removeClass("on").siblings().addClass("on");
-            }, 2000);
-        }
-    }
     let autoI;
     let autoT;
     function autoSlide() {
