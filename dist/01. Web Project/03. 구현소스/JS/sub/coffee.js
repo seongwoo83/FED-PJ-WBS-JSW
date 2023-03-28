@@ -8,19 +8,31 @@ $(() => {
     });
     arrowBtn.on("click", function () {
         $(this).siblings().children(".on").removeClass("on").siblings().addClass("on");
-        clearInterval(timer);
-        setInterval(() => {
-            slide();
-        }, 1000);
+        clearAuto();
     });
     arrowBtn.find("a").on("click", function (e) {
         e.preventDefault();
     });
     let timer;
+    let plot = 0;
     function slide() {
-        timer = setInterval(() => {
+        if (plot === 0) {
+            timer = setInterval(() => {
+                $(".slider_wrap").find(".on").removeClass("on").siblings().addClass("on");
+            }, 2000);
+        }
+    }
+    let autoI;
+    let autoT;
+    function autoSlide() {
+        autoI = setInterval(() => {
             $(".slider_wrap").find(".on").removeClass("on").siblings().addClass("on");
         }, 2000);
     }
-    slide();
+    autoSlide();
+    function clearAuto() {
+        clearInterval(autoI);
+        clearTimeout(autoT);
+        autoT = setTimeout(autoSlide, 3000);
+    }
 });

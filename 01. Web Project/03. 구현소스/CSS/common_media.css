@@ -102,6 +102,11 @@
         display: none;
     }
 }
+@media screen and (max-width: 660px) {
+    .mb_menu_list a{
+        font-size: 4vw;
+    }
+}
 @media screen and (max-width: 640px) {
     .news_wrap {
         flex-direction: column;
