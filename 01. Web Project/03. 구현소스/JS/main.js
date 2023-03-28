@@ -69,7 +69,10 @@ window.addEventListener("DOMContentLoaded",()=>{
                 promoSlider.style.transform = `translateX(${-819*2}px)`;
                 sliderBx[3].classList.add("middle");
             }, 400);
-            
+            clearInterval(timer);
+            setTimeout(() => {
+                autoSlide();
+            }, 2000);
         }else{
             promoSlider.style.transform = `translateX(${-819*1}px)`;
             promoSlider.style.transition = "transform .4s ease-in-out";
@@ -80,9 +83,20 @@ window.addEventListener("DOMContentLoaded",()=>{
                 promoSlider.style.transform = `translateX(${-819*2}px)`;
                 sliderBx[1].classList.add("middle");
             }, 400);
-            
+            clearInterval(timer);
+            setTimeout(() => {
+                autoSlide();
+            }, 2000);
         }
     };
+
+    let timer;
+    function autoSlide(){
+        timer = setInterval(() => {
+            goSlide(1)
+        }, 3000);
+    }
+    autoSlide();
     
     btns.forEach((ele,idx)=>{ // ele => 요소자신, idx => 요소 순번
         ele.onclick = ()=>goSlide(idx);
