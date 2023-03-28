@@ -246,6 +246,7 @@
         left: 50%;
         transform: translateX(-50%);
         padding-top: 30px;
+        padding-right: 0;
         text-align: center;
     }
     .m_reward_info{
@@ -285,12 +286,8 @@
         left: 50%;
         transform: translateX(-50%);
     }
-    .menu_promo {
-        top: 62px;
-    }
     .main .m_star_rewards {
         position: relative;
-        top: 62px;
     }
 }
 @media screen and (max-width: 875px) {
