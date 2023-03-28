@@ -5,8 +5,5 @@
   },
   "devDependencies": {
     "@types/jquery": "^3.5.16"
-  },
-  "scripts": {
-    "dev": "ts-node 01. Web Project/03. 구현소스/JS/sub/corporate.ts"
   }
 }
