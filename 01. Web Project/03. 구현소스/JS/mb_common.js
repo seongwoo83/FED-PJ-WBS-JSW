@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded",()=>{
         hcode += `
         <ul class="mb_menu_list">
             <li class="mb_smenu_list li_tit"><a href="#">${x}</a></li>
-            <li class="mb_smenu_list mb_smenu_smenu allin"><a href="#">한번에 보기</a></li> 
+            <li class="mb_smenu_list mb_smenu_smenu"><a href="#" class="allin">한번에 보기</a></li> 
         `
         for(let y in ndata[x]){
             hcode +=`
@@ -40,12 +40,24 @@ window.addEventListener("DOMContentLoaded",()=>{
                 ele2.classList.toggle("on");
                 const mbSmenuList = ele2.querySelectorAll(".mb_smenu_smenu ul li");
                 ele2.onclick= ()=>{
-                    ele2.classList.toggle("in");
-                    console.log(mbSmenuList);
-                    mbSmenuList.forEach(ele3 => {
+                    if(ele2.querySelector(".allin")){
+                        let btxt = ele1.innerText;
+                        switch(btxt) {
+                            case "COFFEE": location.href = "coffee.html"; break;
+                            case "MENU": location.href = "menu.html"; break;
+                            case "STORE": location.href = "store.html"; break;
+                            case "RESPONSIBILITY": location.href = "responsibility.html"; break;
+                            case "STARBUCKS REWARDS": location.href = "reward.html"; break;
+                            case "CORPORATE SALES": location.href = "corporate.html"; break;
+                            case "WHAT'S NEW": location.href = "new.html"; break;
+                        }
+                    }else{
+                        ele2.classList.toggle("in");
+                        mbSmenuList.forEach(ele3 => {
                         ele3.classList.toggle("on");
                         ele3.style.transition  = "height .4s ease-out";
-                    });
+                        });
+                    }
                 }
             })          
         }
@@ -69,11 +81,6 @@ window.addEventListener("DOMContentLoaded",()=>{
         }, 700);
     }
 
-    $("mb_smenu_smenu").find(".allin").on("click", function(){
-        $(this).preventDefault();
-        let btnTxt = $(this).parent().siblings(".li_tit");
-        console.log(btnTxt);
-    })
 
 
 

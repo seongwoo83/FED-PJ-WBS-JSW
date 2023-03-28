@@ -164,3 +164,14 @@
         height: 100%;
     }
 }
+@media screen and (max-width: 660px) {
+    .mb_icon_wrap span {
+        width: 7vw;
+    }
+    .inner img{
+        height: 77%;
+    }
+    .inner .detail_btn{
+        top: 70%;
+    }
+}
