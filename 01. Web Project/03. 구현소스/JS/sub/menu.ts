@@ -29,7 +29,7 @@ const mdata : ProdName = {
 }
 
 window.addEventListener("DOMContentLoaded",function(){
-    const productWrap : any = document.querySelector(".product_wrap")
+    const productWrap = document.querySelector(".product_wrap") as HTMLElement;
 
     let hcode: string = "";
     hcode+="<ul>";
@@ -47,9 +47,9 @@ window.addEventListener("DOMContentLoaded",function(){
 
     productWrap.innerHTML += hcode;
 
-    const productButton : any = document.querySelector(".product_wrap");
-    const productList : any = document.querySelector(".product_wrap ul");
-    const pda : any = document.querySelector(".product_wrap a");
+    const productButton = document.querySelector(".product_wrap") as HTMLElement;
+    const productList = document.querySelector(".product_wrap ul") as HTMLElement;
+    const pda = document.querySelector(".product_wrap a") as HTMLElement;
     
     pda.onclick = function(e : Event){
         e.preventDefault();
