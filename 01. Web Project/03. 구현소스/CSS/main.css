@@ -401,10 +401,11 @@ button.promo{
     height: 100%;
     margin: 0 auto;
 }
-.coffee1_inner .coffee_imgbx{
-    position: absolute;
-    left: 10.9%;
-    top: 15.18%;
+.coffee1_inner .coffee_imgbx {
+    display: inline-block;
+    position: relative;
+    left: 22.9%;
+    top: -12.82%;
     max-width: 310px;
     width: 42.97%;
     transition: .7s ease-in-out;
@@ -413,17 +414,18 @@ button.promo{
     opacity: .4;
     left: -31%;
 }
-.coffee1_inner .coffee_txtbx{
-    position: absolute;
+.coffee1_inner .coffee_txtbx {
+    position: relative;
     top: 32.8%;
-    right: 16%;
+    left: 23%;
     max-width: 339px;
     width: 37.63%;
     transition: .7s ease-in-out;
+    display: inline-block;
 }
 .coffee1_inner .coffee_txtbx.off{
     opacity: 0.4;
-    right: -40%;
+    left: 77%;
 }
 .coffee_imgbx img, .coffee_txtbx img{
     width: 100%;

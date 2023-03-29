@@ -10,6 +10,9 @@
     .container{
         width: auto;
     }
+    .guide_txt{
+        margin: 0 10px;
+    }
     .guide_bx{
         flex-direction: column;
     }
@@ -26,11 +29,11 @@
     }
     .notice_bx{
         width: 85%;
-        margin-left: 10px;
+        margin: 30px auto 0;
     }
     .question_bx{
         width: 90%;
-        margin-left: 10px;
+        margin: 40px auto 50px;
     }
     .inner_question{
         flex-direction: column;
@@ -47,8 +50,8 @@
         width: 100%;
     }
     .inner_go span{
-        width: 94%;
-        margin-top: 10px;
+        width: 92%;
+        margin: 10px auto 0;
     }
     .cbtn_wrap{
         flex-wrap: wrap;

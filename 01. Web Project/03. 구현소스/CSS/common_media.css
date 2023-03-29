@@ -131,6 +131,9 @@
         height: 50%;
         top: 50%;
     }
+    .help_img img{
+        margin: 0 auto;
+    }
 }
 /*************************************** 서브페이지 미디어쿼리  ***************************************/
 @media screen and (max-width: 1125px) {
@@ -150,6 +153,7 @@
         top: 87%;
         height: 20px;
         line-height: 20px;
+        margin: 0 20px;
     }
 }
 @media screen and (max-width: 960px) {
