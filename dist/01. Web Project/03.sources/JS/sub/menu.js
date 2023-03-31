@@ -31,7 +31,7 @@ window.addEventListener("DOMContentLoaded", function () {
         hcode += `
             <li>
                 <a href="#" class="pdc_img">
-                    <img src="./03.구현소스/img/menu/product/${mdata[x]}.jpg">
+                    <img src="./03.sources/img/menu/product/${mdata[x]}.jpg">
                 </a>
                 <span class="pdc_name">${x}</span>
             </li>
