@@ -31,12 +31,12 @@ window.addEventListener("DOMContentLoaded",()=>{
     promo.onclick = ()=>{
         let arrowTxt = "";
         arrowTxt = promoBtn.getAttribute("src");
-        if(arrowTxt === "./03. 구현소스/img/index/main_promo_down.png"){
-            arrowTxt = "./03. 구현소스/img/index/main_promo_up.png"
+        if(arrowTxt === "./03.구현소스/img/index/main_promo_down.png"){
+            arrowTxt = "./03.구현소스/img/index/main_promo_up.png"
             promoBtn.setAttribute("src", arrowTxt);
             promoMenu.style.height = promoSwiper.clientHeight+ 30 +"px";
         }else{
-            arrowTxt = "./03. 구현소스/img/index/main_promo_down.png"
+            arrowTxt = "./03.구현소스/img/index/main_promo_down.png"
             promoBtn.setAttribute("src", arrowTxt);
             promoMenu.style.height = "0";
             promoMenu.style.overflow = "hidden";

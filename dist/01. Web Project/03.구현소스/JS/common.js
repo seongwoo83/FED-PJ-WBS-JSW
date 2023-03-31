@@ -108,7 +108,7 @@ window.addEventListener("load", function () {
         temp += `
         <li>
             <a href="#">
-                <img src="./03. 구현소스/img/index/footer_award_img${i}.jpg" alt="하단 상 이미지">
+                <img src="./03.구현소스/img/index/footer_award_img${i}.jpg" alt="하단 상 이미지">
             </a>
             </li>
             `;
