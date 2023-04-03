@@ -36,8 +36,6 @@ window.addEventListener("load", function () {
     gnb.innerHTML = hcode;
     const gnbList = document.querySelectorAll(".gnb>ul>li");
     const navList = document.querySelectorAll(".gnb>ul>li .smenu_wrap");
-    // console.log('gnbList: ', gnbList);
-    // console.log('navList: ', navList);
     for (let i = 0; i < gnbList.length; i++) {
         gnbList[i].onmouseover = function () {
             navList[i].style.height = this.querySelector(".smenu").clientHeight + "px";

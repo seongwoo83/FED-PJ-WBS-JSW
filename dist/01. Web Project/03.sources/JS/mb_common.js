@@ -37,7 +37,6 @@ window.addEventListener("DOMContentLoaded", () => {
                 const mbSmenuList = ele2.querySelectorAll(".mb_smenu_smenu ul li");
                 ele2.onclick = () => {
                     ele2.classList.toggle("in");
-                    console.log(mbSmenuList);
                     mbSmenuList.forEach(ele3 => {
                         ele3.classList.toggle("on");
                         ele3.style.transition = "height .4s ease-out";

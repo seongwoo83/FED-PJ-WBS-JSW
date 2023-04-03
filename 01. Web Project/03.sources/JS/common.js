@@ -40,8 +40,6 @@ window.addEventListener("load", function(){
 
     const gnbList = document.querySelectorAll(".gnb>ul>li");
     const navList = document.querySelectorAll(".gnb>ul>li .smenu_wrap");
-    // console.log('gnbList: ', gnbList);
-    // console.log('navList: ', navList);
 
     for(let i = 0; i<gnbList.length; i++){
         gnbList[i].onmouseover = function(){

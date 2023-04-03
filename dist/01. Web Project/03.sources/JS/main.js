@@ -21,7 +21,6 @@ window.addEventListener("DOMContentLoaded", () => {
         eventCh();
     }, 3500);
     const promoSwiper = document.querySelector(".promo_swiper");
-    console.log(promoSwiper.clientHeight);
     promo.onclick = () => {
         let arrowTxt = "";
         arrowTxt = promoBtn.getAttribute("src");
@@ -46,8 +45,6 @@ window.addEventListener("DOMContentLoaded", () => {
             prot = 0;
         }, 400);
         let sliderBx = promoSlider.querySelectorAll(".promo_box");
-        /* 1. 함수 호출 및 전달값 확인 */
-        console.log("호출완료", seq);
         /* 현재전역 promoSeq변수 */
         /* 2. 버튼 별 분기하기 */
         if (seq) {
@@ -102,7 +99,6 @@ window.addEventListener("DOMContentLoaded", () => {
     const star_txt2 = document.querySelector(".star_txt2");
     window.addEventListener("scroll", () => {
         let scTop = Math.floor(window.scrollY / document.body.clientHeight * 100);
-        // console.log(scTop);
         const crm = ele => ele.classList.remove("off");
         const cad = ele => ele.classList.add("off");
         if (scTop > 15 && scTop <= 25) {
