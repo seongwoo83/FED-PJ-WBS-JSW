@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+}
+.inner{
+    max-width: 1920px;
+}
+.wrap_inner{
+    display: flex;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+.logo a{
+    display: inline-block;
+    background-image: url(../img/index/gnb_logo_b.svg);
+    width: 269px;
+    height: 20px;
+    background-size: 269px 20px;
+    text-indent: -9999px;
+}
