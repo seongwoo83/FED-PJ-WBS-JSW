@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./js/lib/jquery-3.6.3.min.js"></script>
     <script src="./js/lib/jquery-ui.min.js"></script>
-    <script src="./js/common.js"></script>
+    <!-- 뷰JS 프레임워크 스텐드얼론 버전 가져오기 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <!-- 엑시오스 라이브러리 스텐드얼론 버전 가져오기(제이슨불러오기) -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.17.1/dist/axios.min.js"></script>
+    <script src="./js/commonVue.js"></script>
     <link rel="stylesheet" href="./css/index.css">
     <title>Ralph Lauren (customize)</title>
 </head>
@@ -15,7 +19,27 @@
             <div class="inner">
                 <div class="wrap_inner">
                     <h1 class="logo"><a href="#">Ralph Lauren</a></h1>
-                    <nav class="gnb"></nav>
+                    <nav class="gnb">
+                        <ul v-for="(value1, key1) in menus.data">
+                            <h2>{{value1.분류}}</h2>
+                            <h3>추천 컬렉션</h3>
+                            <ul v-for="(value2, idx) in value1.추천컬렉션">
+                                <li>{{value2}}</li>
+                            </ul>
+                            <h3>브랜드</h3>
+                            <ul v-for="(value2, idx) in value1.브랜드" v-if="value1.브랜드">
+                                <li>{{value2}}</li>
+                            </ul>
+                            <h3>의류</h3>
+                            <ul v-for="(value2, idx) in value1.의류" v-if="value1.의류">
+                                <li>{{value2}}</li>
+                            </ul>
+                            <h3>신발</h3>
+                            <ul v-for="(value2, idx) in value1.신발" v-if="value1.신발">
+                                <li>{{value2}}</li>
+                            </ul>
+                        </ul>
+                    </nav>
                     <div class="member"></div>
                 </div>
             </div>

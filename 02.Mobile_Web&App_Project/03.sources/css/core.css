@@ -13,3 +13,14 @@ font-family: "Le Jeune Deck", "Noto Serif KR", serif;
     font-family: "Founders";
     src: url(./fonts/Founders_Grotesk/FoundersGrotesk-Regular.otf) format("opentype");
 }
+
+
+.h1{
+    font-size: 20px;
+}
+.h2{
+    font-size: 16px;
+}
+.h3{
+    font-size: 14px;
+}
