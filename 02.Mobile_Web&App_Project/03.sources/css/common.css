@@ -20,7 +20,23 @@
     display: inline-block;
     background-image: url(../img/index/gnb_logo_b.svg);
     width: 269px;
-    height: 20px;
+    height: 60px;
     background-size: 269px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
     text-indent: -9999px;
+}
+.gnb{
+    width: 30%;
+}
+.category{
+    display: flex;
+}
+.smenu{
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+.category>ul:first-of-type{
+    display: flex;
 }

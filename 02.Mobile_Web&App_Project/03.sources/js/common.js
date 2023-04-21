@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", function () {
     function 화면뿌려(이거) {
-        document.getElementById("top").innerHTML += 이거 + "<br/>";
+        document.querySelector(".gnb").innerHTML = 이거 ;
     }
 
     async function myAFn() {
@@ -34,35 +34,35 @@ window.addEventListener("DOMContentLoaded", function () {
         }); //////////// myProm 인스턴스
 
         const makeHtml = (obj) => {
-            let hcode = "";
-            for (let i = 0; i < obj.length; i++) {
-                hcode += `<ul>`;
-                for (let x in obj[i]) {
+            let hcode = `
+            <ul class="category">
+            `;
+            for(let x in obj){
+                hcode += `
+                <h2>${x}</h2>
+                    <ul class="smenu">
+                `;
+                for(let y in obj[x]){
                     hcode += `
-                            <ul>
-                                <h3>${x}</h3>
-                        `;
-                    for (let y in obj[i][x]) {
+                        <ul>
+                            <h3>${y}</h3>
+                    `;
+                    for(let z of obj[x][y]){
                         hcode += `
-                                <h4>${y}</h4>
-                                <ul>
-                            `;
-                        for (let z of obj[i][x][y]) {
-                            hcode += `
-                                    <li><a href="#">${z}</a></li>
-                                `;
-                        }
-                        hcode += `</ul>`;
+                            <li>
+                                <a>${z}</a>
+                            </li>
+                        `
                     }
-                    hcode += `</ul>`;
+                    hcode +=`</ul>`
                 }
-                hcode += `</ul>`;
+                hcode += `</ul>`
             }
-            console.log(hcode);
+            hcode += `</ul>`
             return hcode;
         };
         let temp = await myProm;
-        // 화면뿌려(makeHtml(temp));
+        화면뿌려(makeHtml(temp));
     }
     myAFn();
 });
