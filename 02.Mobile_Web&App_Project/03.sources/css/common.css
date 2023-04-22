@@ -8,13 +8,14 @@
     height: 60px;
 }
 .inner{
+    margin: 0 auto;
     max-width: 1920px;
 }
 .wrap_inner{
     display: flex;
     height: 100%;
-    width: 80%;
     margin: 0 auto;
+    justify-content: space-between;
 }
 .logo a{
     display: inline-block;
@@ -27,16 +28,33 @@
     text-indent: -9999px;
 }
 .gnb{
-    width: 30%;
+    width: 33%;
+    display: flex;
+}
+.member{
+    width: 33%;
 }
 .category{
     display: flex;
 }
-.smenu{
+.category div{
     position: absolute;
     top: 60px;
+    left: 0;
+    width: 100%;
     display: none;
 }
-.category>ul:first-of-type{
+.gnb .category:first-child .smenu{
     display: flex;
+}
+.smenu{
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+.smenu ul{
+    margin-top: 20px;
+    width: 220px;
 }
