@@ -1,55 +1,73 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js/lib/jquery-3.6.3.min.js"></script>
-    <script src="./js/lib/jquery-ui.min.js"></script>
-    <script src="./js/nav.js"></script> 
-    <script src="./js/common.js"></script>
-    <link rel="stylesheet" href="./css/index.css">
-    <title>Ralph Lauren (customize)</title>
-</head>
-<body>
-    <section id="top">
-        <header class="top">
-            <div class="inner">
-                <div class="wrap_inner">
-                    <nav class="gnb"></nav>
-                    <h1 class="logo"><a href="#">Ralph Lauren</a></h1>
-                    <div class="member"></div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="./js/lib/jquery-3.6.3.min.js"></script>
+        <script src="./js/lib/jquery-ui.min.js"></script>
+        <script src="./js/nav.js"></script>
+        <script src="./js/common.js"></script>
+        <script src="./js/index.js"></script>
+        <link rel="stylesheet" href="./css/index.css" />
+        <title>Ralph Lauren (customize)</title>
+    </head>
+    <body>
+        <section id="top">
+            <header class="top">
+                <div class="inner">
+                    <div class="wrap_inner">
+                        <nav class="gnb"></nav>
+                        <h1 class="logo"><a href="#">Ralph Lauren</a></h1>
+                        <div class="member"></div>
+                    </div>
                 </div>
-            </div>
-        </header>
-    </section>
-    <section id="main">
-        <div class="wrap_inner">        
+            </header>
+        </section>
+        <section id="main">
             <main class="main">
-                <div class="vids"></div>
-                <div class="polo_show">
-                    <div class="show_vid"></div>
-                    <div class="img_slide"></div>
+                <div class="banner page">
+                    <div class="inner">
+                        <div class="cover"></div>
+                        <ul class="slide">
+                            <li class="slide_page"><video src="./vid/top1.mp4" autoplay="1" loop="loop"></video></li>
+                            <li class="slide_page"><video src="./vid/top2.mp4" autoplay="1" loop="loop"></video></li>
+                            <li class="slide_page"><img src="./img/index/top3.webp" alt="  "></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="polo_collection"></div>
-                <div class="polo_spring"></div>
-                <div class="polo_heritage"></div>
-                <div class="more_detail"></div>
+                <div class="polo_show page">
+                    <div class="inner">
+                        <div class="show_vid"></div>
+                        <div class="img_slide"></div>
+                    </div>
+                </div>
+                <div class="polo_collection page">
+                    <div class="inner"></div>
+                </div>
+                <div class="polo_spring page">
+                    <div class="inner"></div>
+                </div>
+                <div class="polo_heritage page">
+                    <div class="inner"></div>
+                </div>
+                <div class="more_detail page">
+                    <div class="inner"></div>
+                </div>
             </main>
-        </div>
-    </section>
-    <section id="info">
-        <footer class="info">
-            <div class="inner">
-                <div class="fmenu">
-                    <div class="about"></div>
-                    <div class="account"></div>
-                    <div class="faq"></div>
-                    <div class="email"></div>
+        </section>
+        <section id="info">
+            <footer class="info">
+                <div class="inner">
+                    <div class="fmenu">
+                        <div class="about"></div>
+                        <div class="account"></div>
+                        <div class="faq"></div>
+                        <div class="email"></div>
+                    </div>
+                    <div class="sns"></div>
+                    <div class="reserve"></div>
                 </div>
-                <div class="sns"></div>
-                <div class="reserve"></div>
-            </div>
-        </footer>
-    </section>
-</body>
+            </footer>
+        </section>
+    </body>
 </html>
