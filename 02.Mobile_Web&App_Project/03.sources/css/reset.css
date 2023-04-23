@@ -10,7 +10,7 @@ dl, dt, dd, ol, ul, li, footer, header,nav, section , h1, h2, h3, h4, h5, h6{
 	margin: 0;
 	padding: 0;
 	border: 0;
-	vertical-align: baseline;
+	vertical-align: bottom;
     outline: 1px dotted red;
 }
 ol, ul {
