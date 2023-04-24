@@ -3,7 +3,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+html, body{
+	overflow-x: hidden;
+}
 html, body, div, span, iframe,p,
 a, img, strong,
 dl, dt, dd, ol, ul, li, footer, header,nav, section , h1, h2, h3, h4, h5, h6{
