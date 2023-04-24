@@ -13,7 +13,7 @@
     margin: 0 auto;
     max-width: 1920px;
     height: 100%;
-    overflow: hidden;
+    /* overflow-x: hidden; */
 }
 .wrap_inner{
     display: flex;
@@ -46,7 +46,9 @@
     top: 60px;
     left: 0;
     width: 100%;
-    display: none;
+    height: 0;
+    overflow: hidden;
+    /* display: none; */
 }
 .gnb .category:first-child .smenu{
     display: flex;
@@ -56,7 +58,7 @@
     display: flex;
     left: 50%;
     transform: translateX(-50%);
-    display: none;
+    /* display: none; */
 }
 .smenu ul{
     margin-top: 20px;
