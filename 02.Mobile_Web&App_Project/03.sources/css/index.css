@@ -19,12 +19,26 @@
 .slide{
     position: relative;
     display: flex;
-    width: 300%;
+    width: 600%;
     height: 100%;
+    left: -100%;
 }
 .slide_page{
     position: relative;
     flex: 1;
+}
+.slide_page video+img, .slide_page img+img{
+    position: absolute;
+    width: 25%;
+}
+.vid1 video+img{
+    top: 20%;
+    left: 15%;
+}
+.vid2 video+img, .imgb img+img{
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 video{
     width: 100%;
@@ -46,12 +60,13 @@ img{
 }
 .show_vid{
     position: absolute;
+    width: 28%;
     top: 15%;
     left: 15%;
 }
 .show_img{
     position: absolute;
-    width: 27%;
+    width: 28%;
     top: 15%;
     right: 15%;
 }

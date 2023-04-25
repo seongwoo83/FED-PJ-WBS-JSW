@@ -68,7 +68,4 @@ slide.on("dragstop",function(){
 
 
 
-
-
-
 })

@@ -30,15 +30,24 @@
     background-repeat: no-repeat;
     text-indent: -9999px;
 }
-.gnb{
+.gnb_wrap{
     width: 33%;
+}
+.gnb{
+    width: 80%;
+    height: 100%;
     display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
 }
 .member{
     width: 33%;
 }
 .category{
     display: flex;
+}
+.category>h2 a{
+    line-height: 60px;
 }
 .category div{
     position: absolute;
