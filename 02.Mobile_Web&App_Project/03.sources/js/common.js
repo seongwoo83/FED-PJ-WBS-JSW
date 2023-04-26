@@ -3,7 +3,7 @@ $(()=>{
         console.log("터치");
         console.log($(this).find(".smenu").height())
         $(this).find("div").stop().animate({
-            height: $(".smenu", this).height()+"px",
+            height: $(".smenu", this).height()+30+"px",
             backgroundColor:"#fff"
         },400);
     })

@@ -64,11 +64,13 @@
 .smenu{
     position: absolute;
     display: flex;
+    flex-wrap: wrap;
+    min-width: 80%;
     left: 50%;
     transform: translateX(-50%);
     /* display: none; */
 }
 .smenu ul{
     margin-top: 20px;
-    width: 220px;
+    width: 200px;
 }
