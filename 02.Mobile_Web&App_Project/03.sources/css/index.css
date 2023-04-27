@@ -85,6 +85,19 @@ img{
 .img_slide li img{
     width: 100%;
 }
+.vid_txt, .img_txt{
+    position: absolute;
+    font-size: 27px;
+    color: darkblue;
+}
+.vid_txt{
+    top: 10%;
+    left: 15%;
+}
+.img_txt{
+    top: 10%;
+    left: 57%;
+}
 .page{
     width: 50%;
 }
@@ -108,8 +121,28 @@ img{
 .collection img, .spring img{
     height: 100%;
 }
+.heritage{
+    position: relative;
+}
+.cont_txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: blue;
+    font-size: 70px;
+    text-align: center;
+}
 .detail{
     position: relative;
+}
+.detail_tit{
+    text-align: center;
+}
+.detail_tit h2{
+    display: inline-block;
+    padding: 25px 0;
+    font-size: 40px;
 }
 .detail ul{
     display: flex;
@@ -118,11 +151,48 @@ img{
     width: 70%;
     height: 100%;
 }
+.detail li{
+    text-align: center;
+}
+.detail h3{
+    font-size: 28px;
+    padding-bottom: 5px;
+}
+.info{
+    padding-top: 40px;
+}
 .fmenu{
     display: flex;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
+    justify-content: space-evenly;
 }
 .fmenu>div{
-    flex:1;
+    width: 20%;
+}
+.fmenu h3, .fmenu li{
+    padding: 3px 0;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.email p{
+    font-size: 13px;
+}
+.vl{
+    border-right: 1px solid darkblue;
+}
+.sns ul{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.reserve{
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0;
 }
