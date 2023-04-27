@@ -133,7 +133,7 @@ $(() => {
     function movePage() {
         let tgpos = retVal(tpg);
 
-        if (tgpos <= 0 && tgpos >= -4200) {
+        if (tgpos <= 0 && tgpos >= -2200) {
             mvbx.style.left = tgpos + "px";
         } else if (tgpos > 0) {
             mvbx.style.left = "0";
