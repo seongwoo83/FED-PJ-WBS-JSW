@@ -7,6 +7,9 @@
 body{
     overflow-x: hidden;
 }
+#main{
+    min-height: 600px;
+}
 .cover{
     position: fixed;
     top: 0;
@@ -239,6 +242,9 @@ img{
     display: flex;
     justify-content: center;
     gap: 10px;
+}
+.sns a{
+    font-size: 20px;
 }
 .reserve{
     max-width: 1100px;
