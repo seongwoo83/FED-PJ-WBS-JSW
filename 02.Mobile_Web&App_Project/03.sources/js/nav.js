@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", function () {
     async function myAFn() {
         const myProm = new Promise((prFn) => {
             let ajax = new XMLHttpRequest();
-            ajax.open("GET", "./js/json/gnb.json");
+            ajax.open("GET", "/02.Mobile_Web&App_Project/03.sources/js/json/gnb.json");
             ajax.responseType = "json";
             ajax.onload = function () {
                 console.log(ajax.status);

@@ -16,12 +16,12 @@ $(()=>{
 
     const topInner = $(".top .inner");
     topInner.on("mouseenter", function(){
-        $(this).animate({
+        $(this).stop().animate({
             backgroundColor: "#fff"
         })
     })
     topInner.on("mouseleave", function(){
-        $(this).animate({
+        $(this).stop().animate({
             backgroundColor: "transparent"
         })
     })
