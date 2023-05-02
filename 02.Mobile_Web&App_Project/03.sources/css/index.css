@@ -30,7 +30,6 @@ body{
 }
 .slide_page{
     position: relative;
-    flex: 1;
 }
 .slide_page video+img, .slide_page img+img{
     position: absolute;
@@ -216,7 +215,7 @@ img{
 }
 .fmenu{
     display: flex;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     justify-content: space-evenly;
 }
@@ -247,7 +246,7 @@ img{
     font-size: 20px;
 }
 .reserve{
-    max-width: 1100px;
+    max-width: 900px;
     margin: 0 auto;
     text-align: center;
     padding: 30px 0;
