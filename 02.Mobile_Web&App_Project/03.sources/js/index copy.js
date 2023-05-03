@@ -1,18 +1,4 @@
 window.addEventListener("DOMContentLoaded", function () {
-    let scTop = 0;
-    $(window).on("scroll",function(){
-        scTop = $(this).scrollTop();
-        console.log(scTop);
-        if(scTop>100){
-            $(".top .inner").animate({
-                backgroundColor: "#fff"
-            })
-        }else{
-            $(".top .inner").animate({
-                backgroundColor: "transparent"
-            })
-        }
-    })
     const tpg = document.querySelector(".vt_wrap");
     const spg = document.querySelector(".hr_wrap");
 
@@ -35,7 +21,11 @@ window.addEventListener("DOMContentLoaded", function () {
     console.log("로딩됨");
     const progressCircle = document.querySelector(".autoplay-progress svg");
     const progressContent = document.querySelector(".autoplay-progress span");
-    var swiper3 = new Swiper(".mySwiper3", {
+    const control = $(".playcontrol");
+    // 재생/멈춤변수
+    let pause = 0;
+    let swiper;
+    swiper = new Swiper(".mySwiper3", {
         grabCursor: true,
         effect: "creative",
         loop: true,
@@ -64,8 +54,19 @@ window.addEventListener("DOMContentLoaded", function () {
         on: {
             autoplayTimeLeft(s, time, progress) {
                 progressCircle.style.setProperty("--progress", 1 - progress);
-                progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+                progressContent.textContent = ``;
             },
         },
     });
+    control.on("click",function(){
+        if(pause){
+            swiper.autoplay.resume();
+            $(this).text("∥")
+            pause = 0
+        }else{
+            swiper.autoplay.pause();
+            pause = 1
+            $(this).text("≫")
+        }
+    })
 });
