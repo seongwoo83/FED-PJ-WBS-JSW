@@ -76,3 +76,61 @@
     text-align: center;
     padding-top: 10px;
 }
+.product_wrap{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;  
+    right: 0;
+    background-color: #000000cc;
+    z-index: 9999;
+    overflow: auto;
+}
+.close_btn{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+
+}
+.product_detail{
+    position: relative;
+    top: 0;
+    margin-left: 10%;
+    background-color: #fff;
+    width: 90%;
+}
+.product_detail .inner{
+    display: flex;
+    max-width: 1400px;
+    padding: 40px 0;
+    gap: 30px;
+}
+.product_img_wrap{
+    position: relative;
+    width: 60%;
+}
+.product_img_wrap ul{
+    display: grid;
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+    grid-template-columns: 50% 50%;
+    width: calc(100% - 12px);
+}
+.product_img_wrap li{
+    width: 100%;
+    height: 100%;
+}
+.product_info_wrap{
+    position: relative;
+    width: 40%;
+}
+.product_info_wrap .logo{
+    text-indent: -9999px;
+    background: url(../img/index/gnb_logo_b.svg) no-repeat center;
+}
+.product_info{
+    position: sticky;
+    top: 30%;
+    transform: translateY(-50%);
+}
