@@ -1,7 +1,6 @@
 $(()=>{
     $(document).on("mouseenter", ".category", function(){
-        console.log("터치");
-        console.log($(this).find(".smenu").height())
+        // console.log($(this).find(".smenu").height())
         $(this).find("div").stop().animate({
             height: $(".smenu", this).height()+30+"px",
             backgroundColor:"#ffffffdd"
@@ -20,7 +19,7 @@ $(()=>{
             backgroundColor: "#ffffffdd"
         },200);
         $(this).find(".logo a").css({
-            backgroundImage: "url('./img/index/gnb_logo_b.svg')"
+            backgroundImage: "url('/02.Mobile_Web&App_Project/03.sources/img/index/gnb_logo_b.svg')"
         });
     })
     topInner.on("mouseleave", function(){
@@ -28,7 +27,7 @@ $(()=>{
             backgroundColor: "transparent"
         },200);
         $(this).find(".logo a").css({
-            backgroundImage: "url('./img/index/gnb_logo_w.svg')"
+            backgroundImage: "url('/02.Mobile_Web&App_Project/03.sources/img/index/gnb_logo_w.svg')"
         });
     })
 
@@ -40,14 +39,14 @@ $(()=>{
                 backgroundColor: "#ffffffdd"
             }, 200);
             topInner.find(".logo a").css({
-                backgroundImage: "url('./img/index/gnb_logo_b.svg')"
+                backgroundImage: "url('/02.Mobile_Web&App_Project/03.sources/img/index/gnb_logo_b.svg')"
             })
         }else{
             topInner.stop().animate({
                 backgroundColor: "transparent"
             }, 200);
             topInner.find(".logo a").css({
-                backgroundImage: "url('./img/index/gnb_logo_w.svg')"
+                backgroundImage: "url('/02.Mobile_Web&App_Project/03.sources/img/index/gnb_logo_w.svg')"
             })
         }
     })

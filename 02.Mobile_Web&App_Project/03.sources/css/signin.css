@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+.logo a{
+    background-image: url(/02.Mobile_Web&App_Project/03.sources/img/index/gnb_logo_b.svg) !important;
+}
+.main{
+    padding-top: 60px;
+}
+.main .inner{
+    padding: 50px;
+}
+.sign_cont{
+    display: flex;
+    padding-top: 40px;
+}
+.help_wrap{
+    width: 20%;
+    margin-right: 40px;
+}
+form>input{
+    display: block;
+    border: 1px solid rgb(10, 10, 40);
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+.bir_wrap{
+    display: flex;
+    width: 100%;
+}
+.bir_wrap input{
+    width: 50%;
+    padding: 5px;
+    margin: 5px;
+}
+.bir_wrap select{
+    width: 25%;
+    padding: 5px;
+    margin: 5px;
+}
+#gender{
+    display: block;
+    border: 1px solid rgb(10, 10, 40);
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+}
+.wrap{
+    display: flex;
+    width: 100%;
+}
