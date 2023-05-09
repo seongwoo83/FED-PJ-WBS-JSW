@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+.top{
+    background-color: #fff !important;
+}
 .logo a{
     background-image: url(/02.Mobile_Web&App_Project/03.sources/img/index/gnb_logo_b.svg) !important;
 }
@@ -9,7 +12,7 @@
 }
 .tit_warp{
     margin-top: 100px;
-    padding-top: 60px;
+    padding-top: 30px;
     text-align: center;
 }
 .cat{
@@ -80,7 +83,7 @@
     padding-top: 10px;
 }
 .product_wrap{
-    display: none;
+    /* display: none; */
     position: fixed;
     top: 0;
     left: 0;

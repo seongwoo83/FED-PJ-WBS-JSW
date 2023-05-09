@@ -11,7 +11,7 @@ dl, dt, dd, ol, ul, li, footer, header,nav, section , h1, h2, h3, h4, h5, h6{
 	padding: 0;
 	border: 0;
 	vertical-align: bottom;
-    outline: 1px dotted green;
+    /* outline: 1px dotted green; */
 }
 ol, ul {
 	list-style: none;

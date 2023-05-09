@@ -61,12 +61,56 @@ window.addEventListener("DOMContentLoaded", function () {
     control.on("click",function(){
         if(pause){
             swiper.autoplay.resume();
-            $(this).text("∥")
+            $(this).text("∥");
             pause = 0
         }else{
             swiper.autoplay.pause();
             pause = 1
-            $(this).text("≫")
-        }
+            $(this).text("≫");
+        };
     })
+
+    let slideImg = $(".img_slide li");
+    slideImg.each(function (idx, ele) {
+        $(ele).css({
+            left: 30 * idx + "px",
+            top: 30 * idx + "px",
+            zIndex: -idx + 3,
+        });
+    });
+
+    let slideImgBx = $(".img_slide");
+    console.log(slideImgBx);
+
+    slideImgBx.find("li").on("click", function () {
+        if ($(this).index() === 0) {
+            $(this).animate(
+                {
+                    top: "-50px",
+                    left: "-50px",
+                    opacity: "0",
+                },
+                400,
+                () => {
+                    $(this).parent().append($(this));
+                    slideImg = $(".img_slide li");
+                    slideImg
+                        .each(function (idx, ele) {
+                            $(ele).animate(
+                                {
+                                    left: 30 * idx + "px",
+                                    top: 30 * idx + "px",
+                                    zIndex: -idx + 3,
+                                },
+                                200
+                            );
+                        })
+                        .last()
+                        .animate({
+                            opacity: "1",
+                        });
+                }
+            );
+        } else return;
+    });
 });

@@ -40,7 +40,7 @@
     width: 80%;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 0 auto;
 }
 .member{
@@ -50,6 +50,8 @@
     display: flex;
 }
 .category>h2 a{
+    font-size: 20px;
+    white-space: nowrap;
     line-height: 60px;
 }
 .category div{
