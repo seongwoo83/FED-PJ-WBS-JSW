@@ -1,4 +1,4 @@
-function imgSlide(){
+function imgSlide() {
     let slideImg = $(".img_slide li");
     slideImg.each(function (idx, ele) {
         $(ele).css({
@@ -7,9 +7,9 @@ function imgSlide(){
             zIndex: -idx + 3,
         });
     });
-    
+
     let slideImgBx = $(".img_slide");
-    
+
     slideImgBx.find("li").on("click", function () {
         if ($(this).index() === 0) {
             $(this).animate(

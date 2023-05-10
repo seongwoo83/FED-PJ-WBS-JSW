@@ -1,5 +1,5 @@
 const comData = {
-    topArea:`
+    topArea: `
         <header class="top">
             <div class="inner">
                 <div class="wrap_inner">
