@@ -50,6 +50,7 @@
     display: flex;
 }
 .category>h2 a{
+    color: #fff;
     font-size: 20px;
     white-space: nowrap;
     line-height: 60px;

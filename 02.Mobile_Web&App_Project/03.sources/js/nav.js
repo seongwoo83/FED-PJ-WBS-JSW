@@ -1,12 +1,13 @@
-window.addEventListener("DOMContentLoaded", function () {
+function nav(){
+
     function printHtml(ele, hcode) {
         $(ele).html(hcode);
     }
-
+    
     async function myAFn() {
         const myProm = new Promise((prFn) => {
             let ajax = new XMLHttpRequest();
-            ajax.open("GET", "/02.Mobile_Web&App_Project/03.sources/js/json/gnb.json");
+            ajax.open("GET", "./js/json/gnb.json");
             ajax.responseType = "json";
             ajax.onload = function () {
                 console.log(ajax.status);
@@ -15,39 +16,39 @@ window.addEventListener("DOMContentLoaded", function () {
                 } else {
                     console.log(ajax.statusText);
                 }
-            }; 
+            };
             ajax.send();
-        }); 
-
+        });
+    
         const makeHtml = (obj) => {
             let hcode = `
-            `;
-            for(let x in obj){
-                hcode += `
-                <ul class="category">
-                    <h2><a href="#">${x}</a></h2>
-                    <div>
-                        <ul class="smenu">
                 `;
-                for(let y in obj[x]){
-                    hcode += `
-                        <ul>
-                            <h3>${y}</h3>
+            for (let x in obj) {
+                hcode += `
+                    <ul class="category">
+                        <h2><a href="#">${x}</a></h2>
+                        <div>
+                            <ul class="smenu">
                     `;
-                    for(let z of obj[x][y]){
+                for (let y in obj[x]) {
+                    hcode += `
+                            <ul>
+                                <h3>${y}</h3>
+                        `;
+                    for (let z of obj[x][y]) {
                         hcode += `
-                            <li>
-                                <a>${z}</a>
-                            </li>
-                        `
+                                <li>
+                                    <a>${z}</a>
+                                </li>
+                            `;
                     }
-                    hcode +=`</ul>`
+                    hcode += `</ul>`;
                 }
                 hcode += `
-                        </ul>
-                    </div>
-                </ul>
-                `
+                            </ul>
+                        </div>
+                    </ul>
+                    `;
             }
             return hcode;
         };
@@ -55,4 +56,6 @@ window.addEventListener("DOMContentLoaded", function () {
         printHtml(".gnb", makeHtml(temp));
     }
     myAFn();
-});
+}
+
+export default nav;
