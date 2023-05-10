@@ -1,6 +1,8 @@
 import nav from "./nav.js";
 import common from "./common.js";
 import comData from "./data/data-com.js";
+import store from "./data/store.js";
+import subData from "./data/data-sub.js";
 
 Vue.component("top-comp", {
     template: comData.topArea,
@@ -23,6 +25,15 @@ new Vue({
         });
     },
 });
+
+Vue.component("main-comp",{
+    template: subData.list
+})
+new Vue({
+    el:"#main",
+    store
+})
+
 
 Vue.component("foot-comp", {
     template: comData.infoArea,
