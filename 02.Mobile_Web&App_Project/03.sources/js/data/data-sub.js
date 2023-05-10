@@ -3,8 +3,8 @@ const subData = {
     <main class="main">
     <div class="inner">
         <div class="tit_warp">
-            <div class="cat">남성/ 추천 컬렉션</div>
-            <h2 class="tit">남성 신상품</h2>
+            <div class="cat">{{$store.state.men["cat"]}}/ 추천 컬렉션</div>
+            <h2 class="tit">{{$store.state.men["cat"]}} 신상품</h2>
         </div>
         <div class="cont">
             <div class="search_warp">
@@ -22,11 +22,11 @@ const subData = {
             <h3 class="cat_tit">폴로 랄프로렌</h3>
             <div class="list" id="list">
                 <ul>
-                    <li v-for="(value, name) in $store.state.menPolo">
+                    <li v-for="(value, name) in $store.state.men.polo">
                         <img v-bind:src="'./img/men/poloShirts/'+value['img']+'.jpg'" v-bind:alt="'남성 폴로 셔츠'+value" />
                         <div class="brand">{{value["brand"]}}</div>
                         <div class="name">{{value["name"]}}</div>
-                        <div class="price">기본 금액 {{value["price"]}}</div>
+                        <div class="price">{{value["price"]}}</div>
                     </li>
                 </ul>
             </div>
