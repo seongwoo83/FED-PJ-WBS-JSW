@@ -14,9 +14,6 @@ function common(){
             height: "0",
             backgroundColor:"transparent"
         },200);
-        $(this).find("h2 a").css({
-            color:"#fff"
-        });
     })
 
     const topInner = $(".top .inner");

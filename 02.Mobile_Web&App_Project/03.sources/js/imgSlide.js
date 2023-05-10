@@ -9,7 +9,6 @@ function imgSlide(){
     });
     
     let slideImgBx = $(".img_slide");
-    console.log(slideImgBx);
     
     slideImgBx.find("li").on("click", function () {
         if ($(this).index() === 0) {

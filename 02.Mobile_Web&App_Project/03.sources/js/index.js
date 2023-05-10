@@ -5,7 +5,6 @@ import imgSlide from "./imgSlide.js";
 import hrScroll from "./hrScroll.js";
 import common from "./common.js";
 
-console.log("로딩됨");
 Vue.component("top-comp", {
     template:comData.topArea
 });

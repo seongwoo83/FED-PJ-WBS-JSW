@@ -4,79 +4,60 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://kit.fontawesome.com/6688d7064c.js" crossorigin="anonymous"></script>
+        <link href="https://cdn-fsly.yottaa.net/62b4643a4f1bbf4e83e90207/www.ralphlauren.co.kr/v~4b.2b/on/demandware.static/Sites-RalphLauren_KR-Site/-/default/dwa5513e62/images/favicon_rl.ico?yocs=3c_3f_3g_" rel="shortcut icon" />
         <script src="./js/lib/jquery-3.6.3.min.js"></script>
         <script src="./js/lib/jquery-ui.min.js"></script>
-        <script src="./js/nav.js"></script>
-        <script src="./js/common.js"></script>
-        <script src="./js/index.js"></script>
+        
+    <!-- 뷰JS 스탠드얼론 버전 가져오기! -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+        <script src="./js/index.js" type="module"></script>
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <link rel="stylesheet" href="./css/index.css" />
         <title>Ralph Lauren (customize)</title>
     </head>
     <body>
         <section id="top">
-            <header class="top">
-                <div class="inner">
-                    <div class="wrap_inner">
-                        <div class="gnb_wrap">
-                            <nav class="gnb"></nav>
-                        </div>
-                        <h1 class="logo"><a href="#">Ralph Lauren</a></h1>
-                        <div class="member"></div>
-                    </div>
-                </div>
-            </header>
+            <top-comp></top-comp>
         </section>
         <section id="main">
             <main class="main">
                 <div class="banner">
                     <div class="inner">
                         <div class="cover"></div>
-                        <ul class="slide">
-                            <li class="slide_page imgb">
-                                <a href="#">
+                        <div class="swiper mySwiper3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide_page imgb">
                                     <img src="./img/index/top3.webp" alt="banner" />
                                     <img src="./img/index/top3_txt.svg" alt="banner text" />
-                                </a>
-                            </li>
-                            <li class="slide_page vid1">
-                                <a href="#">
+                                </div>
+                                <div class="swiper-slide slide_page vid1">
                                     <video autoplay loop="true" muted>
                                         <source src="./vid/top1.mp4" type="video/mp4" />
                                     </video>
                                     <img src="./img/index/top1_txt.svg" alt="banner text" />
-                                </a>
-                            </li>
-                            <li class="slide_page vid2">
-                                <a href="#">
+                                </div>
+                                <div class="swiper-slide slide_page vid2">
                                     <video autoplay loop="true" muted>
                                         <source src="./vid/top2.mp4" type="video/mp4" />
                                     </video>
                                     <img src="./img/index/top2_img.svg" alt="banner text" />
-                                </a>
-                            </li>
-                            <li class="slide_page imgb">
-                                <a href="#">
-                                    <img src="./img/index/top3.webp" alt="banner" />
-                                    <img src="./img/index/top3_txt.svg" alt="banner text" />
-                                </a>
-                            </li>
-                            <li class="slide_page vid1">
-                                <a href="#">
-                                    <video autoplay loop="true" muted>
-                                        <source src="./vid/top1.mp4" type="video/mp4" />
-                                    </video>
-                                    <img src="./img/index/top1_txt.svg" alt="banner text" />
-                                </a>
-                            </li>
-                            <li class="slide_page vid2">
-                                <a href="#">
-                                    <video autoplay loop="true" muted>
-                                        <source src="./vid/top2.mp4" type="video/mp4" />
-                                    </video>
-                                    <img src="./img/index/top2_img.svg" alt="banner text" />
-                                </a>
-                            </li>
-                        </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                            <div class="autoplay-progress">
+                                <svg viewBox="0 0 48 48">
+                                    <circle cx="24" cy="24" r="20"></circle>
+                                </svg>
+                                <span></span>
+                            </div>
+                            <button class="playcontrol">∥</button>
+                        </div>
                     </div>
                 </div>
                 <div class="polo_show">
@@ -108,7 +89,7 @@
                             <li>
                                 <div class="polo_collection page">
                                     <div class="collection">
-                                        <img src="./img/index/cont2_txt.svg" alt="content text">
+                                        <img src="./img/index/cont2_txt.svg" alt="content text" />
                                         <span class="collect_txt">Spring Forward</span>
                                     </div>
                                 </div>
@@ -116,7 +97,7 @@
                             <li>
                                 <div class="polo_spring page">
                                     <div class="spring">
-                                        <img src="./img/index/cont3_txt.svg" alt="content text">
+                                        <img src="./img/index/cont3_txt.svg" alt="content text" />
                                         <span class="spring_txt">Spring 23 Monaco</span>
                                     </div>
                                 </div>
@@ -166,77 +147,7 @@
             </main>
         </section>
         <section id="info">
-            <footer class="info">
-                <div class="inner">
-                    <div class="fmenu">
-                        <div class="about">
-                            <h3>ABOUT</h3>
-                            <ul>
-                                <li>랄프 로렌 소개</li>
-                                <li>World of RL</li>
-                                <li>브랜드 보호</li>
-                                <li>반품</li>
-                                <li>개인정보 처리방침</li>
-                                <li>이용약관</li>
-                                <li>판매약관</li>
-                                <li>사업자 정보</li>
-                                <li>쿠키 공지</li>
-                                <li>채용 정보</li>
-                            </ul>
-                        </div>
-                        <span class="vl"></span>
-                        <div class="account">
-                            <h3>계정</h3>
-                            <ul>
-                                <li>내 계정</li>
-                                <li>주문 확인</li>
-                            </ul>
-                        </div>
-                        <span class="vl"></span>
-                        <div class="faq">
-                            <h3>고객센터</h3>
-                            <ul>
-                                <li>COVID-19 관련 소식</li>
-                                <li>도움말</li>
-                                <li>배송</li>
-                                <li>반품</li>
-                                <li>나만의 핏 찾기</li>
-                                <li>매장 서비스</li>
-                                <li>사이트 맵</li>
-                            </ul>
-                        </div>
-                        <span class="vl"></span>
-                        <div class="email">
-                            <p>
-                                <b>이메일 수신 신청을 통해 랄프 로렌의 최신 컬렉션과 신상품, 서비스 및 이벤트에 대한 다양한 브랜드 소식을 제일 먼저 받아 보세요.</b>
-                            </p>
-                            <div class="input_wrap">
-                                <input type="text" placeholder="이메일 주소 입력" />
-                                <button>등록</button>
-                            </div>
-                            <p>
-                                각 이메일에는 언제든지 구독을 취소할 수 있는 구독 취소 링크가 삽입되어 있습니다. <br />
-                                더 자세한 정보는 개인정보 처리방침을 확인해주세요.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="sns">
-                        <ul>
-                            <li><a href="#"class="fa-brands fa-square-instagram"></a></li>
-                            <li><a href="#" class="fa-brands fa-square-facebook"></a></li>
-                            <li><a href="#"class="fa-brands fa-square-youtube"></a></li>
-                            <li><a href="#"class="fa-brands fa-square-twitter"></a></li>
-                        </ul>
-                    </div>
-                    <div class="reserve">
-                        <p>© COPYRIGHT 2023 RALPH LAUREN. ALL RIGHTS RESERVED.</p>
-                        <br />
-                        <p>사업자 등록번호: 120-87-00270 | 통신판매업신고번호: 제2020-서울강남-01539호 [사업자정보확인] | 대표자: 김진형 주소: 서울시 강남구 학동로 343 19층 | 호스팅 서비스 사업자: 클레우드 플레어 | 고객센터: 080-566-1199| 메일문의: CUSTOMERASSISTANCE@RALPHLAUREN.CO.KR</p>
-                        <br />
-                        <p>KCP 구매안전 서비스(채무지급보증) 고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한 KCP 구매안전서비스(지급보증서)를 이용하실 수 있습니다.</p>
-                    </div>
-                </div>
-            </footer>
+            <foot-comp></foot-comp>
         </section>
     </body>
 </html>
