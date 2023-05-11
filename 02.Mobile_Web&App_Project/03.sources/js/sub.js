@@ -30,12 +30,12 @@ new Vue({
         const behindImg = $(".behind_img");
         
         behindImg.on("mouseenter",function(){
-            $(this).animate({
+            $(this).stop().animate({
                 opacity:1
             },200)
         });
         behindImg.on("mouseout", function(){
-            $(this).animate({
+            $(this).stop().animate({
                 opacity:0
             })
         })
