@@ -18,11 +18,13 @@ new Vue({
 Vue.component("main-comp",{
     template: subData.list
 })
+Vue.component("pro-comp",{
+    template: subData.detail
+})
 new Vue({
     el:"#main",
     store,
     mounted:function(){
-        const frontImg = $(".front_img");
         const behindImg = $(".behind_img");
 
         behindImg.on("mouseenter",function(){

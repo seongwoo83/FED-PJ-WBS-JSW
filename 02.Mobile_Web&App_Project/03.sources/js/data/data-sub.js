@@ -84,6 +84,9 @@ const subData = {
     </div>
 </main>
     `,
+    detail:`
+    
+    `
 };
 
 export default subData;
