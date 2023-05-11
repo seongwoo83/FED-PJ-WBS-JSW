@@ -23,7 +23,8 @@ const subData = {
             <div class="list" id="list">
                 <ul>
                     <li v-for="(value, name) in $store.state.men.polo">
-                        <img v-bind:src="'./img/men/poloShirts/'+value['img']+'.jpg'" v-bind:alt="'남성 폴로 셔츠'+value" />
+                        <img class="front_img" v-bind:src="'./img/men/poloShirts/'+value['img']+'.jpg'" v-bind:alt="'남성 폴로 셔츠'+value['img']" />
+                        <img class="behind_img" v-bind:src="'./img/men/poloShirts-1/alt'+value['img']+'.jpg'" alt="" />
                         <div class="brand">{{value["brand"]}}</div>
                         <div class="name">{{value["name"]}}</div>
                         <div class="price">{{value["price"]}}</div>
@@ -33,7 +34,7 @@ const subData = {
             <div class="total">
                 <h4>1-8/412아이템</h4>
             </div>
-            <div class="result_warp">
+            <div class="result_wrap">
                 <a href="#" class="more_item">32 더보기</a>
                 <a href="#" class="whole_item">전체보기</a>
             </div>
@@ -41,39 +42,15 @@ const subData = {
     </div>
     <div class="product_wrap">
         <a href="#" class="close_btn"><i class="fa-sharp fa-solid fa-xmark"></i></a>
-        <div class="product_detail">
+        <div class="product_detail" v-for="(value, name) in $store.state.men.polo">
             <div class="inner">
                 <div class="product_img_wrap">
                     <ul>
                         <li>
-                            <img src="./img/index/m_cont1_4.webp" alt="" />
+                            <img v-bind:src="'./img/men/poloShirts/'+value['img']+'.jpg'" alt="" />
                         </li>
                         <li>
-                            <img src="./img/index/m_cont1_4.webp" alt="" />
-                        </li>
-                        <li>
-                            <img src="./img/index/m_cont1_4.webp" alt="" />
-                        </li>
-                        <li>
-                            <img src="./img/index/m_cont1_4.webp" alt="" />
-                        </li>
-                        <li>
-                            <img src="./img/index/m_cont1_4.webp" alt="" />
-                        </li>
-                        <li>
-                            <img src="./img/index/m_cont1_4.webp" alt="" />
-                        </li>
-                        <li>
-                            <img src="./img/index/m_cont1_4.webp" alt="" />
-                        </li>
-                        <li>
-                            <img src="./img/index/m_cont1_4.webp" alt="" />
-                        </li>
-                        <li>
-                            <img src="./img/index/m_cont1_4.webp" alt="" />
-                        </li>
-                        <li>
-                            <img src="./img/index/m_cont1_4.webp" alt="" />
+                            <img v-bind:src="'./img/men/poloShirts-1/alt'+value['img']+'.jpg'" alt="" />
                         </li>
                     </ul>
                 </div>
@@ -83,13 +60,13 @@ const subData = {
                             <h1 class="logo">Ralph Lauren</h1>
                         </li>
                         <li>
-                            <h3 class="pro_cate">카테고리</h3>
+                            <h3 class="pro_cate">{{value["brand"]}}</h3>
                         </li>
                         <li>
-                            <h3 class="pro_tit">제품명</h3>
+                            <h3 class="pro_tit">{{value["name"]}}</h3>
                         </li>
                         <li>
-                            <h3 class="pro_price">가격</h3>
+                            <h3 class="pro_price">{{value["price"]}}</h3>
                         </li>
                         <li>
                             <h3 class="pro_size">사이즈</h3>

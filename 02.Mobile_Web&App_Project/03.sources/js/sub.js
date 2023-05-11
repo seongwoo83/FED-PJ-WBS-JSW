@@ -12,6 +12,30 @@ new Vue({
     mounted: function () {
         nav();
         common();
+    }
+});
+
+Vue.component("main-comp",{
+    template: subData.list
+})
+new Vue({
+    el:"#main",
+    store,
+    mounted:function(){
+        const frontImg = $(".front_img");
+        const behindImg = $(".behind_img");
+
+        behindImg.on("mouseenter",function(){
+            $(this).animate({
+                opacity:1
+            },200)
+        });
+        behindImg.on("mouseout", function(){
+            $(this).animate({
+                opacity:0
+            })
+        })
+
 
         const productPage = $(".product_wrap");
         const imgs = $(".list li");
@@ -24,14 +48,6 @@ new Vue({
             $(this).parent().hide();
         });
     },
-});
-
-Vue.component("main-comp",{
-    template: subData.list
-})
-new Vue({
-    el:"#main",
-    store
 })
 
 
