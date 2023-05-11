@@ -32,10 +32,10 @@ const subData = {
                 </ul>
             </div>
             <div class="total">
-                <h4>1-8/412아이템</h4>
+                <h4>1-8/20아이템</h4>
             </div>
             <div class="result_wrap">
-                <a href="#" class="more_item">32 더보기</a>
+                <a href="#" class="more_item">더보기</a>
                 <a href="#" class="whole_item">전체보기</a>
             </div>
         </div>

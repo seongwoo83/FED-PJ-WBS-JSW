@@ -32,6 +32,21 @@ body *{
 .swiper-wrapper{
     box-sizing: border-box;
 }
+.next_btn, .prev_btn{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    color: beige;
+    font-size: 40px;
+}
+.prev_btn{
+    left: 30px;;
+}
+.next_btn{
+    right: 30px;
+}
 .autoplay-progress {
     position: absolute;
     right: 16px;
@@ -43,7 +58,7 @@ body *{
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    color: var(--swiper-theme-color);
+    color: darkblue;
 }
 .swiper-pagination-bullet{
     width: 30%;
@@ -60,7 +75,7 @@ body *{
     width: 100%;
     height: 100%;
     stroke-width: 4px;
-    stroke: var(--swiper-theme-color);
+    stroke: darkblue;
     fill: none;
     stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
     stroke-dasharray: 125.6;
@@ -279,7 +294,7 @@ img{
 }
 .fmenu{
     display: flex;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     justify-content: space-evenly;
     padding: 10px 0;

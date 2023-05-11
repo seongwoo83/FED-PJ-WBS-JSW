@@ -28,8 +28,8 @@ function swiper() {
             clickable: true,
         },
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".next_btn",
+            prevEl: ".prev_btn",
         },
         on: {
             autoplayTimeLeft(s, time, progress) {

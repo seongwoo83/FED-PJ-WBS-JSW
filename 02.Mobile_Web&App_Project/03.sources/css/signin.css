@@ -1,10 +1,13 @@
 @charset "UTF-8";
 
+.wrap_inner{
+    background-color: #333 !important;
+}
 .logo a{
-    background-image: url(/02.Mobile_Web&App_Project/03.sources/img/index/gnb_logo_b.svg) !important;
+    background-image: url(/02.Mobile_Web&App_Project/03.sources/img/index/gnb_logo_w.svg) !important;
 }
 .category h2 a{
-    color: #000 !important;
+    color: #fff !important;
 }
 .main{
     padding-top: 60px;
