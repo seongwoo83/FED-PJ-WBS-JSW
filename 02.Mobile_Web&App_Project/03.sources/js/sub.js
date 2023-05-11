@@ -14,19 +14,21 @@ new Vue({
         common();
     }
 });
-
-Vue.component("main-comp",{
+const mainComp = {
     template: subData.list
-})
-Vue.component("pro-comp",{
+}
+const proComp = {
     template: subData.detail
-})
+}
 new Vue({
     el:"#main",
+    components:{
+        "main-comp": mainComp
+    },
     store,
     mounted:function(){
         const behindImg = $(".behind_img");
-
+        
         behindImg.on("mouseenter",function(){
             $(this).animate({
                 opacity:1
@@ -39,12 +41,14 @@ new Vue({
         })
 
 
+
+        
         const productPage = $(".product_wrap");
         const imgs = $(".list li");
         imgs.on("click", function () {
             productPage.show();
         });
-
+        
         const close = $(".close_btn");
         close.on("click", function () {
             $(this).parent().hide();

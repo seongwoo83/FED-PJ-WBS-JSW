@@ -7,7 +7,7 @@ const subData = {
             <h2 class="tit">{{$store.state.men["cat"]}} 신상품</h2>
         </div>
         <div class="cont">
-            <div class="search_warp">
+            <div class="search_wrap">
                 <div class="left_filter">필터</div>
                 <div class="right_fliter_opt">
                     <span class="default">정렬기준</span>
@@ -40,7 +40,7 @@ const subData = {
             </div>
         </div>
     </div>
-    <div class="product_wrap">
+    <div class="product_wrap" >
         <a href="#" class="close_btn"><i class="fa-sharp fa-solid fa-xmark"></i></a>
         <div class="product_detail" v-for="(value, name) in $store.state.men.polo">
             <div class="inner">
@@ -85,7 +85,45 @@ const subData = {
 </main>
     `,
     detail:`
-    
+    <div class="product_detail" v-for="(value, name) in $store.state.men.polo">
+            <div class="inner">
+                <div class="product_img_wrap">
+                    <ul>
+                        <li>
+                            <img v-bind:src="'./img/men/poloShirts/'+value['img']+'.jpg'" alt="" />
+                        </li>
+                        <li>
+                            <img v-bind:src="'./img/men/poloShirts-1/alt'+value['img']+'.jpg'" alt="" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="product_info_wrap">
+                    <ul class="product_info">
+                        <li>
+                            <h1 class="logo">Ralph Lauren</h1>
+                        </li>
+                        <li>
+                            <h3 class="pro_cate">{{value["brand"]}}</h3>
+                        </li>
+                        <li>
+                            <h3 class="pro_tit">{{value["name"]}}</h3>
+                        </li>
+                        <li>
+                            <h3 class="pro_price">{{value["price"]}}</h3>
+                        </li>
+                        <li>
+                            <h3 class="pro_size">사이즈</h3>
+                        </li>
+                        <li>
+                            <h3 class="pro_cnt">갯수</h3>
+                        </li>
+                        <li>
+                            <h3 class="pro_sum_price">총가격</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     `
 };
 
