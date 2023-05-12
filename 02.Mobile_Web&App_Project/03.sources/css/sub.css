@@ -120,10 +120,10 @@
     width: 60%;
 }
 .product_img_wrap ul{
-    display: grid;
+    /* display: grid;
     grid-column-gap: 12px;
     grid-row-gap: 12px;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 50%; */
     width: calc(100% - 12px);
 }
 .product_img_wrap li{

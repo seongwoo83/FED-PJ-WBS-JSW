@@ -1,8 +1,8 @@
 import nav from "./nav.js";
 import common from "./common.js";
 import comData from "./data/data-com.js";
-import store from "./data/store.js";
-import subData from "./data/data-sub.js";
+import store from "./data/store copy.js";
+import subData from "./data/data-sub copy.js";
 
 Vue.component("top-comp", {
     template: comData.topArea,
@@ -16,18 +16,6 @@ new Vue({
 });
 const mainComp = {
     template: subData.list,
-    data(){
-        return{
-           setval:this.myval
-        }
-    },
-    props:["myval"],
-    methods:{
-        goPapa(){
-            console.log("자식요~!!",this.$refs.tgi.myval);
-            this.$emit("goval")
-        }
-    }
 }
 const proComp = {
     template: subData.detail
@@ -38,10 +26,8 @@ new Vue({
         "main-comp": mainComp
     },
     store,
-    methods:{
-        setVal(){
-            console.log("부모요~~!");
-        }
+    created:function(){
+        store.dispatch('initData')
     },
     mounted:function(){
         const behindImg = $(".behind_img");
@@ -56,18 +42,26 @@ new Vue({
                 opacity:0
             })
         })
-
-
-
         
         const productPage = $(".product_wrap");
         const imgs = $(".list li");
         imgs.on("click", function () {
+            const gname = $(this).attr("data-name");
+            const result = store.state.items.filter(obj=> obj.name === gname);
+
+            productPage.find("img").eq(0).attr("src", `./img/men/poloShirts/${result[0].idx}.jpg`)
+            productPage.find("img").eq(1).attr("src", `./img/men/poloShirts-1/alt${result[0].idx}.jpg`)
+            productPage.find(".pro_bra").text(result[0].brand).
+            parent().siblings().find(".pro_tit").text(result[0].name).
+            parent().siblings().find(".pro_price").text(result[0].price).
+            parent().siblings().find(".pro_size").text(result[0].size);
+        
             productPage.show();
         });
         
         const close = $(".close_btn");
-        close.on("click", function () {
+        close.on("click", function (e) {
+            e.preventDefault();
             $(this).parent().hide();
         });
     },
