@@ -24,7 +24,7 @@ const subData = {
                 <ul>
                     <li v-for="(value, name) in $store.state.men.polo">
                         <img class="front_img" v-bind:src="'./img/men/poloShirts/'+value['img']+'.jpg'" v-bind:alt="'남성 폴로 셔츠'+value['img']" />
-                        <img ref="tgi" class="behind_img" v-bind:myval="value" v-bind:src="'./img/men/poloShirts-1/alt'+value['img']+'.jpg'" v-on:click="goPapa" alt="" />
+                        <img class="behind_img" v-bind:src="'./img/men/poloShirts-1/alt'+value['img']+'.jpg'" alt="" />
                         <div class="brand">{{value["brand"]}}</div>
                         <div class="name">{{value["name"]}}</div>
                         <div class="price">{{value["price"]}}</div>
