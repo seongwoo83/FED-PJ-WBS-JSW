@@ -3,8 +3,8 @@ const subData = {
     <main class="main">
     <div class="inner">
         <div class="tit_warp">
-            <div class="cat">{{$store.state.men["cat"]}}/ 추천 컬렉션</div>
-            <h2 class="tit">{{$store.state.men["cat"]}} 신상품</h2>
+            <div class="cat">{{$store.state.cat}}/ 추천 컬렉션</div>
+            <h2 class="tit">{{$store.state.cat}} 신상품</h2>
         </div>
         <div class="cont">
             <div class="search_wrap">
@@ -22,10 +22,10 @@ const subData = {
             <h3 class="cat_tit">폴로 랄프로렌</h3>
             <div class="list" id="list">
                 <ul>
-                    <li v-for="(value, name) in $store.state.men.polo">
-                        <img class="front_img" v-bind:src="'./img/men/poloShirts/'+value['idx']+'.jpg'" v-bind:alt="'남성 폴로 셔츠'+value['img']" />
+                    <li v-for="(value, name) in $store.state.gen.prod">
+                        <img class="front_img" v-bind:src="'./img/'+$store.state.catEn+'/prod/'+value['idx']+'.jpg'" v-bind:alt="'product'+value['img']" />
                         <img ref="tgi" class="behind_img"
-                        :src="'./img/men/poloShirts-1/alt'+value['idx']+'.jpg'" 
+                        :src="'./img/'+$store.state.catEn+'/prod-1/alt'+value['idx']+'.jpg'" 
                         @click.prevent="chkNum(value)" alt="" />
                         <div class="brand">{{value["brand"]}}</div>
                         <div class="name">{{value["name"]}}</div>
@@ -44,16 +44,16 @@ const subData = {
     </div>
     <div class="product_wrap" >
         <a href="#" class="close_btn"><i class="fa-sharp fa-solid fa-xmark"></i></a>
-        <div class="product_detail" v-for="(value, name) in $store.state.men.polo" 
+        <div class="product_detail" v-for="(value, name) in $store.state.gen.prod" 
         v-if="value['idx']==$store.state.imgnum">
             <div class="inner">
                 <div class="product_img_wrap">
                     <ul>
                         <li>
-                            <img v-bind:src="'./img/men/poloShirts/'+value['idx']+'.jpg'" alt="" />
+                            <img v-bind:src="'./img/'+$store.state.catEn+'/prod/'+value['idx']+'.jpg'" alt="" />
                         </li>
                         <li>
-                            <img v-bind:src="'./img/men/poloShirts-1/alt'+value['idx']+'.jpg'" alt="" />
+                            <img v-bind:src="'./img/'+$store.state.catEn+'/prod-1/alt'+value['idx']+'.jpg'" alt="" />
                         </li>
                     </ul>
                 </div>

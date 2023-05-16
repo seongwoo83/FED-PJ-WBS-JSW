@@ -26,7 +26,7 @@ function nav(){
             for (let x in obj) {
                 hcode += `
                     <ul class="category">
-                        <h2><a href="#">${x}</a></h2>
+                        <h2><a href="sub.html?cat=${x}">${x}</a></h2>
                         <div>
                             <ul class="smenu">
                     `;
@@ -56,6 +56,9 @@ function nav(){
         printHtml(".gnb", makeHtml(temp));
     }
     myAFn();
+    $(".category>a").on("click",function(e){
+        e.preventDefault();
+    })
 }
 
 export default nav;

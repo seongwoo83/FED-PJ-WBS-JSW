@@ -4,6 +4,27 @@ import comData from "./data/data-com.js";
 import store from "./data/store.js";
 import subData from "./data/data-sub.js";
 
+(()=>{
+    let pm;
+    // GET방식으로 넘어온 데이터 처리하여 분류별 서브페이지 구성하기
+    // location.href -> 상단 url 읽어오기
+    if (location.href.indexOf("?") !== -1) {
+        if(location.href.indexOf("%20")!==-1){
+            pm = location.href.split("?")[1].split("=")[1].split("%20")[0].toLowerCase();
+        }else{
+            pm = location.href.split("?")[1].split("=")[1].toLowerCase();
+        }
+        // pm에 값이 할당이 되어있다면 undefined가 아니므로 true
+        if (pm) {
+            store.commit("chgData", decodeURI(pm));
+            // decodeURI() -> 변경할 문자열만 있어야 디코딩됨
+            // decodeURIComponent() -> url전체에 섞여있어도 모두 디코딩
+        } else {
+            store.commit("chgData", "MEN");
+        }
+    }
+})()
+
 Vue.component("top-comp", {
     template: comData.topArea,
 });
@@ -40,7 +61,7 @@ new Vue({
     },
     store,
     created:function(){
-        store.dispatch('initData')
+        // store.dispatch('initData')
     },
     mounted:function(){
         const behindImg = $(".behind_img");
