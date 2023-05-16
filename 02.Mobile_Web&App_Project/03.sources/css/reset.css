@@ -13,6 +13,9 @@ dl, dt, dd, ol, ul, li, footer, header,nav, section , h1, h2, h3, h4, h5, h6{
 	vertical-align: bottom;
     /* outline: 1px dotted green; */
 }
+*{
+    font-family: "Le Jeune Deck", "Noto Serif KR", serif;
+}
 ol, ul {
 	list-style: none;
 }

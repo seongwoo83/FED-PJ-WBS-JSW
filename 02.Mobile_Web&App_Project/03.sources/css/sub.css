@@ -45,7 +45,8 @@
 }
 .cat_tit{
     padding: 40px 10px;
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: normal;
 }
 .list{
     padding-bottom: 30px;
@@ -68,7 +69,19 @@
     opacity: 0;
 }
 .brand{
+    font-family: 'Founders', 'Noto Sans KR', sans-serif;
     margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+}
+.price{
+    font-family: 'Founders', 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+.new{
+    font-family: 'Founders', 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    color: #ccc;
 }
 .total h4{
     text-align: center;
@@ -158,8 +171,38 @@
 }
 .product_info li{
     padding: 10px 0;
+    display: flex;
 }
-.product_info h3{
-    font-size: 25px;
-    padding-left: 30px;
+.product_info .logo{
+    width: 100%;
+}
+.pro{
+    width: 20%;
+}
+.basket{
+    font-size: 23px;
+    font-family: 'Founders', 'Noto Sans KR', sans-serif;
+    color: #fff;
+    background-color: darkblue;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+}
+.basket:hover{
+    color: darkblue;
+    border: 1px solid darkblue;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.explain{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: center;
+    color: #555;
+
 }

@@ -6,7 +6,7 @@ const comData = {
                     <div class="gnb_wrap">
                         <nav class="gnb"></nav>
                     </div>
-                    <h1 class="logo"><a href="#">Ralph Lauren</a></h1>
+                    <h1 class="logo"><a href="index.html">Ralph Lauren</a></h1>
                     <div class="member"></div>
                 </div>
             </div>

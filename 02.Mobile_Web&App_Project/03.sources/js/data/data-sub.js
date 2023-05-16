@@ -19,17 +19,18 @@ const subData = {
                     </select>
                 </div>
             </div>
-            <h3 class="cat_tit">폴로 랄프로렌</h3>
+            <h3 class="cat_tit">Polo Ralph Lauren</h3>
             <div class="list" id="list">
                 <ul>
                     <li v-for="(value, name) in $store.state.gen.prod">
                         <img class="front_img" v-bind:src="'./img/'+$store.state.catEn+'/prod/'+value['idx']+'.jpg'" v-bind:alt="'product'+value['img']" />
                         <img ref="tgi" class="behind_img"
                         :src="'./img/'+$store.state.catEn+'/prod-1/alt'+value['idx']+'.jpg'" 
-                        @click.prevent="chkNum(value)" alt="" />
+                        @click.prevent="chkNum(value)"alt="" />
                         <div class="brand">{{value["brand"]}}</div>
                         <div class="name">{{value["name"]}}</div>
-                        <div class="price">{{value["price"]}}</div>
+                        <div class="price">￦{{value["price"]}}</div>
+                        <div class="new" v-if="value['new'] ==1">New Arrival</div>
                     </li>
                 </ul>
             </div>
@@ -63,22 +64,26 @@ const subData = {
                             <h1 class="logo">Ralph Lauren{{$store.state.imgnum}}</h1>
                         </li>
                         <li>
-                            <h3 class="pro_cate">{{value["brand"]}}</h3>
+                            <span class="pro_cate pro">브랜드</span>
+                            <span>{{value["brand"]}}</span>
                         </li>
                         <li>
-                            <h3 class="pro_tit">{{value["name"]}}</h3>
+                            <span class="pro_tit pro">상품명 : </span>
+                            <span>{{value["name"]}}</span>
                         </li>
                         <li>
-                            <h3 class="pro_price">{{value["price"]}}</h3>
+                            <span class="pro_price pro">판매가 : </span>
+                            <span>￦ {{value["price"]}}</span>
                         </li>
                         <li>
-                            <h3 class="pro_size">{{value["size"]}}</h3>
+                            <span class="pro_size pro">사이즈 : </span>
+                            <span>{{value["size"]}}</span>
                         </li>
                         <li>
-                            <h3 class="pro_cnt">갯수</h3>
+                            <a href="#" class="basket">장바구니에 추가</a>
                         </li>
                         <li>
-                            <h3 class="pro_sum_price">총가격</h3>
+                            <p class="explain">{{value["detail"]}}</p>
                         </li>
                     </ul>
                 </div>

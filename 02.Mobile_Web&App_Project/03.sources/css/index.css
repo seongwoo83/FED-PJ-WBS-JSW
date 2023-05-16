@@ -7,9 +7,6 @@
 body{
     overflow-x: hidden;
 }
-body *{
-    font-family: "Le Jeune Deck", "Noto Serif KR", serif;
-}
 #main{
     min-height: 600px;
 }

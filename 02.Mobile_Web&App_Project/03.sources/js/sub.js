@@ -80,23 +80,23 @@ new Vue({
         const productPage = $(".product_wrap");
         const imgs = $(".list li");
         imgs.on("click", function () {
-            // const gname = $(this).attr("data-name");
-            // const result = store.state.items.filter(obj=> obj.name === gname);
-
-            // productPage.find("img").eq(0).attr("src", `./img/men/poloShirts/${result[0].idx}.jpg`)
-            // productPage.find("img").eq(1).attr("src", `./img/men/poloShirts-1/alt${result[0].idx}.jpg`)
-            // productPage.find(".pro_bra").text(result[0].brand).
-            // parent().siblings().find(".pro_tit").text(result[0].name).
-            // parent().siblings().find(".pro_price").text(result[0].price).
-            // parent().siblings().find(".pro_size").text(result[0].size);
-        
             productPage.show();
-        });
+        } );
         
         const close = $(".close_btn");
         close.on("click", function (e) {
             e.preventDefault();
             $(this).parent().hide();
+        });
+        
+        function insComma(x) {
+                return x.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        };
+        const gprice = $(".price");
+        
+        gprice.each((idx, ele)=>{
+            let nprice= insComma($(ele).text());
+            $(ele).text(nprice)
         });
     },
 })
