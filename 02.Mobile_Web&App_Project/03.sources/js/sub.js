@@ -81,12 +81,18 @@ new Vue({
         const imgs = $(".list li");
         imgs.on("click", function () {
             productPage.show();
+            $("body").css({
+                overflow:"hidden"
+            })
         } );
         
         const close = $(".close_btn");
         close.on("click", function (e) {
             e.preventDefault();
             $(this).parent().hide();
+            $("body").css({
+                overflow:"auto"
+            })
         });
         
         function insComma(x) {

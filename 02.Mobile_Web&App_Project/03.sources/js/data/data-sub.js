@@ -63,14 +63,17 @@ const subData = {
                         <li>
                             <h1 class="logo">Ralph Lauren{{$store.state.imgnum}}</h1>
                         </li>
+                        <hr>
                         <li>
-                            <span class="pro_cate pro">브랜드</span>
-                            <span>{{value["brand"]}}</span>
+                            <span class="pro_brand">{{value["brand"]}}</span>
                         </li>
                         <li>
-                            <span class="pro_tit pro">상품명 : </span>
                             <span>{{value["name"]}}</span>
                         </li>
+                        <li>
+                            <p class="explain" v-html="value['detail']"></p>
+                        </li>
+                        <hr>
                         <li>
                             <span class="pro_price pro">판매가 : </span>
                             <span>￦ {{value["price"]}}</span>
@@ -79,11 +82,9 @@ const subData = {
                             <span class="pro_size pro">사이즈 : </span>
                             <span>{{value["size"]}}</span>
                         </li>
+                        <hr>
                         <li>
                             <a href="#" class="basket">장바구니에 추가</a>
-                        </li>
-                        <li>
-                            <p class="explain">{{value["detail"]}}</p>
                         </li>
                     </ul>
                 </div>
