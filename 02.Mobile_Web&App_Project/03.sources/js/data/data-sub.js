@@ -24,14 +24,14 @@ const subData = {
             <h3 class="cat_tit">Polo Ralph Lauren</h3>
             <div class="list" id="list">
                 <ul>
-                    <li v-for="(value, index) in $store.state.gen.prod" v-if="value.brand == $store.state.pbrand[0] || value.brand == $store.state.pbrand[1]">
+                    <li v-for="(value, index) in $store.state.gen.prod" v-if="(value.brand == $store.state.pbrand[0] || value.brand == $store.state.pbrand[1]") && (value.gnum >= 0 && value.gnum</li>)>
                         <img class="front_img" v-bind:src="'./img/'+$store.state.catEn+'/prod/'+value['idx']+'.jpg'" v-bind:alt="'product'+value['img']" />
                         <img ref="tgi" class="behind_img"
                         :src="'./img/'+$store.state.catEn+'/prod-1/alt'+value['idx']+'.jpg'" 
                         @click.prevent="chkNum(value)"alt="" />
                         <div class="brand">{{value["brand"]}}</div>
                         <div class="name">{{value["name"]}}</div>
-                        <div class="price" v-text ="value.price"></div>
+                        <div class="price" v-text ="'￦'+value.price"></div>
                         <div class="new" v-if="value['new'] ==1">New Arrival</div>
                     </li>
                 </ul>

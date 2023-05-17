@@ -41,6 +41,8 @@ const store = new Vuex.Store({
             dt.cat = dt.goods[pm].cat;
             dt.catEn = dt.goods[pm].catEn;
             dt.gen = dt.goods[pm];
+            dt.pnum = dt.goods[pm].prod.length;
+            console.log(dt.pnum);
             switch (pm){
                 case  "men" : dt.brand = ["Polo Ralph Lauren", "Purple Label"]; break;
                 case "women" : dt.brand = ["Polo Ralph Lauren", "Ralph Lauren Collection"]; break;
@@ -55,6 +57,8 @@ const store = new Vuex.Store({
                 dt.pbrand = dt.brand;
             }else{
                 dt.pbrand = [pm, null];
+                // console.log(dt.gen.prod.filter(item=>item["brand"] == pm));
+                // dt.pnum = dt.gen.prod.filter(item=>item["brand"] == pm).length
             }
         },
     },

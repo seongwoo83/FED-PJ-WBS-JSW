@@ -101,10 +101,12 @@ new Vue({
         };
         const gprice = $(".price");
         
-        gprice.each((idx, ele)=>{
-            let nprice= insComma($(ele).text());
-            $(ele).text(nprice)
-        });
+        setInterval(() => {
+            gprice.each((idx, ele)=>{
+                let nprice= insComma($(ele).text());
+                $(ele).text(nprice)
+            });
+        }, 1);
     },
 })
 
