@@ -22,6 +22,7 @@ import subData from "./data/data-sub.js";
         } else {
             store.commit("chgData", "MEN");
         }
+        store.commit("brdChange", 'all')
     }
 })()
 
@@ -96,7 +97,7 @@ new Vue({
         });
         
         function insComma(x) {
-                return x.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
         };
         const gprice = $(".price");
         

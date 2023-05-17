@@ -4,16 +4,18 @@ const subData = {
     <div class="inner">
         <div class="tit_warp">
             <div class="cat">{{$store.state.cat}}/ 추천 컬렉션</div>
-            <h2 class="tit">{{$store.state.cat}} 신상품</h2>
+            <h2 class="tit">{{$store.state.catEn.toUpperCase()}}'s Item</h2>
         </div>
         <div class="cont">
             <div class="search_wrap">
-                <div class="left_filter">필터</div>
+                <div class="left_filter">
+                    <span>필터</span>
+                    <span><a href="#" @click.prevent="$store.commit('brdChange', 'all')"> | All</a></span>
+                    <span  v-for="(v,i) in $store.state.filter" v-if="$store.state.brand.includes(v)"><a href="#" @click.prevent="$store.commit('brdChange', v)"> | {{v}}</a></span>
+                </div>
                 <div class="right_fliter_opt">
-                    <span class="default">정렬기준</span>
-                    <select name="norm" id="norm">
-                        <option value="new">신상품순</option>
-                        <option value="popular">인기상품순</option>
+                    <select name="norm" id="norm" @change="$store.commit('upperPrice', $store.state.gen)">
+                        <option value="norm">정렬기준</option>
                         <option value="expen">높은가격순</option>
                         <option value="cheap">낮은가격순</option>
                     </select>
@@ -22,25 +24,25 @@ const subData = {
             <h3 class="cat_tit">Polo Ralph Lauren</h3>
             <div class="list" id="list">
                 <ul>
-                    <li v-for="(value, name) in $store.state.gen.prod">
+                    <li v-for="(value, index) in $store.state.gen.prod" v-if="value.brand == $store.state.pbrand[0] || value.brand == $store.state.pbrand[1]">
                         <img class="front_img" v-bind:src="'./img/'+$store.state.catEn+'/prod/'+value['idx']+'.jpg'" v-bind:alt="'product'+value['img']" />
                         <img ref="tgi" class="behind_img"
                         :src="'./img/'+$store.state.catEn+'/prod-1/alt'+value['idx']+'.jpg'" 
                         @click.prevent="chkNum(value)"alt="" />
                         <div class="brand">{{value["brand"]}}</div>
                         <div class="name">{{value["name"]}}</div>
-                        <div class="price">￦{{value["price"]}}</div>
+                        <div class="price" v-text ="value.price"></div>
                         <div class="new" v-if="value['new'] ==1">New Arrival</div>
                     </li>
                 </ul>
             </div>
             <div class="total">
-                <h4>1-8/20아이템</h4>
-            </div>
-            <div class="result_wrap">
-                <a href="#" class="more_item">더보기</a>
-                <a href="#" class="whole_item">전체보기</a>
-            </div>
+            <h4>1-8/20아이템</h4>
+        </div>
+        <div class="result_wrap">
+            <a href="#" class="more_item">더보기</a>
+            <a href="#" class="whole_item">전체보기</a>
+        </div>
         </div>
     </div>
     <div class="product_wrap" >
