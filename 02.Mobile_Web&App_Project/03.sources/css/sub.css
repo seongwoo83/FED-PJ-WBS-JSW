@@ -119,9 +119,9 @@
 .product_detail{
     position: relative;
     top: 0;
-    margin-left: 10%;
+    margin-left: 22%;
     background-color: #fff;
-    width: 90%;
+    width: 78%;
 }
 .product_detail .inner{
     display: flex;
@@ -154,8 +154,8 @@
 .close_btn{
     display: inline-block;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 20px;
+    left: 20px;
     color: #fff;
 }
 .close_btn i{
