@@ -21,7 +21,7 @@ const subData = {
                     </select>
                 </div>
             </div>
-            <h3 class="cat_tit">Polo Ralph Lauren</h3>
+            <h3 class="cat_tit">{{$store.state.pbrand[0]}}</h3>
             <div class="list" id="list">
                 <ul>
                     <li v-for="(value, index) in $store.state.gen.prod" v-if="value.brand == $store.state.pbrand[0] || value.brand == $store.state.pbrand[1]">
