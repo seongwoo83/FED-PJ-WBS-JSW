@@ -36,18 +36,18 @@ const subData = {
                     </li>
                 </ul>
             </div>
-            <div class="total">
+            <!-- <div class="total">
             <h4>1-8/20아이템</h4>
         </div>
         <div class="result_wrap">
             <a href="#" class="more_item">더보기</a>
             <a href="#" class="whole_item">전체보기</a>
-        </div>
+        </div> -->
         </div>
     </div>
     <div class="product_wrap" >
         <a href="#" class="close_btn"><i class="fa-sharp fa-solid fa-xmark"></i></a>
-        <div class="product_detail" v-for="(value, name) in $store.state.gen.prod" 
+        <div class="product_detail" v-for="(value, index) in $store.state.gen.prod" 
         v-if="value['idx']==$store.state.imgnum">
             <div class="inner">
                 <div class="product_img_wrap">
@@ -86,7 +86,7 @@ const subData = {
                         </li>
                         <hr>
                         <li>
-                            <a href="#" class="basket">장바구니에 추가</a>
+                            <a href="#" class="basket" @click.prevent="$store.commit('addCart', index)">Add to Cart</a>
                         </li>
                     </ul>
                 </div>

@@ -4,6 +4,7 @@ import swiper from "./swiper.js";
 import imgSlide from "./imgSlide.js";
 import hrScroll from "./hrScroll.js";
 import common from "./common.js";
+import showCart from "./cart.js";
 
 Vue.component("top-comp", {
     template: comData.topArea,
@@ -16,6 +17,7 @@ new Vue({
         imgSlide();
         hrScroll();
         common();
+        showCart()
     },
 });
 Vue.component("foot-comp", {

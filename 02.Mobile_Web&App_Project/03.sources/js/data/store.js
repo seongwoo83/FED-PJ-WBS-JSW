@@ -61,6 +61,12 @@ const store = new Vuex.Store({
                 // dt.pnum = dt.gen.prod.filter(item=>item["brand"] == pm).length
             }
         },
+
+        addCart(dt, pm){
+            // console.log(dt.gen.prod[pm]);
+            window.localStorage.setItem(dt.gen.prod[pm].idx, JSON.stringify(dt.gen.prod[pm]))
+            console.log(localStorage);
+        }
     },
 });
 

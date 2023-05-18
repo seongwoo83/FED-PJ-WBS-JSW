@@ -7,7 +7,15 @@ const comData = {
                         <nav class="gnb"></nav>
                     </div>
                     <h1 class="logo"><a href="index.html">Ralph Lauren</a></h1>
-                    <div class="member"></div>
+                    <div class="cart">
+                        <a href="#" class="open_cart">Cart</a>
+                        <div class="cartmenu">
+                        <a href="#" class="remove_cart">Remove Cart</a>
+                        <ul>
+                        </ul>
+                        <a href="#" class="buy_item">Buy Items</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>

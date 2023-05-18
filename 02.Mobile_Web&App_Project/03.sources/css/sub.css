@@ -63,6 +63,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    cursor: url(../img/index/Link-Select.png), auto;
 }
 .behind_img{
     position: absolute;
@@ -129,7 +130,6 @@
 }
 .product_img_wrap{
     position: relative;
-    width: 60%;
 }
 .product_img_wrap ul{
     /* display: grid;
@@ -145,10 +145,11 @@
 }
 .product_img_wrap img{
     height: 100%;
+    width: auto;
 }
 .product_info_wrap{
     position: relative;
-    width: 40%;
+    width: 30%;
 }
 .close_btn{
     display: inline-block;
@@ -169,9 +170,7 @@
 }
 .product_info{
     position: sticky;
-    width: 90%;
-    top: 43%;
-    transform: translateY(-50%);
+    top: 7%;
 }
 .product_info li{
     padding: 10px 0;
@@ -189,19 +188,21 @@
     font-weight: bold;
     font-size: 30px;
 }
-.product_info li:nth-child(6){
+.product_info li:nth-of-type(5){
     padding-top: 40px;
 }
+.product_info li:nth-of-type(7){
+    height: 50px;
+    line-height: 50px;
+    font-family: "Le Jeune Deck", "Noto Serif KR", serif;
+}
 .basket{
-    font-size: 23px;
-    font-family: 'Founders', 'Noto Sans KR', sans-serif;
     color: darkblue;
     background-color: #fff;
     width: 100%;
     height: 100%;
     margin: 0 auto;
     text-align: center;
-    padding: 10px;
     border: 1px solid darkblue;
     box-sizing: border-box;
 }
@@ -218,7 +219,7 @@
 .explain{
     width: 100%;
     margin: 0 auto;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 35px;
     color: #999;
 

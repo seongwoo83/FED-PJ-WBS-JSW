@@ -3,6 +3,7 @@ import common from "./common.js";
 import comData from "./data/data-com.js";
 import store from "./data/store.js";
 import subData from "./data/data-sub.js";
+import showCart from "./cart.js";
 
 (()=>{
     let pm;
@@ -34,6 +35,7 @@ new Vue({
     mounted: function () {
         nav();
         common();
+        showCart();
     }
 });
 const mainComp = {
