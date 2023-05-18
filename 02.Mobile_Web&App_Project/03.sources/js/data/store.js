@@ -67,7 +67,7 @@ const store = new Vuex.Store({
             window.localStorage.setItem(dt.gen.prod[pm].idx, JSON.stringify(dt.gen.prod[pm]))
             console.log(localStorage);
             Swal.fire({
-                timer: 1000,
+                timer: 1500,
                 timerProgressBar: true,
                 icon: 'success',                         // Alert 타입
                 title: 'Cart',         // Alert 제목

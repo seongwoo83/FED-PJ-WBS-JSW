@@ -1,0 +1,166 @@
+@charset "UTF-8";
+section{
+    width: 100vw;
+    height: 100vh;
+}
+#page1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0 ;
+    z-index: 4;
+    display: flex;
+    opacity: 1;
+}
+#page1 video{
+    width: auto;
+    height: 100vh;
+}
+.intro{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.intro img{
+    position: absolute;
+    width: 60%;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.intro span{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 60px;
+}
+.date{
+    top: 60%;
+}
+.name{
+    top: 65%;
+}
+#page2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0 ;
+    z-index: 3;
+    border: 40px solid #dfe0d1;
+    box-sizing: border-box;
+    display: flex;
+    opacity: 0;
+}
+.third{
+    position: relative;
+    width: 33%;
+    height: 100%;
+}
+.sec_tit{
+    position: absolute;
+    font-size: 70px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.circ{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.color1{
+    background-color: darkblue;
+    top: 20%;
+}
+.color2{
+    background-color: beige;
+    top: 35%;
+}
+.color3{
+    top: 50%;
+    background-color: #c2bcb5;
+}
+.font{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.font_list{
+    position: relative;
+    width: 80%;
+    margin: 5% auto 0;
+    text-align: center;
+}
+.font_list p{
+    font-size: 35px;
+}
+.font_list_tit{
+    font-size: 50px;
+}
+.list1 *{
+    font-family: 'Founders', 'Noto Sans KR', sans-serif;
+}
+.list2 *{
+    font-family: "Le Jeune Deck", "Noto Serif KR", serif;
+}
+.list3 *{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.tech{
+    display: flex;
+    flex-direction: column;
+}
+.tech_wrap{
+    position: relative;
+    top: 15%;
+}
+.tech_list{
+    height: 20%;
+    position: relative;
+    margin-top: 5%;
+}
+.tech_list img{
+    position: relative;
+    height: 80%;
+    width: auto;
+    margin: 2% auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.jquery img{
+    margin-top: -5%;
+}
+.tech_list_tit{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+}
+.set_wrap{
+    display: flex;
+    width: 75%;
+    margin: 0 15%;
+    justify-content: space-between;
+}
+
+#page3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0 ;
+    z-index: 2;
+}
+#page4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0 ;
+    z-index: 1;
+}

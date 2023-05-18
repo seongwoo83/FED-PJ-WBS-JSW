@@ -230,3 +230,12 @@
 .swal2-container{
     z-index: 999999;
 }
+.swal2-icon.swal2-success .swal2-success-ring{
+    border-color: rgb(134 156 220 / 30%);;
+}
+.swal2-icon.swal2-success{
+    border-color: darkblue;
+}
+.swal2-icon.swal2-success [class^=swal2-success-line]{
+    background-color: #010147;
+}
