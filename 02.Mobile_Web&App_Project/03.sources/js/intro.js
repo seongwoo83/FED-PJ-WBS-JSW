@@ -1,5 +1,16 @@
 $(()=>{
     $("#page1").on("click", function(){
-        $(this).fadeOut(300).siblings().find("#page2").fadeIn(300)
+        console.log('클릭됨');
+        $(this).animate({
+            opacity:0,
+            zIndex:1
+        },300)
+    });
+    $("#page2").on("click",function(){
+        $(this).animate({
+            opacity:0
+        },300,function(){
+            location.href = "./index.html"
+        })
     })
 })

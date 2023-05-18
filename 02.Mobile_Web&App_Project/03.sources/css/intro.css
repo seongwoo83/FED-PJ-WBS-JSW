@@ -11,7 +11,7 @@ section{
     right: 0 ;
     z-index: 4;
     display: flex;
-    opacity: 1;
+    background-color: #fff;
 }
 #page1 video{
     width: auto;
@@ -51,7 +51,6 @@ section{
     border: 40px solid #dfe0d1;
     box-sizing: border-box;
     display: flex;
-    opacity: 0;
 }
 .third{
     position: relative;
