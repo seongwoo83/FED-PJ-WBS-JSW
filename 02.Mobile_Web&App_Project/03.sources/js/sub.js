@@ -50,6 +50,9 @@ const mainComp = {
         chkNum(pm){
             console.log("자식");
             store.state.imgnum = pm["idx"];
+        },
+        insComma(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
         }
     }
 }

@@ -39,6 +39,9 @@ function common() {
         $(this).find(".logo a").css({
             backgroundImage: "url('./img/index/gnb_logo_b.svg')",
         });
+        $(this).find(".open_cart").css({
+            color:"#000"
+        })
     });
     topInner.on("mouseleave", function () {
         $(this).stop().animate(
@@ -53,6 +56,9 @@ function common() {
         $(this).find(".logo a").css({
             backgroundImage: "url('./img/index/gnb_logo_w.svg')",
         });
+        $(this).find(".open_cart").css({
+            color:"#fff"
+        })
     });
 
     let scTop = 0;

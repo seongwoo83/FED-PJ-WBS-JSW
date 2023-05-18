@@ -78,7 +78,7 @@ const subData = {
                         <hr>
                         <li>
                             <span class="pro_price pro">판매가 : </span>
-                            <span>￦ {{value["price"]}}</span>
+                            <span>￦ {{insComma(value["price"])}}</span>
                         </li>
                         <li>
                             <span class="pro_size pro">사이즈 : </span>

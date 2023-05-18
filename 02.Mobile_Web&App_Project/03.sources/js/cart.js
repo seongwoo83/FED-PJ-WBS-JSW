@@ -15,7 +15,7 @@ function showCart(){
                 <ol class="list_info">
                     <li>${x.category}</li>
                     <li>${x.name}</li>
-                    <li>${x.price}</li>
+                    <li>￦ ${x.price}</li>
                 </ol>
             </ol>
             `
