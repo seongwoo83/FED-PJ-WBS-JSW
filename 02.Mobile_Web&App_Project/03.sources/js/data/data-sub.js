@@ -86,7 +86,7 @@ const subData = {
                         </li>
                         <hr>
                         <li>
-                            <a href="#" class="basket" @click.prevent="$store.commit('addCart', index)">Add to Cart</a>
+                            <a href="#" class="basket" @click="$store.commit('addCart', index)">Add to Cart</a>
                         </li>
                     </ul>
                 </div>

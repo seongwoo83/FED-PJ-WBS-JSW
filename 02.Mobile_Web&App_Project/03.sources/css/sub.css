@@ -227,3 +227,6 @@
     color: #999;
 
 }
+.swal2-container{
+    z-index: 999999;
+}

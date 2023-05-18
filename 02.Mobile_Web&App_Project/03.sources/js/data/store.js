@@ -66,6 +66,13 @@ const store = new Vuex.Store({
             // console.log(dt.gen.prod[pm]);
             window.localStorage.setItem(dt.gen.prod[pm].idx, JSON.stringify(dt.gen.prod[pm]))
             console.log(localStorage);
+            Swal.fire({
+                timer: 1000,
+                timerProgressBar: true,
+                icon: 'success',                         // Alert 타입
+                title: 'Cart',         // Alert 제목
+                text: 'Add Complete',  // Alert 내용
+        });
         }
     },
 });
