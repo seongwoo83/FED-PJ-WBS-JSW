@@ -1,4 +1,9 @@
 @charset "UTF-8";
+
+html,body{
+    overflow: hidden;
+}
+
 section{
     width: 100vw;
     height: 100vh;
@@ -93,11 +98,13 @@ section{
 .font_list{
     position: relative;
     width: 80%;
+    height: 20%;
     margin: 5% auto 0;
     text-align: center;
+    top: 5%;
 }
 .font_list p{
-    font-size: 35px;
+    font-size: 30px;
 }
 .font_list_tit{
     font-size: 50px;
@@ -115,14 +122,11 @@ section{
     display: flex;
     flex-direction: column;
 }
-.tech_wrap{
-    position: relative;
-    top: 15%;
-}
 .tech_list{
     height: 20%;
     position: relative;
     margin-top: 5%;
+    top: 15%;
 }
 .tech_list img{
     position: relative;
@@ -145,21 +149,4 @@ section{
     width: 75%;
     margin: 0 15%;
     justify-content: space-between;
-}
-
-#page3{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0 ;
-    z-index: 2;
-}
-#page4{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0 ;
-    z-index: 1;
 }
