@@ -191,10 +191,10 @@ img{
     height: 100%;
 }
 .hr_wrap li:first-child{
-    background: url(https://i.postimg.cc/SKssCW0R/cont2.webp) no-repeat top/cover;
+    background: url(../img/index/cont2.webp) no-repeat top/cover;
 }
 .hr_wrap li:last-child{
-    background: url(https://i.postimg.cc/tgWXhDSX/cont3.webp) no-repeat top/cover;
+    background: url(../img/index/cont3.webp) no-repeat top/cover;
 }
 .vt_wrap{
     position: relative;
