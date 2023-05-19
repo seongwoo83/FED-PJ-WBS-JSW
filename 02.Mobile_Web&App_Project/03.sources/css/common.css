@@ -25,7 +25,7 @@
 }
 .logo a{
     display: inline-block;
-    background-image: url(/02.Mobile_Web&App_Project/03.sources/img/index/gnb_logo_w.svg);
+    background-image: url(../img/index/gnb_logo_w.svg);
     width: 269px;
     height: 60px;
     background-size: 269px 20px;
