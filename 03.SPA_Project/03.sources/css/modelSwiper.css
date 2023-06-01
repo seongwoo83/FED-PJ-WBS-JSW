@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+ul{
+    display: flex;
+    width: 20%;
+    background-color: #eee;
+    overflow: hidden;
+}
+li{
+    width: 100%;
+}
+li img{
+    width: 100%;
+}
