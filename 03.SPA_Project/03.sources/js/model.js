@@ -1,58 +1,58 @@
 const model = [
     {
-        "name":"monza-sp2.png",
+        "name":"monza-sp2",
         "src":"./img/index/monza-sp2.png"
     },
     {
-        "name":"portofino.png",
+        "name":"portofino",
         "src":"./img/index/portofino.png"
     },
     {
-        "name":"purosangue.png",
+        "name":"purosangue",
         "src":"./img/index/purosangue.png"
     },
     {
-        "name":"roma.png",
+        "name":"roma",
         "src":"./img/index/roma.png"
     },
     {
-        "name":"roma-spider.png",
+        "name":"roma-spider",
         "src":"./img/index/roma-spider.png"
     },
     {
-        "name":"sf90-stradale.png",
+        "name":"sf90-stradale",
         "src":"./img/index/sf90-stradale.png"
     },
     {
-        "name":"296_gts.png",
+        "name":"296_gts",
         "src":"./img/index/296_gts.png"
     },
     {
-        "name":"296-gtb.png",
+        "name":"296-gtb",
         "src":"./img/index/296-gtb.png"
     },
     {
-        "name":"812-competizione.png",
+        "name":"812-competizione",
         "src":"./img/index/812-competizione.png"
     },
     {
-        "name":"812-competizionet.png",
+        "name":"812-competizionet",
         "src":"./img/index/812-competizionet.png"
     },
     {
-        "name":"812-gts.png",
+        "name":"812-gts",
         "src":"./img/index/812-gts.png"
     },
     {
-        "name":"daytona-sp3.png",
+        "name":"daytona-sp3",
         "src":"./img/index/daytona-sp3.png"
     },
     {
-        "name":"df90-spider.png",
+        "name":"df90-spider",
         "src":"./img/index/df90-spider.png"
     },
     {
-        "name":"monza-sp1.png",
+        "name":"monza-sp1",
         "src":"./img/index/monza-sp1.png"
     },
 ]
