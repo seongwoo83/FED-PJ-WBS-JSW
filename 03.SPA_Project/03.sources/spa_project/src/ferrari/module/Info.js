@@ -1,3 +1,5 @@
+import '../css/info.css'
+
 /* eslint-disable */
 function Info(){
     return(
@@ -5,23 +7,25 @@ function Info(){
             <div className="subscribe_wrap">
                 <button className="subscribe">
                     <span>Subscribe Ferrari Newletter</span>
-                    <svg viewBox="0 0 24 24">
-                        <circle cx={12} cy={12} r={11} stroke="1"></circle>
-                    </svg>
-                    <svg viewBox="0 0 8 16" class="icon" width="8" height="16" xmlns="http://www.w3.org/2000/svg" style={{height: "16px", width: "8px"}}>
-                        <path d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z"></path>
-                    </svg>
+                    <div className='svg_container'>
+                        <svg viewBox="0 0 24 24" className='circle'>
+                            <circle cx={12} cy={12} r={11} stroke="1"></circle>
+                        </svg>
+                        <svg viewBox="0 0 8 16" className="icon" width="8" height="16" xmlns="http://www.w3.org/2000/svg" style={{height: "16px", width: "8px"}}>
+                            <path d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z"></path>
+                        </svg>
+                    </div>
                 </button>
             </div>
             <div className="sns_container">
                 <ul>
-                    <li><a href="https://www.facebook.com/Ferrari">FACEBOOK</a></li>
-                    <li><a href="https://www.instagram.com/ferrari/">INSTARGRAM</a></li>
-                    <li><a href="https://www.linkedin.com/company/ferrari/">LINKEDIN</a></li>
-                    <li><a href="https://www.tiktok.com/@ferrari">TIKTOK</a></li>
-                    <li><a href="https://www.twitch.tv/ferrariesports">TWITCH</a></li>
-                    <li><a href="https://twitter.com/Ferrari">TWITTER</a></li>
-                    <li><a href="https://www.youtube.com/user/ferrariworld">YOUTUBE</a></li>
+                    <li><a href="https://www.facebook.com/Ferrari"><span>+</span>FACEBOOK</a></li>
+                    <li><a href="https://www.instagram.com/ferrari/"><span>+</span>INSTARGRAM</a></li>
+                    <li><a href="https://www.linkedin.com/company/ferrari/"><span>+</span>LINKEDIN</a></li>
+                    <li><a href="https://www.tiktok.com/@ferrari"><span>+</span>TIKTOK</a></li>
+                    <li><a href="https://www.twitch.tv/ferrariesports"><span>+</span>TWITCH</a></li>
+                    <li><a href="https://twitter.com/Ferrari"><span>+</span>TWITTER</a></li>
+                    <li><a href="https://www.youtube.com/user/ferrariworld"><span>+</span>YOUTUBE</a></li>
                 </ul>
             </div>
             <div className="reserve_wrap">

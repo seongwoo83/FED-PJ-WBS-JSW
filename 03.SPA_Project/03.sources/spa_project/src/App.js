@@ -1,10 +1,12 @@
 import './App.css';
-import Info from './ferrari/info';
-import Model from './ferrari/model';
+import Board from './ferrari/module/Board';
+import Model from './ferrari/module/Model';
+import Info from './ferrari/module/Info';
 
 function App() {
   return (
     <>
+      <Board />
       <Model />
       <Info />
     </>

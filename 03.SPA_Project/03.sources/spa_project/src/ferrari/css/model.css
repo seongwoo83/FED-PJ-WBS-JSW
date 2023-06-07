@@ -2,7 +2,6 @@
 
 .swiper-slide{
     position: relative;
-    background-color: #fafafa;
 }
 .tit_wrap{
     position: absolute;
@@ -15,6 +14,7 @@
     width: 100%;
 }
 .tit_wrap{
+    position: relative;
     display: none;
 }
 .tit{

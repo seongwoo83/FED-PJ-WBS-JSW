@@ -1,9 +1,5 @@
 const mdata = [
     {
-        "name":"monza-sp2",
-        "src":"./img/index/monza-sp2.png"
-    },
-    {
         "name":"portofino",
         "src":"./img/index/portofino.png"
     },
@@ -32,14 +28,6 @@ const mdata = [
         "src":"./img/index/296-gtb.png"
     },
     {
-        "name":"812-competizione",
-        "src":"./img/index/812-competizione.png"
-    },
-    {
-        "name":"812-competizionet",
-        "src":"./img/index/812-competizionet.png"
-    },
-    {
         "name":"812-gts",
         "src":"./img/index/812-gts.png"
     },
@@ -54,6 +42,10 @@ const mdata = [
     {
         "name":"monza-sp1",
         "src":"./img/index/monza-sp1.png"
+    },
+    {
+        "name":"monza-sp2",
+        "src":"./img/index/monza-sp2.png"
     },
 ]
 export default mdata;
