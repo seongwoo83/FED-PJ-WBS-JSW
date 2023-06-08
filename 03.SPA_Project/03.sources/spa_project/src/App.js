@@ -6,8 +6,8 @@ import Info from './ferrari/module/Info';
 function App() {
   return (
     <>
-      <Board />
       <Model />
+      <Board />
       <Info />
     </>
   );

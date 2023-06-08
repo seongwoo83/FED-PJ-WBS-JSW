@@ -19,7 +19,6 @@ function Model(){
             rewind={true}
             scrollbar={{draggable: true}}
             navigation={true}
-            mousewheel={true}
             onSwiper={()=>$('.swiper-slide-active').find(".tit_wrap").fadeIn()}
             onSlideChangeTransitionStart={()=>$(".swiper-slide-active").find(".tit_wrap").fadeIn(1000).parent().siblings(".swiper-slide").find(".tit_wrap").hide()}
             breakpoints={{
