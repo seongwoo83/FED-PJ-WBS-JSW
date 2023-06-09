@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.news{
+    height: 1000px;
+    margin: 50px;
+    position: relative;
+}
+.news_container{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.img_wrap{
+    position: relative;
+}
+.img_wrap img{
+    opacity: 0;
+}
+.grey_back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #ddd;
+}
+.news_tit span{
+    display: inline-block;
+    transform: matrix(0.99756, 0.06975, -0.06975, 0.99756, 0, 25);
+    opacity: 0;
+    transition: .3s linear;
+}
+.news_tit span.on{
+    transform:matrix(1,0,0,1,0,0);
+    opacity: 1;
+}
