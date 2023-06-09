@@ -2,6 +2,7 @@ import React from 'react';
 import $ from 'jquery';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Navigation, Mousewheel} from 'swiper';
+import {SlideNextButton, SlidePrevButton} from './Swiperbutton';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -18,7 +19,6 @@ function Model(){
             slidesPerView={1.2}
             rewind={true}
             scrollbar={{draggable: true}}
-            navigation={true}
             onSwiper={()=>$('.swiper-slide-active').find(".tit_wrap").fadeIn()}
             onSlideChangeTransitionStart={()=>$(".swiper-slide-active").find(".tit_wrap").fadeIn(1000).parent().siblings(".swiper-slide").find(".tit_wrap").hide()}
             breakpoints={{
@@ -48,6 +48,10 @@ function Model(){
                     );
                 })
             }
+            <div className='btn_wrap'>
+                <SlidePrevButton />
+                <SlideNextButton />
+            </div>
         </Swiper>
         </div>
     );
