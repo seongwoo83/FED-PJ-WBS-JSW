@@ -1,6 +1,7 @@
 import logo from './logo.svg'
 import './App.css';
 import React from 'react';
+import Greetings from './Grettings';
 
 const App: React.FC = ()=> {
   return (
@@ -19,6 +20,7 @@ const App: React.FC = ()=> {
           Learn React
         </a>
       </header>
+      <Greetings name="hello"/>
     </div>
   );
 }
