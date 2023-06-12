@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .news{
-    height: 1000px;
+    min-height: 1000px;
     margin: 50px;
     position: relative;
 }
@@ -9,20 +9,30 @@
     position: absolute;
     top: 0;
     left: 0;
+    display: flex;
+    flex-direction: column;
 }
 .img_wrap{
     position: relative;
+    width: auto;
+    height: 60%;
 }
-.img_wrap img{
+.news_container img{
+    width: 100%;
+    height: 100%;
     opacity: 0;
 }
 .grey_back{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 100%;
     bottom: 0;
     right: 0;
+    z-index: -1;
     background-color: #ddd;
+}
+.cont_wrap{
+    height: 40%;
 }
 .news_tit span{
     display: inline-block;

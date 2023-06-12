@@ -1,7 +1,7 @@
 import React from 'react';
 import $ from 'jquery';
 import {Swiper, SwiperSlide} from 'swiper/react';
-import {Navigation, Mousewheel} from 'swiper';
+import {Navigation} from 'swiper';
 import {SlideNextButton, SlidePrevButton} from './Swiperbutton';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -14,10 +14,10 @@ function Model(){
     return(
         <div className='swiper_wrap'>
         <Swiper
-            modules={[ Navigation, Mousewheel]}
+            modules={[ Navigation]}
             spaceBetween={10}
             slidesPerView={1.2}
-            rewind={true}
+            loop={true}
             scrollbar={{draggable: true}}
             onSwiper={()=>$('.swiper-slide-active').find(".tit_wrap").fadeIn()}
             onSlideChangeTransitionStart={()=>$(".swiper-slide-active").find(".tit_wrap").fadeIn(1000).parent().siblings(".swiper-slide").find(".tit_wrap").hide()}
@@ -36,10 +36,8 @@ function Model(){
                 mdata.map((v, i)=>{
                     return (
                         <SwiperSlide key={i}>
-                            <div className='img_wrap'>
-                                <picture>
-                                    <img src={v.src} alt='차' />
-                                </picture>
+                            <div className='img_wrap' >
+                                <img src={v.src} alt='차'  />
                             </div>
                             <div className='tit_wrap'>
                                 <span className='tit'>{v.name.toUpperCase()}</span>
