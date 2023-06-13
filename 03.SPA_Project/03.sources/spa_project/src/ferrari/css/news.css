@@ -24,9 +24,7 @@
 }
 .grey_back{
     position: absolute;
-    top: 0;
-    left: 100%;
-    bottom: 0;
+    left: 0;
     right: 0;
     z-index: -1;
     background-color: #ddd;
@@ -34,11 +32,20 @@
 .cont_wrap{
     height: 40%;
 }
+.news_sum, .cont_wrap .detail{
+    opacity: 0;
+    transform: translateY(10px);
+    transition: .5s linear;
+}
+.news_sum.on, .cont_wrap .detail.on{
+    transform: translateY(0);
+    opacity: 1;
+}
 .news_tit span{
     display: inline-block;
     transform: matrix(0.99756, 0.06975, -0.06975, 0.99756, 0, 25);
     opacity: 0;
-    transition: .3s linear;
+    transition: .5s linear;
 }
 .news_tit span.on{
     transform:matrix(1,0,0,1,0,0);

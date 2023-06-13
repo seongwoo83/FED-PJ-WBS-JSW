@@ -10,45 +10,58 @@ $(() => {
             .join(" ");
         $(v).html(hcode);
     });
+    
+    $(".news_container").last().after(`<div class="grey_back"></div>`)
+
 
     let news_container = $(".news_container");
-    news_container.each((i,v)=>{
-        $(v).css({
-            zIndex:-i
-        }).eq(0).find("img").css({
+    news_container.eq(0).find("img").css({
             opacity:1
-        }).siblings(".grey_back").css({
-            left:0
-        });
+        })
+    const news = $(".news");
+    const grey = $(".grey_back");
+    function setgrey(){
+        grey.css({
+        height:news_container.find("img").height()
     })
-    let news = $(".news");
+}
+    setTimeout(setgrey, 0);
 
-    news.find(".news_container").on("click",function(){
-        if($(this).index()===0){
-            $(this).find("img").animate({
-                opacity:0
-            },100).delay(100).siblings(".grey_back").animate({
-                left:"100%"
-            },500,()=>{
-                $(this).parent().append($(this));
-                news_container = $(".news_container");
-                news_container.each((i,v)=>{
-                    $(v).css({
-                        zIndex:-i
-                    }).eq(0).siblings(".grey_back").css({
+    let snum = 0;
+    let prot = 0
+    news.on("click",function(){
+        if(prot===1) return;
+        prot = 1;
+        setTimeout(() => {
+            prot=0;
+        }, 1600);
+        setTimeout(() => {
+            if(snum === news_container.length) snum=0;
+        }, 0);
+        snum++;
+        news_container.eq(snum-1).find("img").animate({
+            opacity:0
+        },400,()=>{
+            setTimeout(() => {
+                $(this).find(".news_container").eq(snum).find("img").animate({
+                    opacity:1
+                },400).parent().siblings().find(".news_tit span").addClass("on").parent().siblings().addClass("on")
+            }, 800);
+            }).parent().siblings().find(".news_tit span").removeClass("on").parent().siblings().removeClass("on")
+    
+            setTimeout(() => {
+                grey.animate({
+                    left:"100%"
+                },400,()=>{
+                    $(this).find(".grey_back").css({
+                        left:0,
                         right:"100%"
                     }).animate({
                         right:0
-                    },500).delay(500).find("img").animate({
-                        opacity:1
-                    },300);
-                }).last().find("img").animate({
-                    opacity:1
-                }).siblings('.grey_back').animate({
-                    left:0
+                    },400)
                 })
-            })
-        }
+            }, 400);
+
     })
 
     
@@ -84,7 +97,6 @@ function News() {
                     <div className="news_container" key={i} data-num={i}>
                         <div className="img_wrap">
                             <img src={v.src} alt=" " />
-                            <div className="grey_back"></div>
                         </div>
                             <div className="cont_wrap" data-num={i} key={i}>
                                 <h2 className="news_tit">{v.tit}</h2>
