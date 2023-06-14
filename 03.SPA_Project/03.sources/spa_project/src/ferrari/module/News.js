@@ -15,8 +15,16 @@ $(() => {
         width:"100%"
     }).find(".img_bx").css({
         opacity:1
-    }).parent().siblings(".cont_wrap").find(".news_sum").addClass("on").siblings(".detail").addClass("on").siblings(".news_tit").find("span").addClass("on")
+    }).parents(".news_oh").siblings(".cont_wrap").find(".news_sum").addClass("on").siblings(".detail").addClass("on").siblings(".news_tit").find("span").addClass("on");
 
+    $(window).on("resize",function(){
+        $(".news").css({
+            height: $(".news_container").outerHeight() + 100+ "px"
+        })
+    });
+    $(".news").css({
+        height: $(".news_container").outerHeight() + 100+ "px"
+    });
     
     
     let snum = 0;
@@ -38,7 +46,7 @@ $(() => {
                     width:0
                 })
             })
-        }).parent(".img_wrap").siblings(".cont_wrap").find(".news_sum").removeClass("on").siblings(".detail").removeClass("on").siblings(".news_tit").find("span").removeClass("on")
+        }).parents(".news_oh").siblings(".cont_wrap").find(".news_sum").removeClass("on").siblings(".detail").removeClass("on").siblings(".news_tit").find("span").removeClass("on")
 
 
         setTimeout(() => {
@@ -47,14 +55,31 @@ $(() => {
             },300,()=>{
                 $(".news").find(".news_container").eq(snum+1===4? 0 : snum+1).find(".img_bx").animate({
                     opacity:1
-                },100).parents(".img_wrap").siblings(".cont_wrap").find(".news_sum").addClass("on").siblings(".detail").addClass("on").siblings(".news_tit").find("span").addClass("on");
+                },100).parents(".news_oh").siblings(".cont_wrap").find(".news_sum").addClass("on").siblings(".detail").addClass("on").siblings(".news_tit").find("span").addClass("on");
                 snum++;
                 if(snum===4) snum=0;
             })
         }, 400);
+        clearAuto()
     }
+
     $(".news").on("click",newsSlide);
-    setInterval(newsSlide, 3000);
+
+
+    let autoI;
+    let autoT;
+
+    function autoSlide() {
+        autoI = setInterval(newsSlide, 3000);
+    }
+
+    autoSlide();
+
+    function clearAuto() {
+        clearInterval(autoI);
+        clearTimeout(autoT);
+        autoT = setTimeout(autoSlide, 1000);
+    }
 });
 
 
@@ -86,9 +111,11 @@ function News() {
         <section className="news">
                 {news_data.map((v, i) => (
                     <div className="news_container" key={i} data-num={i}>
-                        <div className="img_wrap">
-                            <div className="img_bx">
-                                <img src={v.src} alt=" " />
+                        <div className="news_oh">
+                            <div className="img_wrap">
+                                <div className="img_bx">
+                                    <img src={v.src} alt=" " />
+                                </div>
                             </div>
                         </div>
                         <div className="cont_wrap" data-num={i} key={i}>

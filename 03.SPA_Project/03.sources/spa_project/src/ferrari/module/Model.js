@@ -19,16 +19,24 @@ function Model(){
             slidesPerView={1.2}
             loop={true}
             scrollbar={{draggable: true}}
-            onSwiper={()=>$('.swiper-slide-active').find(".tit_wrap").fadeIn()}
-            onSlideChangeTransitionStart={()=>$(".swiper-slide-active").find(".tit_wrap").fadeIn(1000).parent().siblings(".swiper-slide").find(".tit_wrap").hide()}
+            onSwiper={()=>$('.swiper-slide-active').find(".tit_wrap").css({
+                opacity:1
+            }).parents(".swiper-slide").css({
+                backgroundColor:"#888"
+            })}
+            onSlideChangeTransitionStart={()=>$(".swiper-slide-active").find(".tit_wrap").animate({
+                opacity:1
+            }).parent().siblings(".swiper-slide").find(".tit_wrap").animate({
+                opacity:0
+            })}
             breakpoints={{
                 700:{
                     slidesPerView:2,
-                    spaceBetween:5
+                    spaceBetween:-50
                 },
                 1200:{
                     slidesPerView:3,
-                    spaceBetween:0
+                    spaceBetween:-300
                 }
             }}
         >

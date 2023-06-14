@@ -2,20 +2,24 @@
 
 .swiper-slide{
     position: relative;
+    transform: skew(20deg);
+    background-color: #888;
 }
 .tit_wrap{
     position: absolute;
     bottom: 5%;
+    transform: skew(-20deg);
 }
 .img_wrap{
     width: 100%;
 }
-.img_wrap img{
+.swiper-slide .img_wrap img{
     width: 100%;
+    transform: skew(-20deg);
 }
 .tit_wrap{
     position: relative;
-    display: none;
+    opacity: 0;
 }
 .tit{
     font-size: 40px;

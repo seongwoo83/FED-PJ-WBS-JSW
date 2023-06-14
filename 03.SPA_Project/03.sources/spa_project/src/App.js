@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       <Test />
-      <News />
       <Model />
+      <News />
       <Board />
       <Info />
     </>
