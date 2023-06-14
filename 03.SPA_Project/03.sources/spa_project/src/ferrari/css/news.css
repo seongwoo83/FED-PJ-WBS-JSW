@@ -16,6 +16,7 @@
     position: relative;
     width: auto;
     height: 60%;
+    background-color: #ededed;
 }
 .news_container img{
     width: 100%;
@@ -50,4 +51,7 @@
 .news_tit span.on{
     transform:matrix(1,0,0,1,0,0);
     opacity: 1;
+}
+
+@media screen and (min-width:1000px){
 }

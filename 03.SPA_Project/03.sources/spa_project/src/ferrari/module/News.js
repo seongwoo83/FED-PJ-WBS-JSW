@@ -10,59 +10,8 @@ $(() => {
             .join(" ");
         $(v).html(hcode);
     });
+
     
-    $(".news_container").last().after(`<div class="grey_back"></div>`)
-
-
-    let news_container = $(".news_container");
-    news_container.eq(0).find("img").css({
-            opacity:1
-        })
-    const news = $(".news");
-    const grey = $(".grey_back");
-    function setgrey(){
-        grey.css({
-        height:news_container.find("img").height()
-    })
-}
-    setTimeout(setgrey, 0);
-
-    let snum = 0;
-    let prot = 0
-    news.on("click",function(){
-        if(prot===1) return;
-        prot = 1;
-        setTimeout(() => {
-            prot=0;
-        }, 1600);
-        setTimeout(() => {
-            if(snum === news_container.length) snum=0;
-        }, 0);
-        snum++;
-        news_container.eq(snum-1).find("img").animate({
-            opacity:0
-        },400,()=>{
-            setTimeout(() => {
-                $(this).find(".news_container").eq(snum).find("img").animate({
-                    opacity:1
-                },400).parent().siblings().find(".news_tit span").addClass("on").parent().siblings().addClass("on")
-            }, 800);
-            }).parent().siblings().find(".news_tit span").removeClass("on").parent().siblings().removeClass("on")
-    
-            setTimeout(() => {
-                grey.animate({
-                    left:"100%"
-                },400,()=>{
-                    $(this).find(".grey_back").css({
-                        left:0,
-                        right:"100%"
-                    }).animate({
-                        right:0
-                    },400)
-                })
-            }, 400);
-
-    })
 
     
 });
