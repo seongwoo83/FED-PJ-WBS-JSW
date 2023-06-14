@@ -11,10 +11,52 @@ $(() => {
         $(v).html(hcode);
     });
 
-    
+    $(".news_container").eq(0).find(".img_wrap").css({
+        width:"100%"
+    }).find(".img_bx").css({
+        opacity:1
+    }).parent().siblings(".cont_wrap").find(".news_sum").addClass("on").siblings(".detail").addClass("on").siblings(".news_tit").find("span").addClass("on")
 
     
+    
+    let snum = 0;
+    let prot = 0
+    function newsSlide(){
+        if(prot ===1)return;
+        prot = 1;
+        setTimeout(() => {
+            prot = 0;
+        }, 1000);
+        $('.news_container').eq(snum).find(".img_bx").animate({
+            opacity:0
+        },100,()=>{
+            $(".news").find(".news_container").eq(snum).find(".img_wrap").animate({
+                left:"100%"
+            },300,()=>{
+                $(".news").find(".news_container").eq(snum).find(".img_wrap").css({
+                    left:0,
+                    width:0
+                })
+            })
+        }).parent(".img_wrap").siblings(".cont_wrap").find(".news_sum").removeClass("on").siblings(".detail").removeClass("on").siblings(".news_tit").find("span").removeClass("on")
+
+
+        setTimeout(() => {
+            $(".news_container").eq(snum+1===4? 0 : snum+1).find(".img_wrap").animate({
+                width:"100%"
+            },300,()=>{
+                $(".news").find(".news_container").eq(snum+1===4? 0 : snum+1).find(".img_bx").animate({
+                    opacity:1
+                },100).parents(".img_wrap").siblings(".cont_wrap").find(".news_sum").addClass("on").siblings(".detail").addClass("on").siblings(".news_tit").find("span").addClass("on");
+                snum++;
+                if(snum===4) snum=0;
+            })
+        }, 400);
+    }
+    $(".news").on("click",newsSlide);
+    setInterval(newsSlide, 3000);
 });
+
 
 function News() {
     const news_data = [
@@ -45,13 +87,15 @@ function News() {
                 {news_data.map((v, i) => (
                     <div className="news_container" key={i} data-num={i}>
                         <div className="img_wrap">
-                            <img src={v.src} alt=" " />
-                        </div>
-                            <div className="cont_wrap" data-num={i} key={i}>
-                                <h2 className="news_tit">{v.tit}</h2>
-                                <p className="news_sum">{v.sum}</p>
-                                <button className="detail">자세히 살펴보기</button>
+                            <div className="img_bx">
+                                <img src={v.src} alt=" " />
                             </div>
+                        </div>
+                        <div className="cont_wrap" data-num={i} key={i}>
+                            <h2 className="news_tit">{v.tit}</h2>
+                            <p className="news_sum">{v.sum}</p>
+                            <button className="detail">자세히 살펴보기</button>
+                        </div>
                         </div>
                 ))}
         </section>
