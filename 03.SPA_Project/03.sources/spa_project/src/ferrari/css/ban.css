@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.video_slide{
+    position: relative;
+    height: 100vh;
+    margin-bottom: 20px;
+}
+.v_cont_bx{
+    position: absolute;
+    display: flex;  
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+.v_stit{
+    color: #fff;
+}
+.v_btit{
+    color: #fff;
+}
+.v_src{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
