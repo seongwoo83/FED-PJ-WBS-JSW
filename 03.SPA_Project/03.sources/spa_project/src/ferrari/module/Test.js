@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import '../css/test.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Test() {
     return (

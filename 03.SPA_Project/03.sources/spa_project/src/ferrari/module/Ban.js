@@ -24,7 +24,7 @@ function Ban(){
 
 
     return(
-        <div>
+        <div className="banner">
         <Swiper
         modules={[Autoplay]}
         loop={true}
