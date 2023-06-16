@@ -1,6 +1,9 @@
 import '../css/info.css'
 
-/* eslint-disable */
+/**
+ * footer
+ */
+/* ⁡⁢⁣⁣eslint-disable⁡ */
 function Info(){
     return(
         <footer>
