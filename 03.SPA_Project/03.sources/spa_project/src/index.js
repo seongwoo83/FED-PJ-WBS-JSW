@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './App.css';
 import {HashRouter, Route, Routes} from "react-router-dom";
-import Main from './ferrari/Main';
 import Layout from './ferrari/Layout';
+import Main from './ferrari/Main';
+import Cars from './ferrari/Cars';
 
 
 export default function App(){
@@ -12,7 +13,7 @@ export default function App(){
       <Routes>
         <Route path='/' element={<Layout />}>
         <Route index element={<Main />} />
-        <Route path='/cars' element={<Main />} />
+        <Route path='cars' element={<Cars />} />
         </Route>
       </Routes>
     </HashRouter>
@@ -21,7 +22,7 @@ export default function App(){
 
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.querySelector('#root'));
 root.render(
     <App />
 );

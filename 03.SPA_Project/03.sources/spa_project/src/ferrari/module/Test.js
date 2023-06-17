@@ -25,6 +25,13 @@ function Test() {
                         </Navbar.Offcanvas>
                     </Container>
                 </Navbar>
+                <div className="menu_cover">
+                    <div className="mlist_wrap">
+                        <ul className="mlist">
+                        </ul>
+                    </div>
+                    <div className="mvid_wrap"></div>
+                </div>
         </>
     );
 }
