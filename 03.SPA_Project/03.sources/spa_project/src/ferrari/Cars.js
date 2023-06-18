@@ -50,6 +50,7 @@ const Cars = () => {
                     }
                 </ul>
                 <p className="c_per_sum">{mdata[idx].cper.psum}</p>
+                <video src={mdata[idx].cvid[1]} autoPlay="autoplay" muted="muted" loop="loop"/>
             </StyledDiv>
             <div className="c_des_wrap">
                 <img src={mdata[idx].psrc[4]} alt=" "/>
