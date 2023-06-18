@@ -9,13 +9,13 @@ const StyledDiv = styled.div`
     background-color : ${(props) => props.bgc}
 `
 const Cars = () => {
-    let idx = 0;
+    let idx = 1;
     return(
         <>
             <StyledDiv bgc={mdata[idx].bgc} className="c_vid_wrap">
                 <video src={mdata[idx].cvid[0]} muted="muted" autoPlay="autoplay" loop="loop" />
                 <h3 className="slogan">{mdata[idx].slo}</h3>
-                <img src={mdata[idx].logo} alt=" " />
+                <img className="c_logo" src={mdata[idx].logo} alt=" " />
             </StyledDiv>
             <StyledDiv bgc={mdata[idx].bgc} className="c_sum_wrap">
                 <img src={mdata[idx].psrc[0]} alt=" "/>
@@ -28,6 +28,12 @@ const Cars = () => {
                 <Swiper 
                     slidesPerView={1.2}
                     allowTouchMove={true}
+                    breakpoints={{
+                        1200:{
+                            slidesPerView:2,
+                            spaceBetween:0
+                        }
+                    }}
                 >
                     <SwiperSlide>
                         <img src={mdata[idx].psrc[1]} alt=" "/>
@@ -41,16 +47,21 @@ const Cars = () => {
                 </Swiper>
             </StyledDiv>
             <StyledDiv bgc={mdata[idx].bgc} className="c_per_wrap">
-                <ul className="c_per">
-                    <li>{mdata[idx].cper.eng}</li>
-                    <li>{mdata[idx].cper.hp}</li>
-                    {
-                        mdata[idx].cper.zero && 
-                        <li>{mdata[idx].cper.zero}</li>
-                    }
-                </ul>
-                <p className="c_per_sum">{mdata[idx].cper.psum}</p>
-                <video src={mdata[idx].cvid[1]} autoPlay="autoplay" muted="muted" loop="loop"/>
+                <div className="c_per_container">
+                    <ul className="c_per">
+                        <li>{mdata[idx].cper.eng}</li>
+                        <li>{mdata[idx].cper.hp}</li>
+                        {
+                            mdata[idx].cper.zero && 
+                            <li>{mdata[idx].cper.zero}</li>
+                        }
+                    </ul>
+                    <p className="c_per_sum">{mdata[idx].cper.psum}</p>
+                </div>
+                {
+                    mdata[idx].cvid[1] &&
+                    <video src={mdata[idx].cvid[1]} autoPlay="autoplay" muted="muted" />
+                }
             </StyledDiv>
             <div className="c_des_wrap">
                 <img src={mdata[idx].psrc[4]} alt=" "/>
