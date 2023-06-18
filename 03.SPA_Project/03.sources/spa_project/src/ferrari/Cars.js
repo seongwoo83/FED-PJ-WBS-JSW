@@ -8,7 +8,7 @@ const StyledDiv = styled.div`
     background-color : ${(props) => props.bgc}
 `
 const Cars = () => {
-    let idx = 2;
+    let idx = 1;
     return(
         <>
             <div className="c_vid_wrap">
