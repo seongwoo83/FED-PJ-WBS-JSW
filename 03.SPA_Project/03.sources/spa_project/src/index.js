@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './App.css';
+import './Index.css';
 import {HashRouter, Route, Routes} from "react-router-dom";
 import Layout from './ferrari/Layout';
 import Main from './ferrari/Main';

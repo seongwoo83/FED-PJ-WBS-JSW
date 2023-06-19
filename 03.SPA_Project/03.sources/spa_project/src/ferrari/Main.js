@@ -1,4 +1,4 @@
-import "../App.css";
+import "../Index.css";
 import Board from "../ferrari/module/Board";
 import Model from "../ferrari/module/Model";
 import News from "../ferrari/module/News";
