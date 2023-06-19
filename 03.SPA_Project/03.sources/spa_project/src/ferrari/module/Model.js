@@ -126,7 +126,7 @@ function Model() {
                                 <img src={v.src} alt="차" />
                             </div>
                             <div className="tit_wrap">
-                                <Link  to="/cars" state={{cidx:v.idx}} className="tit">{v.name.toUpperCase()}</Link>
+                                <Link  to="/autos" state={{cidx:v.idx}} className="tit">{v.name.toUpperCase()}</Link>
                             </div>
                         </SwiperSlide>
                     );

@@ -1,9 +1,7 @@
 import '../css/info.css'
-
-/**
- * footer
- */
-/* ⁡⁢⁣⁣eslint-disable⁡ */
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookSquare, faInstagram, faTwitch, faTwitter, faYoutube, faLinkedin, faTiktok} from "@fortawesome/free-brands-svg-icons"
+/* eslint-disable */
 function Info(){
     return(
         <footer>
@@ -22,13 +20,13 @@ function Info(){
             </div>
             <div className="sns_container">
                 <ul>
-                    <li><a href="https://www.facebook.com/Ferrari"><span>+</span>FACEBOOK</a></li>
-                    <li><a href="https://www.instagram.com/ferrari/"><span>+</span>INSTARGRAM</a></li>
-                    <li><a href="https://www.linkedin.com/company/ferrari/"><span>+</span>LINKEDIN</a></li>
-                    <li><a href="https://www.tiktok.com/@ferrari"><span>+</span>TIKTOK</a></li>
-                    <li><a href="https://www.twitch.tv/ferrariesports"><span>+</span>TWITCH</a></li>
-                    <li><a href="https://twitter.com/Ferrari"><span>+</span>TWITTER</a></li>
-                    <li><a href="https://www.youtube.com/user/ferrariworld"><span>+</span>YOUTUBE</a></li>
+                    <li><a href="https://www.facebook.com/Ferrari"><FontAwesomeIcon className="logo_ico" icon={faFacebookSquare} />FACEBOOK</a></li>
+                    <li><a href="https://www.instagram.com/ferrari/"><FontAwesomeIcon className="logo_ico" icon={faInstagram} />INSTARGRAM</a></li>
+                    <li><a href="https://www.linkedin.com/company/ferrari/"><FontAwesomeIcon className="logo_ico" icon={faLinkedin} />LINKEDIN</a></li>
+                    <li><a href="https://www.tiktok.com/@ferrari"><FontAwesomeIcon className="logo_ico" icon={faTiktok} />TIKTOK</a></li>
+                    <li><a href="https://www.twitch.tv/ferrariesports"><FontAwesomeIcon className="logo_ico" icon={faTwitch} />TWITCH</a></li>
+                    <li><a href="https://twitter.com/Ferrari"><FontAwesomeIcon className="logo_ico" icon={faTwitter} />TWITTER</a></li>
+                    <li><a href="https://www.youtube.com/user/ferrariworld"><FontAwesomeIcon className="logo_ico" icon={faYoutube} />YOUTUBE</a></li>
                 </ul>
             </div>
             <div className="reserve_wrap">

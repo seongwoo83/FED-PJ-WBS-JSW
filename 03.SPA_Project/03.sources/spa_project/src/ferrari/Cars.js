@@ -52,11 +52,11 @@ const Cars = (props) => {
             <StyledDiv bgc={mdata[idx].bgc} className="c_per_wrap">
                 <div className="c_per_container">
                     <ul className="c_per">
-                        <li>{mdata[idx].cper.eng}</li>
-                        <li>{mdata[idx].cper.hp}</li>
+                        <li>{mdata[idx].cper.eng}<span className="st">engine</span></li>
+                        <li>{mdata[idx].cper.hp} HP<span className="st">horse power</span></li>
                         {
                             mdata[idx].cper.zero && 
-                            <li>{mdata[idx].cper.zero}</li>
+                            <li>{mdata[idx].cper.zero}s<span className="st">zero to sixty</span></li>
                         }
                     </ul>
                     <p className="c_per_sum">{mdata[idx].cper.psum}</p>
