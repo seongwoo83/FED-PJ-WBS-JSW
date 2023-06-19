@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "../css/model.css";
 import mdata from "../data/mdata";
+import { Link } from "react-router-dom";
 
 function Model() {
     return (
@@ -125,7 +126,7 @@ function Model() {
                                 <img src={v.src} alt="차" />
                             </div>
                             <div className="tit_wrap">
-                                <span className="tit">{v.name.toUpperCase()}</span>
+                                <Link  to="/cars" state={{cidx:v.idx}} className="tit">{v.name.toUpperCase()}</Link>
                             </div>
                         </SwiperSlide>
                     );

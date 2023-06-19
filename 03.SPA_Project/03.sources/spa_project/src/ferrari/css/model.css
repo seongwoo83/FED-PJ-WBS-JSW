@@ -36,10 +36,13 @@
 .tit_wrap {
     position: relative;
     opacity: 0;
+    z-index: 4;
 }
 .tit {
     font-size: 40px;
     font-weight: bold;
+    text-decoration: none;
+    color: #222;
 }
 .btn_wrap {
     position: absolute;

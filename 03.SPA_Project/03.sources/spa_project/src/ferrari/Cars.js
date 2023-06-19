@@ -3,13 +3,16 @@ import mdata from "./data/mdata";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styled from "styled-components";
 import './css/cars.css';
+import { useLocation } from "react-router-dom";
 
 
 const StyledDiv = styled.div`
     background-color : ${(props) => props.bgc}
 `
-const Cars = () => {
-    let idx = 1;
+const Cars = (props) => {
+    const car = useLocation();
+    const cidx = car.state.cidx-1;
+    let idx = cidx;
     return(
         <>
             <StyledDiv bgc={mdata[idx].bgc} className="c_vid_wrap">
