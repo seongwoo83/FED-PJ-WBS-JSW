@@ -1,14 +1,17 @@
 import $ from "jquery";
 import bdata from "../data/bdata";
 import '../css/board.css';
+import { StyledBtn, StyledBtnBx } from "./Ban";
 
-$(()=>{
-    $(".grid_bd li").each((i, v)=>{
-        $(v).css({
-            backgroundImage : `url(${bdata[i].src})`
+function jqfn(){
+    $(()=>{
+        $(".grid_bd li").each((i, v)=>{
+            $(v).css({
+                backgroundImage : `url(${bdata[i].src})`
+            })
         })
     })
-})
+}
 function Board(){
     return (
         <div className="board">
@@ -19,14 +22,17 @@ function Board(){
                         <li key={i}>
                             <h4>{x.stit}</h4>
                             <h2>{x.btit}</h2>
-                            <button className="detail">
-                                See Detail
-                            </button>
+                                <StyledBtnBx>
+                                    <StyledBtn className="detail n_btn">
+                                        See Detail
+                                    </StyledBtn>
+                                </StyledBtnBx>
                         </li>
                         )
                     })
                 }
             </ul>
+            {jqfn()}
         </div>
     );
 }

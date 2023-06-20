@@ -1,6 +1,18 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import '../css/ban.css';
+import styled from "styled-components";
+
+const StyledBtnBx = styled.div`
+    overflow: hidden;
+`
+const StyledBtn = styled.button`
+    position: relative;
+    padding: 5px 0;
+    border: none;
+    background-color: transparent;
+    color: #aaa;
+`
 function Ban(){
 
     const slide_data = [
@@ -42,7 +54,9 @@ function Ban(){
                                     <h4 className="v_stit">{v.stit}</h4>
                                 }
                                 <h2 className="v_btit">{v.btit}</h2>
-                                <button className="v_btn">Show Details</button>
+                                <StyledBtnBx className="v_btn_wrap">
+                                    <StyledBtn className="v_btn">Show Details</StyledBtn>
+                                </StyledBtnBx>
                             </div>
                             <video src={v.src} muted="muted" autoPlay="autoplay" loop="loop" className="v_src"/>
                         </SwiperSlide>
@@ -54,4 +68,4 @@ function Ban(){
     );
 }
 
-export default Ban;
+export {Ban, StyledBtn,StyledBtnBx};

@@ -1,0 +1,13 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
+
+export default function ScrollTop(){
+    const {pathname} = useLocation();
+
+    useEffect(()=>{
+        window.scrollTo(0, 0)
+    // eslint-disable-next-line
+    }, [pathname]);
+    return null;
+}

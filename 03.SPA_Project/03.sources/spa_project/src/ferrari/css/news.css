@@ -72,7 +72,31 @@
     transform:matrix(1,0,0,1,0,0);
     opacity: 1;
 }
-
+.detail{
+    position: relative;
+    padding: 5px 0;
+    border: none;
+    background-color: transparent;
+    color: #aaa;
+}
+.detail::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid #f22;
+    transition: .4s;
+}
+.detail::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    border: 1px solid #f22;
+    transition: .4s;
+}
 @media screen and (min-width: 850px){
     .news{
         height: 600px;

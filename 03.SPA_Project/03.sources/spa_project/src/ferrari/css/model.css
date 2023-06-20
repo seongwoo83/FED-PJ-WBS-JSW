@@ -91,6 +91,12 @@
 @media screen and (min-width:700px) {
     .btn_wrap{
         top: auto;
+        bottom:30%;
+    }
+}
+@media screen and (min-width:800px){
+    .btn_wrap{
+        top: auto;
         bottom:10%;
     }
 }

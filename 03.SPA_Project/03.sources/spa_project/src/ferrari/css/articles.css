@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+.a_wrap{
+    width: 80%;
+    margin: 0 auto;
+}
+.a_tit_wrap{
+    padding: 30px 0;
+}
+.a_tit_wrap h2{
+    font-size: 35px;
+}
+.a_tit_wrap h4{
+    font-size: 15px;
+    color: #f22;
+}
+.a_img_wrap img{
+    width: 100%;
+    object-fit: cover;
+}
+.a_cont_wrap{
+    padding: 30px 0;
+}
+.a_date{
+    display: inline-block;
+    padding: 10px 0;
+    font-size: 20px;
+}
+.a_art_wrap p{
+    padding: 5px 0;
+}
+.a_art_wrap b{
+    font-size: 16px;
+}
+@media screen and (min-width:900px) {
+    .a_wrap{
+        width: 70%;
+    }
+}
+@media screen and (min-width:1200px){
+    .a_wrap{
+        width: 60%;
+        max-width: 1000px;
+    }
+}

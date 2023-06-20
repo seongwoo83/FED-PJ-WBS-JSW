@@ -19,6 +19,9 @@ nav.navbar{
     z-index: 998;
     padding: 0;
 }
+.auto_btn{
+    cursor: pointer;
+}
 span.navbar-brand{
     padding: 0;
 }

@@ -2,7 +2,7 @@ import "../Index.css";
 import Board from "../ferrari/module/Board";
 import Model from "../ferrari/module/Model";
 import News from "../ferrari/module/News";
-import Ban from "../ferrari/module/Ban";
+import {Ban} from "../ferrari/module/Ban";
 
 function Main() {
     return (

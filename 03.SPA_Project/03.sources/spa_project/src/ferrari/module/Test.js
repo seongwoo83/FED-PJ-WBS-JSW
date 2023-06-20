@@ -51,14 +51,11 @@ function Test() {
                 <Navbar key='md' bg="color">
                     <Container fluid>
                         <Navbar.Brand><h1 className="header_logo"><Link to="/" >Ferrari</Link></h1></Navbar.Brand>
-                        <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
                         <Navbar.Offcanvas id={`offcanvasNavbar-expand-md`} aria-labelledby={`offcanvasNavbarLabel-expand-md`} placement="end">
-                            <Offcanvas.Header closeButton>
-                                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`}>Menu</Offcanvas.Title>
-                            </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-start flex-grow-1 pe-3">
-                                    <Nav.Link className="auto_btn">Autos</Nav.Link>
+                                    {/* eslint-disable-next-line */}
+                                    <a className="auto_btn nav-link">Autos</a>
                                     <Link to="/universe" className="nav-link">Universe</Link>
                                     <img src="./img/logo.png" alt="logo" className="header_logo_img"/>
                                 </Nav>

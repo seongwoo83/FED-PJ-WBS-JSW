@@ -6,6 +6,7 @@ import Layout from './ferrari/Layout';
 import Main from './ferrari/Main';
 import Cars from './ferrari/Cars';
 import Universe from './ferrari/Universe';
+import Articles from './ferrari/Ariticles';
 
 
 export default function App(){
@@ -16,6 +17,7 @@ export default function App(){
         <Route index element={<Main />} />
         <Route path='/autos' element={<Cars />} />
         <Route path='/universe' element={<Universe />} />
+        <Route path='/art' element={<Articles />} />
         </Route>
       </Routes>
     </HashRouter>

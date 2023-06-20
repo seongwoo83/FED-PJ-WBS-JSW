@@ -1,87 +1,91 @@
 import $ from "jquery";
 import "../css/news.css";
+import { StyledBtn, StyledBtnBx } from "./Ban";
 
-$(() => {
-    $(".news_tit").each((i, v) => {
-        let hcode = $(v)
-            .text()
-            .split(" ")
-            .map((v, i) => `<span>${v}</span>`)
-            .join(" ");
-        $(v).html(hcode);
-    });
+function jqfn(){
 
-    $(".news_container").eq(0).find(".img_wrap").css({
-        width:"100%"
-    }).find(".img_bx").css({
-        opacity:1
-    }).parents(".news_oh").siblings(".cont_wrap").find(".news_sum").addClass("on").siblings(".detail").addClass("on").siblings(".news_tit").find("span").addClass("on");
-
-    $(window).on("resize",function(){
+    $(() => {
+        $(".news_tit").each((i, v) => {
+            let hcode = $(v)
+                .text()
+                .split(" ")
+                .map((v, i) => `<span>${v}</span>`)
+                .join(" ");
+            $(v).html(hcode);
+        });
+    
+        $(".news_container").eq(0).find(".img_wrap").css({
+            width:"100%"
+        }).find(".img_bx").css({
+            opacity:1
+        }).parents(".news_oh").siblings(".cont_wrap").find(".news_sum").addClass("on").siblings(".detail").addClass("on").siblings(".news_tit").find("span").addClass("on");
+    
+        $(window).on("resize",function(){
+            $(".news").css({
+                height: $(".news_container").outerHeight() + 100+ "px"
+            })
+        });
         $(".news").css({
             height: $(".news_container").outerHeight() + 100+ "px"
-        })
-    });
-    $(".news").css({
-        height: $(".news_container").outerHeight() + 100+ "px"
-    });
-    
-    
-    let snum = 0;
-    let prot = 0
-    function newsSlide(){
-        if(prot ===1)return;
-        prot = 1;
-        setTimeout(() => {
-            prot = 0;
-        }, 1000);
-        $('.news_container').eq(snum).find(".img_bx").animate({
-            opacity:0
-        },100,()=>{
-            $(".news").find(".news_container").eq(snum).find(".img_wrap").animate({
-                left:"100%"
-            },300,()=>{
-                $(".news").find(".news_container").eq(snum).find(".img_wrap").css({
-                    left:0,
-                    width:0
+        });
+        
+        
+        let snum = 0;
+        let prot = 0
+        function newsSlide(){
+            if(prot ===1)return;
+            prot = 1;
+            setTimeout(() => {
+                prot = 0;
+            }, 1000);
+            $('.news_container').eq(snum).find(".img_bx").animate({
+                opacity:0
+            },100,()=>{
+                $(".news").find(".news_container").eq(snum).find(".img_wrap").animate({
+                    left:"100%"
+                },300,()=>{
+                    $(".news").find(".news_container").eq(snum).find(".img_wrap").css({
+                        left:0,
+                        width:0
+                    })
                 })
-            })
-        }).parents(".news_oh").siblings(".cont_wrap").find(".news_sum").removeClass("on").siblings(".detail").removeClass("on").siblings(".news_tit").find("span").removeClass("on")
-
-
-        setTimeout(() => {
-            $(".news_container").eq(snum+1===4? 0 : snum+1).find(".img_wrap").animate({
-                width:"100%"
-            },300,()=>{
-                $(".news").find(".news_container").eq(snum+1===4? 0 : snum+1).find(".img_bx").animate({
-                    opacity:1
-                },100).parents(".news_oh").siblings(".cont_wrap").find(".news_sum").addClass("on").siblings(".detail").addClass("on").siblings(".news_tit").find("span").addClass("on");
-                snum++;
-                if(snum===4) snum=0;
-            })
-        }, 400);
-        clearAuto()
-    }
-
-    $(".news").on("click",newsSlide);
-
-
-    let autoI;
-    let autoT;
-
-    function autoSlide() {
-        autoI = setInterval(newsSlide, 3000);
-    }
-
-    autoSlide();
-
-    function clearAuto() {
-        clearInterval(autoI);
-        clearTimeout(autoT);
-        autoT = setTimeout(autoSlide, 1000);
-    }
-});
-
+            }).parents(".news_oh").siblings(".cont_wrap").find(".news_sum").removeClass("on").siblings(".detail").removeClass("on").siblings(".news_tit").find("span").removeClass("on")
+    
+    
+            setTimeout(() => {
+                $(".news_container").eq(snum+1===4? 0 : snum+1).find(".img_wrap").animate({
+                    width:"100%"
+                },300,()=>{
+                    $(".news").find(".news_container").eq(snum+1===4? 0 : snum+1).find(".img_bx").animate({
+                        opacity:1
+                    },100).parents(".news_oh").siblings(".cont_wrap").find(".news_sum").addClass("on").siblings(".detail").addClass("on").siblings(".news_tit").find("span").addClass("on");
+                    snum++;
+                    if(snum===4) snum=0;
+                })
+            }, 400);
+            clearAuto()
+        }
+    
+        $(".news").on("click",newsSlide);
+    
+    
+        let autoI;
+        let autoT;
+    
+        function autoSlide() {
+            autoI = setInterval(newsSlide, 3000);
+        }
+    
+        autoSlide();
+    
+        function clearAuto() {
+            clearInterval(autoI);
+            clearTimeout(autoT);
+            autoT = setTimeout(autoSlide, 1000);
+        }
+    });
+}
+jqfn();
 
 function News() {
     const news_data = [
@@ -121,10 +125,11 @@ function News() {
                         <div className="cont_wrap" data-num={i} key={i}>
                             <h2 className="news_tit">{v.tit}</h2>
                             <p className="news_sum">{v.sum}</p>
-                            <button className="detail">자세히 살펴보기</button>
+                            <button className="detail">Show Detail</button>
                         </div>
                         </div>
                 ))}
+                {jqfn()}
         </section>
     );
 }
