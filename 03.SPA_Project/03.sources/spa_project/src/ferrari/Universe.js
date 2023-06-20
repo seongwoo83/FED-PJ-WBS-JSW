@@ -1,4 +1,5 @@
 import Article from "./module/Arti";
+import './css/universe.css'
 
 
 function Universe(){

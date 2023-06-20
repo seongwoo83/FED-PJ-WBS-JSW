@@ -59,7 +59,7 @@ function Test() {
                             <Offcanvas.Body>
                                 <Nav className="justify-content-start flex-grow-1 pe-3">
                                     <Nav.Link className="auto_btn">Autos</Nav.Link>
-                                    <Nav.Link><Link to="/universe">Universe</Link></Nav.Link>
+                                    <Link to="/universe" className="nav-link">Universe</Link>
                                     <img src="./img/logo.png" alt="logo" className="header_logo_img"/>
                                 </Nav>
                             </Offcanvas.Body>
