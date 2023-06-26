@@ -11,6 +11,7 @@ function Articles(){
     let arbsrc = loc.state.arbsrc;
     let arcont = loc.state.arcont;
     arcont = arcont.split("^");
+    console.log(loc);
     return(
         <div className="a_wrap">
             <div className="a_tit_wrap">
@@ -33,8 +34,8 @@ function Articles(){
                         })
                     }
                 </div>
+                <ImgSlide idx={aridx}/>
             </div>
-            <ImgSlide art={"art"+aridx} idx={aridx}/>
         </div>
     )
 }

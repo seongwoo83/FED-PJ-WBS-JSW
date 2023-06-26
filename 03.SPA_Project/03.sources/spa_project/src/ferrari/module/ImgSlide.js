@@ -52,8 +52,9 @@ function ImgSlide(props) {
     return(
         <>
             <ul className='img_slide'>
-                            <>{
-                                article_data[props.art][props.idx].rsrc.map((v,i)=>{
+                            <>
+                            {
+                                article_data[props.idx-1].rsrc.map((v,i)=>{
                                     return (
                                     <li key={i}><img src={v} /></li>
                                     )

@@ -1,10 +1,10 @@
 import article_data from "../data/ardata";
 import { Link } from "react-router-dom";
 
-function Article(props) {
+function Article() {
     return (
-        <div className={"uni_container " + props.art}>
-            {article_data[props.art].map((v, i) => {
+        <div className={"uni_container"}>
+            {article_data.map((v, i) => {
                 return (
                     <div className="article" key={i}>
                         <div className="u_img_wrap">
@@ -22,7 +22,8 @@ function Article(props) {
                                     arloca: v.loca,
                                     arsrc: v.src,
                                     arcont: v.cont,
-                                    arbsrc: v.bsrc
+                                    arbsrc: v.bsrc,
+                                    arrsrc:v.rsrc
                                 }}
                             >
                                 Show Detail
