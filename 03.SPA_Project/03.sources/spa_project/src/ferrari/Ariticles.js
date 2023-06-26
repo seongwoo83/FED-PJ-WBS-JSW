@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import './css/articles.css'
+import ImgSlide from "./module/ImgSlide";
 
 function Articles(){
     const loc = useLocation();
@@ -33,6 +34,7 @@ function Articles(){
                     }
                 </div>
             </div>
+            <ImgSlide art={"art"+aridx} idx={aridx}/>
         </div>
     )
 }

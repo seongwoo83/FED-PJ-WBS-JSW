@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.img_slide{
+    position: relative;
+}
+.img_slide li{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+.img_slide li img{
+    width: 100%;
+}

@@ -1,16 +1,16 @@
 import $ from 'jquery'
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import article_data from '../data/ardata';
+import '../css/imgslide.css';
 
 function ImgSlide(props) {
-    const [nsrc, setNsrc] = useState(article_data.art1.src)
     useEffect(()=>{
         let slideImg = $(".img_slide li");
         slideImg.each(function (idx, ele) {
             $(ele).css({
                 left: 30 * idx + "px",
                 top: 30 * idx + "px",
-                zIndex: -idx + slideImg.length,
+                zIndex: -idx + slideImg.length+1,
             });
         });
 
@@ -34,7 +34,7 @@ function ImgSlide(props) {
                                     {
                                         left: 30 * idx + "px",
                                         top: 30 * idx + "px",
-                                        zIndex: -idx + slideImg.length,
+                                        zIndex: -idx + slideImg.length+1,
                                     },
                                     200
                                 );
@@ -47,22 +47,19 @@ function ImgSlide(props) {
                 );
             } else return;
         });
-    },[nsrc])
+    })
 
     return(
         <>
             <ul className='img_slide'>
-                {
-                    article_data[props.art].map((v,i)=>{
-                        return (
-                            <>
-                                <li key={i}>{v.src}</li>
-                                <li key={i}>{v.src}</li>
-                                <li key={i}>{v.src}</li>
+                            <>{
+                                article_data[props.art][props.idx].rsrc.map((v,i)=>{
+                                    return (
+                                    <li key={i}><img src={v} /></li>
+                                    )
+                                })
+                            }
                             </>
-                        )
-                    })
-                }
             </ul>
         </>
     )
